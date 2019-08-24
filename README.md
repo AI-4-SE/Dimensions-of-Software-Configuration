@@ -45,7 +45,7 @@ You can find the final version of the translated questionnaire [here](questionna
 |                | E-commerce                   | <100      |
 
 ## Dimensions of Configuration
-![Dimensions of Configuration](/images/dimensions.png "Dimensions of Configuration")
+![Dimensions of Configuration](./images/dimensions.png "Dimensions of Configuration")
 
 **Who?**: Stakeholders
 
