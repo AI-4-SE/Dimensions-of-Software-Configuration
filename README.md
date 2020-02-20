@@ -10,8 +10,8 @@
 ## Interviews
 
 We interviewed 11 software developers from 9 different companies and domains
-in semi-structured interviews about the above mentioned aspects regarding 
-configuration tasksand issues in their daily work.
+in semi-structured interviews about the above mentioned aspects regarding
+configuration tasks and issues in their daily work.
 You can find the final version of the translated questionnaire [here](questionnaire.md).
 
 ### Participants
