@@ -93,7 +93,7 @@ purpose, multi-level feature modeling of large-scale industrial software systems
 *Software & Systems Modeling* 17, 3 (01 Jul 2018), 913–938. https://doi.org/10.1007/s10270-016-0564-7
 
 #### An Analysis of the Variability in Forty Preprocessor-Based Software Product Lines
-![Dimensions of An Analysis of the Variability in Forty Preprocessor-BasedSoftware Product Lines](./images/lalks_icse10.png "Dimensions of An Analysis of the Variability in Forty Preprocessor-BasedSoftware Product Lines")
+![Dimensions of An Analysis of the Variability in Forty Preprocessor-BasedSoftware Product Lines](./images/lalks_icse10.svg "Dimensions of An Analysis of the Variability in Forty Preprocessor-BasedSoftware Product Lines")
 
 Jörg Liebig, Sven Apel, Christian Lengauer, Christian Kästner, and Michael
 Schulze. 2010. An Analysis of the Variability in Forty Preprocessor-Based Soft-
@@ -101,14 +101,14 @@ ware Product Lines. In *Proc. Int. Conf. Software Engineering (ICSE)*. ACM, 105�
 
 
 #### Granularity in Software Product Lines
-![Dimensions of Granularity in Software Product Lines](./images/kak_icse08.png "Dimensions of Granularity in Software Product Lines")
+![Dimensions of Granularity in Software Product Lines](./images/kak_icse08.svg "Dimensions of Granularity in Software Product Lines")
 
 Christian Kästner, Sven Apel, and Martin Kuhlemann. 2008. Granularity in
 Software Product Lines. In *Proc. Int. Conf. Software Engineering (ICSE)*. ACM,
 New York, 311–320. https://doi.org/10.1145/1368088.1368131
 
 #### Variability-Aware Static Analysis at Scale: An Empirical Study
-![Dimensions of Variability-Aware Static Analysis at Scale: An Empirical Study](./images/rhein_2018.png "Dimensions of Variability-Aware Static Analysis at Scale: An Empirical Study")
+![Dimensions of Variability-Aware Static Analysis at Scale: An Empirical Study](./images/rhein_2018.svg "Dimensions of Variability-Aware Static Analysis at Scale: An Empirical Study")
 
 Alexander von Rhein, Jörg Liebig, Andreas Janker, Christian Kästner, and Sven
 Apel. 2018. Variability-Aware Static Analysis at Scale: An Empirical Study. *ACM
