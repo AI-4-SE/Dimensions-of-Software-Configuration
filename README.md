@@ -78,7 +78,7 @@ Alexander von Rhein, Jörg Liebig, Andreas Janker, Christian Kästner, and Sven 
 
 #### Software Configuration Engineering in Practice
 
-![Dimensions of Software Configuration Engineering in Practice](./images/ska_18.pdf "Dimensions of Software Configuration Engineering in Practice")
+![Dimensions of Software Configuration Engineering in Practice](./images/ska_18.svg "Dimensions of Software Configuration Engineering in Practice")
 
 M. Sayagh, N. Kerzazi, B. Adams, and F. Petrillo. 2018. Software Configuration Engineering in Practice: Interviews, Survey, and Systematic Literature Review.  *IEEE Transactions on Software Engineering* (2018).
 
