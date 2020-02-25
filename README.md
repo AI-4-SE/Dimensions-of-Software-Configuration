@@ -48,7 +48,7 @@ You can find the final version of the translated questionnaire [here](questionna
 
 ## Related Work
 
-We placed 18 related papers into the context of our model.
+We placed 18 related papers of the domains of software product lines, testing, performance, configuration errors, and configuration engineering into the context of our model.
 
 ### Software Product Lines
 
