@@ -44,13 +44,17 @@ You can find the final version of the translated questionnaire [here](questionna
 
 ## Dimensions of Configuration
 
-![Dimensions of Configuration](/images/dimensions.svg "Dimensions of Configuration")
+![Dimensions of Configuration](./images/dimensions.svg "Dimensions of Configuration")
 
 ## Related Work
 
 We placed 18 related papers into the context of our model.
 
 ### Software Product Lines
+
+#### What is a Feature? A Qualitative Study of Features in Industria Software Product Lines
+
+![What is a Feature](./images/berger2015.svg "What is a Feature?") Thorsten Berger, Daniela Lettner, Julia Rubin, Paul Grünbacher, Adeline Silva, Martin Becker, Marsha Chechik, and Krzysztof Czarnecki. 2015. What is a Feature?: A Qualitative Study of Features in Industrial Software Product Lines.  In Proceedings of the International Conference on Software Product Lines (SPLC).  ACM, 16–25.
 
 #### An Analysis of the Variability in Forty Preprocessor-Based Software Product Lines
 
