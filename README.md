@@ -6,6 +6,11 @@
    * [Companies](#companies)
 2. [Dimensions of Configuration](#dimensions-of-configuration)
 3. [Related Work](#related-work)
+   * [Software Product Lines](#software-product-lines)
+   * [Testing](#testing)
+   * [Performance](#performance)
+   * [Configuration Errors](#configuration-errors)
+   * [Configuration Engineering](#configuration-engineering)
 
 ## Interviews
 
