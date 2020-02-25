@@ -1,4 +1,4 @@
-# Configuration in the DevOps Age
+# Dimensions of Configuration
 
 ## Table of Contents
 1. [Interviews](#interviews)
