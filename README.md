@@ -8,7 +8,7 @@
 3. [Related Work](#related-work)
    * [Software Product Lines](#software-product-lines)
    * [Testing](#testing)
-   * [Performance](#performance)
+   * [Performance Optimization](#performance-optimization)
    * [Configuration Errors](#configuration-errors)
    * [Configuration Engineering](#configuration-engineering)
 
@@ -53,7 +53,7 @@ You can find the final version of the translated questionnaire [here](questionna
 
 ## Related Work
 
-We placed 18 related papers of the domains of software product lines, testing, performance, configuration errors, and configuration engineering into the context of our model.
+We placed 18 related papers of the domains of software product lines, testing, performance optimization, configuration errors, and configuration engineering into the context of our model.
 
 ### Software Product Lines
 
@@ -111,7 +111,7 @@ Dongpu Jin, Xiao Qu, Myra B. Cohen, and Brian Robinson. 2014. Configurations Eve
 
 Michael Hilton, Timothy Tunnell, Kai Huang, Darko Marinov, and Danny Dig.  2016. Usage, Costs, and Benefits of Continuous Integration in Open-source Projects. In *Proceedings of the International Conference on Automated Software Engineering (ASE)*. ACM, 426–437.
 
-### Performance
+### Performance Optimization
 
 #### Faster discovery of faster system configurations with spectral learning
 
