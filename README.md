@@ -76,6 +76,12 @@ Alexander von Rhein, Jörg Liebig, Andreas Janker, Christian Kästner, and Sven 
 
 Thorsten Berger, Ralf Rublack, Divya Nair, Joanne M. Atlee, Martin Becker, Krzysztof Czarnecki, and Andrzej Wąsowski. 2013. A Survey of Variability Modeling in Industrial Practice. In *Proceedings of the Seventh International Workshop on Variability Modelling of Software-intensive Systems (VaMoS ’13)*. ACM, New York, NY, USA, Article 7, 8 pages. https://doi.org/10.1145/2430502.2430513
 
+#### Multi-purpose, multi-level feature modeling of large-scale industrial software systems
+
+![Dimensions of Multi-purpose, multi-level feature modeling of large-scale industrial software systems](./images/rabiser_2018.svg "Dimensions of Multi-purpose, multi-level feature modeling of large-scale industrial software systems")
+
+Daniela Rabiser, Herbert Prähofer, Paul Grünbacher, Michael Petruzelka, Klaus Eder, Florian Angerer, Mario Kromoser, and Andreas Grimmer. 2018. Multi-purpose, multi-level feature modeling of large-scale industrial software systems.  *Software & Systems Modeling* 17, 3 (01 Jul 2018), 913–938. https://doi.org/10.1007/s10270-016-0564-7
+
 ### Testing
 
 #### A Survey of Combinatorial Testing
@@ -89,6 +95,12 @@ Changhai Nie and Hareton Leung. 2011. A Survey of Combinatorial Testing. *ACM Co
 ![Dimensions of Configurations Everywhere: Implications for Testing and Debugging in Practice](./images/jin_2014.svg "Dimensions of Configurations Everywhere: Implications for Testing and Debugging in Practice")
 
 Dongpu Jin, Xiao Qu, Myra B. Cohen, and Brian Robinson. 2014. Configurations Everywhere: Implications for Testing and Debugging in Practice. In Companion *Proceedings of the 36th International Conference on Software Engineering (ICSE Companion 2014)*. ACM, New York, NY, USA, 215–224. https://doi.org/10.1145/2591062.2591191
+
+#### Usage, Costs, and Benefits of Continuous Integration in Open-source Projects
+
+![Dimensions of Usage, Costs, and Benefits of Continuous Integration in Open-source Projects](./images/hilton_2016.svg "Dimensions of Usage, Costs, and Benefits of Continuous Integration in Open-source Projects")
+
+Michael Hilton, Timothy Tunnell, Kai Huang, Darko Marinov, and Danny Dig.  2016. Usage, Costs, and Benefits of Continuous Integration in Open-source Projects. In *Proceedings of the International Conference on Automated Software Engineering (ASE)*. ACM, 426–437.
 
 ### Performance
 
@@ -132,12 +144,6 @@ Tianyin Xu and Yuanyuan Zhou. 2015. Systems Approaches to Tackling Configuration
 
 M. Sayagh, N. Kerzazi, B. Adams, and F. Petrillo. 2018. Software Configuration Engineering in Practice: Interviews, Survey, and Systematic Literature Review.  *IEEE Transactions on Software Engineering* (2018).
 
-#### Multi-purpose, multi-level feature modeling of large-scale industrial software systems
-
-![Dimensions of Multi-purpose, multi-level feature modeling of large-scale industrial software systems](./images/rabiser_2018.svg "Dimensions of Multi-purpose, multi-level feature modeling of large-scale industrial software systems")
-
-Daniela Rabiser, Herbert Prähofer, Paul Grünbacher, Michael Petruzelka, Klaus Eder, Florian Angerer, Mario Kromoser, and Andreas Grimmer. 2018. Multi-purpose, multi-level feature modeling of large-scale industrial software systems.  *Software & Systems Modeling* 17, 3 (01 Jul 2018), 913–938. https://doi.org/10.1007/s10270-016-0564-7
-
 #### Mining Container Image Repositories for Software Configuration and Beyond
 
 ![Dimensions of Mining Container Image Repositories for Software Configuration and Beyond](./images/xu_2018.svg "Dimensions of Mining Container Image Repositories for Software Configuration and Beyond")
@@ -155,9 +161,3 @@ Jens Smeds, Kristian Nybom, and Ivan Porres. 2015. DevOps: A Definition and Perc
 ![Dimensions of DevOps Capabilities, Practices, and Challenges: Insights from a Case Study](./images/senapathi_2018.svg "Dimensions of DevOps Capabilities, Practices, and Challenges: Insights from a Case Study")
 
 Mali Senapathi, Jim Buchan, and Hady Osman. 2018. DevOps Capabilities, Prac- tices, and Challenges: Insights from a Case Study. In *Proceedings of the Interna- tional Conference on Evaluation and Assessment in Software Engineering (EASE)*.  ACM, 57–67.
-
-#### Usage, Costs, and Benefits of Continuous Integration in Open-source Projects
-
-![Dimensions of Usage, Costs, and Benefits of Continuous Integration in Open-source Projects](./images/hilton_2016.svg "Dimensions of Usage, Costs, and Benefits of Continuous Integration in Open-source Projects")
-
-Michael Hilton, Timothy Tunnell, Kai Huang, Darko Marinov, and Danny Dig.  2016. Usage, Costs, and Benefits of Continuous Integration in Open-source Projects. In *Proceedings of the International Conference on Automated Software Engineering (ASE)*. ACM, 426–437.
