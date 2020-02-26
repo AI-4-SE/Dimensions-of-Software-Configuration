@@ -57,7 +57,7 @@ We placed 18 related papers of the domains of software product lines, testing, p
 
 ### Software Product Lines
 
-#### What is a Feature? A Qualitative Study of Features in Industria Software Product Lines
+#### What is a Feature? A Qualitative Study of Features in Industrial Software Product Lines
 
 ![What is a Feature](https://user-images.githubusercontent.com/831282/75362838-99c15600-58b9-11ea-960f-548570a90f66.png)
 
