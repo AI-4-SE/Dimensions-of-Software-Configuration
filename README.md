@@ -21,17 +21,17 @@ You can find the final version of the translated questionnaire [here](questionna
 
 | ID  | Experience | Role                          | Domains               | Transcript                         |
 | --- | ----------:| ----------------------------- | --------------------- | ---------------------------------- |
-| I1  | 10 years   | Consultant, Senior Developer  | DevOps, Fullstack     | [Transcript](transcripts/i1.md)    |
-| I2  | 14 years   | Developer                     | Backend, Microservice | [Transcript](transcripts/i2i3.md)  |
-| I3  | 22 years   | Developer, Software Architect | DevOps, Microservice  | [Transcript](transcripts/i2i3.md)  |
-| I4  | 15 years   | Developer, Test Engineer      | Backend               | [Transcript](transcripts/i4.md)    |
-| I5  | 11 years   | Senior Developer              | Backend, Microservice | [Transcript](transcripts/i5.md)    |
-| I6  |  7 years   | Software Architect            | Backend, Microservice | [Transcript](transcripts/i6.md)    |
-| I7  |  6 years   | Team Lead                     | Fullstack             | [Transcript](transcripts/i7.md)    |
-| I8  | 19 years   | Cloud Foundation Architect    | Backend               | [Transcript](transcripts/i8.md)    |
-| I9  |  5 years   | Developer                     | Backend               | [Transcript](transcripts/i9.md)    |
-| I10 |  7 years   | Consultant, Tester, Developer | Fullstack             | [Transcript](transcripts/i10.md)   |
-| I11 | 20 years   | Senior Software Engineer      | Frontend              | [Transcript](transcripts/i11.md)   |
+| I1  | 10 years   | Consultant, Senior Developer  | DevOps, Fullstack     | [Transcript](transcripts/original/i01.md)   [(translation)](transcripts/translated/i01.txt)   |
+| I2  | 14 years   | Developer                     | Backend, Microservice | [Transcript](transcripts/original/i02i03.md) [(translation)](transcripts/translated/i02i03.txt) |
+| I3  | 22 years   | Developer, Software Architect | DevOps, Microservice  | [Transcript](transcripts/original/i02i3.md) [(translation)](transcripts/translated/i02i3.txt) |
+| I4  | 15 years   | Developer, Test Engineer      | Backend               | [Transcript](transcripts/original/i04.md)   [(translation)](transcripts/translated/i04.txt)   |
+| I5  | 11 years   | Senior Developer              | Backend, Microservice | [Transcript](transcripts/original/i05.md)   [(translation)](transcripts/translated/i05.txt)   |
+| I6  |  7 years   | Software Architect            | Backend, Microservice | [Transcript](transcripts/original/i06.md)   [(translation)](transcripts/translated/i06.txt)   |
+| I7  |  6 years   | Team Lead                     | Fullstack             | [Transcript](transcripts/original/i07.md)   [(translation)](transcripts/translated/i07.txt)   |
+| I8  | 19 years   | Cloud Foundation Architect    | Backend               | [Transcript](transcripts/original/i08.md)   [(translation)](transcripts/translated/i08.txt)   |
+| I9  |  5 years   | Developer                     | Backend               | [Transcript](transcripts/original/i09.md)   [(translation)](transcripts/translated/i09.txt)   |
+| I10 |  7 years   | Consultant, Tester, Developer | Fullstack             | [Transcript](transcripts/original/i10.md)  [(translation)](transcripts/translated/i10.txt)  |
+| I11 | 20 years   | Senior Software Engineer      | Frontend              | [Transcript](transcripts/original/i11.md)  [(translation)](transcripts/translated/i11.txt)  |
 
 ### Companies
 
