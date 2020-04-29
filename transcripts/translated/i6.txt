@@ -1,0 +1,380 @@
+[INTRO]
+
+R1: So maybe we start by getting some general questions out to put your questions in a little order. What are you doing professionally in your job? So are you somehow a tester, team manager, DevOps, consultant or something?
+
+I6: Yes, a mixture of most of the things you just mentioned. So officially I'm currently a technical architect on the project, but I'm also accompanying the DevOps part a bit and I'm currently specifically concerned with how we can run our services in the cloud. To that extent too - we have exactly configuration problems how we want to do it and we are just about to solve that.
+
+R1: What domain are you at in the end? Are you backend or frontend or - well, so DevOps a little bit likely?
+
+I6: Yes, mainly responsible for the backend microservice landscape, but also a bit in the frontend.
+
+R1: Okay and your role in software development, more like project manager or developer?
+
+I6: Yes, not project manager, but in principle team leader. So develop less yourself, but instruct the team more and think up what they should do.
+
+R1: What work do you do in your daily work with software development and programming?
+
+I6: Let's say 20%.
+
+R1: And what is the remaining 80%?
+
+I6: Management tasks at the moment.
+
+R1: How many years of experience do you have in software development?
+
+I6: 7.
+
+R1: How long have you been working in your organization?
+
+I6: 1.5 years.
+
+R1: And in your current position?
+
+I6: Half a year.
+
+R1: Perhaps one last general question: Which frameworks and tools do you actually work with?
+
+I6: Frameworks, mainly Spring Boot and everything that comes with it. And tools ... we deploy to the AWS cloud and development tools would be mostly IntelliJ, Atom, stuff like that. What you need there.
+
+R1: And CI-like, or dock-like?
+
+I6: Oh yes, exactly CI we use GitLab CI. And Docker too.
+
+R1: Those were the general questions, now let's go a little bit into the configuration. What do you mean by the term configuration at all?
+
+I6: Configuration for me is ultimately how to configure the application. For example, environment-specific configuration parameters, such as in the development environment, please use the following URL to address this service, this URL in the test environment and then this URL in production. But this can also be things like database configurations that are environment-specific or any performance configuration, such as Hystrix or something.
+
+R1: When do you configure software? So at compile time, at runtime or deployment time, right?
+
+I6: It depends on the type of configuration. There are configurations that we only configure at runtime and there are configurations that are basically fixed at compile time. Typical things for runtime configurations are database connection configurations, because they should be kept secret and should not end up in any Git repository. And otherwise just when something needs to be overwritten again, depending on the environment.
+
+R1: To what extent does technical and technical configuration now play a role in your daily work? So you know what we mean by professional?
+
+I6: So my understanding would now actually be with technical configuration that you can make settings as a user of the application (R1: Yes, correct). Of course that plays a role, I had thought about it because I'm more really on the technical trip - the difference is in principle that it has to be handled dynamically and can be set at compile time. These are mostly any configurations that end up in a database.
+
+R1: Are these the professional configurations for you?
+
+I6: Yes, exactly.
+
+R1: And are there actually interactions between functional and technical configuration?
+
+I6: Let me think about it very briefly. (Pause) Yes, I think at one or two places we will have specific interfaces where the technical definition will ultimately end up in a technical configuration. But I would say that's more of an exception.
+
+R1: Would you, if you now think about technical configuration, is your concept of what you mean by configuration still valid, what did you give at the beginning, or do you think about it differently now?
+
+I6: I definitely think about it differently. Yes no, is definitely different. There is configuration — so you would actually have to use a more general term for it.
+
+R1: Where do you see the differences between technical and technical levels? Except for the use case, of course, now. Is one perhaps more complex than the other or?
+
+I6: No, I wouldn't say more complex. Rather the way the configuration works is different. With a technical configuration that is more, you define it and then it is rolled out automatically and determined at the latest at the start of the application, while the technical configuration is almost constantly changing, depending on how the users do it to change. Perhaps you could say that the difference is that you change the technical configuration significantly more frequently at runtime than the technical configuration.
+
+R1: How far do you have to configure tools, frameworks and maybe infrastructure?
+
+I6: So we get infrastructure pre-configured by AWS AMIs—
+
+R1: Do you take the default or what?
+
+I6: Yes exactly, everything is already preconfigured. This will then only be started and we can then start the application accordingly. Tools, CI / CD landscape must be configured. Then connections, i.e. connection settings to AWS, to the Git of course not, but which services have to be rolled out and how is defined in the landscape. And that's what I would call a configuration. Then we have things like sonar in use, which has to be configured, which is of course part of this entire CI / CD landscape, but code quality protection, the rules for this must be set accordingly and those of (?). And finally, you also have a configuration in your IDE. Things like that, do you use spaces instead of tabs? What should the indent look like? Where should the curly brackets be? These are all things that should be standardized in the project.
+
+R1: Yeah okay, so do you pay attention to that?
+
+I6: Yes, we put it there too - so I value it. My team not so much, but—
+
+R1: Are there any interactions between all of these configurations? So if you now have infrastructure and a framework for me, do you have to pay attention to interactions somehow?
+
+I6: Yes, so our infrastructure must partially provide configuration for the application via environment variables, for example. That would be a clear point of interaction. Then there is always the question of how these environment variables come to the infrastructure. Then there is the concrete service from AWS, in which we save the secrets. And that is again interaction between the different infrastructure components and ultimately the application.
+
+R1: Do you typically configure a monolithic system or rather microservices or such distributed architectures?
+
+I6: These are distributed architectures (R1: Microservices?) Yes, microservice architectures.
+
+R1: Have you ever had a monolithic one, and if so, what is more difficult to configure?
+
+I6: More difficult? That was a long time ago and it was when I was a student that I worked with a monolithic application. I would have said spontaneously that it is not more difficult to configure, but easier because you only have to configure a runtime environment and an application. The configuration is longer, but you have the problem with microservices that the configuration depends on the number of services you have. What you don't have with monoliths.
+
+R1: How would you see the importance or importance of configuration in software engineering or software development?
+
+I6: Did I understand the question correctly, how much I consider it important?
+
+R1: Yes exactly, i.e. the importance of configuration. Because people don't talk about it that often, but what value would you give to configuration in general in software development?
+
+I6: A very central, very important position. Because you can really do a lot wrong with it and if you do it wrong, it can ultimately lead to data breaks in the worst case. And especially when you use tools like Spring [...], you don't program much yourself anymore, but are more at configuring. And that's why you have to be very aware of what you are doing and how you are doing it.
+
+R1: Are there differences in different software life phases where configuration is important?
+
+I6: Regarding the importance?
+
+R1: Yes.
+
+I6: Yes, I would also say that it, I say, in the life cycle, if you really start developing Greenfield and roll it out into the final environment, this has an even more central point, because in principle you are there determine how do I configure, how does the configuration get into the application, where do you want to go. And it definitely has to be one of the highest values, because if you do it wrong, it will not get better in other life cycles, so to speak. Once you have set it up correctly and the configuration is there, you have taken this initial big step and know how to do it and can then simply reuse that in further development. And then it has, so to speak, only small configuration increments and no longer this big chunk.
+
+R1: Were you actually prepared for configuration during your studies or training?
+
+I6: I have to think about it very briefly. No That came afterwards.
+
+R1: Should it actually be taught during your studies?
+
+I6: I think so, yes. It would be important to know if this is how you get to work after university and then you will hear for the first time that there are different stages in which different configurations predominate, with different dependent systems, that is so wow , okay ”.
+
+R1: That was the general topic of configuration, now it is getting a little more specific: How do you work with configuration in practice? So the first question is, how are configurations managed and documented by you?
+
+I6: So the configuration that I am saying is available at compile time is largely documented by the fact that it is in the corresponding configuration files and by the fact that it is a microservice landscape, there are also no specific ones Configuration. So we put a lot of value on a clean naming of the configuration parameters, so that the naming should make it clear what this parameter is good for. For the rest of the configuration, things like, general configuration as far as the Spring framework is concerned, this is in principle already documented by Spring itself and if someone does not know what this configuration parameter does, it is relatively easy to look up there to see Find. It becomes more complicated for the configurations that are available at runtime. First of all, that's the whole flow of what I have to do to create a secret, up to how it gets injected at runtime. These are things that are then documented in our Confluence and ultimately what parameters, a kind of guideline, what configuration parameters there, such as username, password, some secrets, tokens, things like that.
+
+R1: And your configuration files, how do you manage them?
+
+I6: They are in the Git repository. The same applies to the CI / CD landscape. In principle, the definition of the CI pipeline is in the Git repository of the associated service. This means that everything relating to this service is exactly in one place.
+
+R1: What is the biggest advantage of your administration?
+
+I6: Well, in the end, that changes to the CI / CD landscape are also tested directly. This means that if you change something and it breaks, it does not end up in the master and breaks the master build, but is initially just a feature branch that broke as a result. It is relatively easy to reverse in the event of an error. The same also applies to the mainly large configurations that are not secret-loaded. That's all attached to the microservice in Git, which also affects it. Of course, this always has the disadvantages of duplicating and triple configuration replication for every microservice. But you also have the advantage of being able to say relatively okay, (? 10:38 pm) Microservice is now connecting — or is no longer starting on port 8080, but on 8090 or whatever.
+
+R1: So you don't have a central repository for configuration files?
+
+I6: No. For Secrets only.
+
+R1: What is the biggest disadvantage of your administration?
+
+I6: As already mentioned in principle, very briefly, that we make configurations double and triple. Just, you then agree in a way to log, for example, and then you take this configuration and copy it into every single microservice. It's just a bit of stupid work and effort that you have to put in there and that is a clear disadvantage.
+
+R1: Do you have any special tools - so you've already mentioned a few - to manage or document configuration?
+
+I6: For managing and documenting configuration - (? 23:57) Confluence and the properties files plus we also partially use the readme files that are attached to the repositories to document very service-specific things there. Otherwise, yes, as I said, the AWS service that we use for the Secrets.
+
+R1: Do you also have special tools for the technical configuration to save them?
+
+I6: Ne.
+
+R1: How do you communicate configurations in a team?
+
+I6: How configurations are communicated in the team—
+
+R1: If, for example, someone changes a new one, as I said, the logging changes or something. And that may affect several people.
+
+I6: We have one - do you know Microsoft Teams? 25:12 This is basically similar to Skype, but can do a lot more. So you can also create teams in teams and then basically have a chat like now Slack, where you have several people in it and can then start channels there. We have a tech implementation channel there and if someone changes something fundamentally, we put it in there like a ping as information and then ultimately assume that everyone has read it.
+
+R1: Okay, let's get to the biggest advantage / disadvantage of this type of communication. Can you name them
+
+I6: So the advantage in the end is that your email inbox doesn't spam. Because we have divided the channels according to subject areas, only things that are specifically important in this respect really come in there. In reality, the disadvantage is that not everyone reads it or at least skilfully ignores it. And then finally a pull request comes in that would overwrite the whole thing and you get a little annoyed about it.
+
+R1: So you also have pull requests that are configuration-specific?
+
+I6: Yes.
+
+R1: Do you review configuration files for code reviews?
+
+I6: Yes, definitely.
+
+R1: How is the procedure with you?
+
+I6: Do you mean now specifically on the properties files?
+
+R1: Exactly, on the configuration files.
+
+I6: Yes, so in the end you see configuration files have been changed? And if so, what has been changed. And if this is somehow something like server port, then it is very likely that the review will initially be rejected and when asked why the server port has been changed here. You always have to approach it with a certain sense. What is the purpose of this pull request? What is the title? And does this title justify this change in configuration? So if this is a runtime configuration, why is it doing this? And does that make sense? And then just consult again. And if it is now a configuration, something like the URL for this service interface has changed, then I usually assume that the person who did this knew what he was doing and why he was changing this URL . And pay attention to (? 28:45) whether the change is logical or whether it makes no sense in the context.
+
+R1: And that's the whole procedure in the end, isn't it?
+
+I6: Yes.
+
+R1: Is the software that you may be writing yourself configurable? So are you installing configuration there?
+
+I6: Yes.
+
+R1: According to which criteria and at what point in time are you planning and implementing these options that you incorporate?
+
+I6: Now that's a really good question. I've never thought about it that way. Ultimately, everything that I could change in the future or that should be environment-specific is kept configurable from the start. As I said, this concerns the URLs, ports, if you have any threshold values ​​that must be observed, then what else?
+
+R1: Does that lead to problems if you do this so often (? 30: 42) that somehow configuration options remain inside the program that are actually no longer necessary to configure?
+
+I6: That can lead to the fact that in principle you have configured something, which will always remain the default for the next 10 years and will not change.
+
+R1: And that's not a problem for you either, is it?
+
+I6: Nope, that's ultimately not a problem.
+
+R2: Do you take them out if you find that you don't need them or do they just stay inside and stay on the default forever?
+
+I6: We usually leave them in the default that we then set. Theoretically, somebody could say tomorrow, "Oh boy, I would like to change that."
+
+R1: How much effort do you put into the configuration options during development?
+
+I6: Well, in the end — do you mean now to include the configuration options in the code? Or to ultimately configure that?
+
+R1: Yes, maybe we will open up two questions. Putting that in might be a question.
+
+I6: I would say that this is relatively little effort, because Spring Boot already offers you a framework, which is really awesome to pick up the configurations. And that makes it relatively easy. So basically it is writing a configuration class that has the fields that the configuration needs plus the injection into the class that this configuration should use and then the corresponding if statement if something is necessary or if you say okay, you just have to make it somehow configurable to loop over it five or ten times, then insert the configuration parameter InLoop. Or if it is a REST call, the URL will be used accordingly. The implementation effort. The effort of the configuration itself, I would actually describe as exactly as much effort. Maybe even a little more, because depending on the configuration, you have to adjust a lot of digits. In the simplest case it is just a configuration in a file that is in the Git repository, then you did not contain any secrets and then in principle you have to add this configuration for each stage and of course configure a bit (? 33: 59) in the stage have to. But if you now have something like a secret, it gets a little more complicated because you have to store the secret in your secret store and you have to make sure that this secret is set as the correct environment variable at runtime and is also adopted at runtime from the microservice. For me, there is a bit more effort involved. And there is always the question of how far you can enable the developers to do it yourself or whether you really always need someone from the DevOps area to say so for the developers? 34: 53) .
+
+R1: Can you also estimate the time as a percentage of the week how much you spend on configuration?
+
+I6: I would say between two and five percent.
+
+R1: And if you set it up initially, i.e. set up initial tools, frameworks and infrastructure, is that a percentage more?
+
+I6: I would say at the moment (? 35: 45) then 80% configuration with which I am concerned.
+
+R1: And if such a version change from a framework, for example Spring Boot36: 00 from 1 to 2 now the example, it is also a lot of effort, right?
+
+I6: Not actually in the configuration. It is really more about any functions of Spring that have been deprecated or maybe no longer available, or certain combinations of Spring Boot starters that previously worked perfectly in the combination and no longer afterwards.
+
+R1: What is the biggest factor for you that determines the configuration effort? So maybe the search for the right option, or the documentation for the option, or find out what is the default value or something.
+
+I6: I would actually say that the search for the right configuration is sometimes the most time-consuming. So first of all, you have to read the documentation if it is a technical requirement and you have to understand exactly what this parameter does and what happens when I tweak it and what effects it will have. But at the same time, even if it has a configuration that is based on a third party dependency, it is always the case that you have to run after people, that they somehow give you the ports that you (? 37: 55). This is less really the configuration than simply writing it in there than the effort involved.
+
+R1: Do you also use configurability to tune non-functional properties such as performance?
+
+I6: Yes.
+
+R1: What for example?
+
+I6: We configure the JDBC pools, i.e. the database connection pools per microservice differently. We have Hystrix configurations, which may not be performance at the moment, but more so reliability on microservice and that it doesn't get down on its knees, but can revocate itself again. We configure heapsizes for each microservice and how many CPUs the machine will get.
+
+R1: Let's move on to the last section, we don't have that much time anymore, but that's another important section: configuration errors. Do you have problems configuring systems, tools, infrastructure and frameworks?
+
+I6: Yes, definitely. One of the biggest problems we have at the moment is — we work with the greenfield approach — and the configuration of the microservices at the moment is such that they create ten JDBC connections by default, each microservice. And then recently our microservices rolled out for the first time and the seventh microservice did not start up anymore, then we looked in, the database can only establish 66 JDBC connections. That means, okay, we should avoid that happening in production. The biggest problem we have to deal with is that we will scale ourselves automatically, which means that we will not know how many microservices we will have running in parallel at the same time, and since we basically have to make an estimate of how many JDBC- Pools are needed, how many connections are needed and accordingly have to add a really fat database and not a big one. Then we already had the case that we divided a monolith into microservices, in principle the technical division was totally easy, but the go-live went wrong four times because of configuration errors that just happened during the division. And in principle, that was a real challenge and it was really complicated and actually cost a lot of nerves.
+
+R1: Was that a professional configuration or?
+
+I6: Anything. These were database connection configurations that were incorrectly transferred or copied incorrectly. Before that in the monolith you had several database connections, which were then split into several microservices. These were things like Hystrix configured incorrectly, which (? 42: 02) sometimes not configured correctly. These are always such little things there that somehow caused the application to stop coming up.
+
+R1: What was the most serious problem for you, what did you get to know and why exactly?
+
+I6: The most serious problem ... yes, in the end exactly what I just said. Configuration of the databases, because if they don't fit, the microservice or the application doesn't come up and that's actually the worst case that can happen to you.
+
+R1: What are the causes of such configuration difficulties for you?
+
+I6: Let's say a certain slowness when transferring or creating the configuration. That you weren't paying enough attention, that really - so that's really difficult - that all ports are released, for example. You open the database on a port and then there is a firewall in between and before that it was another port and you did not think of providing a firewall release for it. But it's a certain complexity of the environment that makes configuration difficult and also extremely difficult to test. You can test things like performance configuration in stages beforehand and then okay, that will work with load tests, but if you then, if everything works in the end user acceptance environment and then you put it into production and the database connection fits there not because exactly that is configured incorrectly there. These are possible problems: configurations that you cannot verify in previous stages are problems. Which we have specifically.
+
+R1: What is a tool or framework that is difficult for you to configure and why exactly?
+
+I6: How hard?
+
+R1: That it is complicated to create a valid configuration, either time-consuming or complicated.
+
+I6: These are currently our deployment configurations. We weren't allowed to do it the way we wanted to. Because the customer said that he has something of his own that works superduper and that is basically a 46:02 functionality that Kubernetes offers you, replicated Cloudnative with EC2 instances and launch templates and such things. And the configuration of it is really complex and complicated.
+
+R1: So a proprietary tool that you don't know, right?
+
+I6: Yes, in the end, yes. Ultimately, the configuration with cloud native resources without additional deployment tools. So that's our biggest challenge right now.
+
+R1: Is the configuration of interacting tools or frameworks problematic?
+
+I6: I do not consider the configuration itself to be so problematic. This is more like the agreement and keeping it backwards compatible, which is more problematic.
+
+R1: What are configuration errors for you and how do they differ from normal bugs? 47:25
+
+I6: I would now spontaneously say that a normal bug has to be fixed in the code and then rolled out over a new release, while a configuration error can be remedied by a restart by overwriting the configuration that is faulty. And then you have to fix the configuration - of course somehow a kind of bugfix in your configuration files, so that in the upcoming release the configuration will not occur again. For me, configuration can be overwritten at runtime. Or redefinable, let's put it this way.
+
+R1: Is there a difference between wrong and bad configuration?
+
+I6: Yes, definitely. Bad configuration works in say 80% of all cases and then there is this one case and everything breaks down. And if the configuration is incorrect, it will not work properly from the start, or in the worst case, the application will no longer start if it is configured incorrectly.
+
+R1: How often do you encounter configuration errors? So once a day, a week or a month or?
+
+I6: It's difficult to say because we're not in a live environment yet. And all of that has to be (? 49: 16) Now let me step back on my last project and then I would say once or twice a week.
+
+R1: And now in the discovery phase, I mean, that is already relevant? It's just a different life cycle. So you said yes, you already got it while setting up—
+
+I6: Yes, I would rather say every one or two days where you change the configuration again and adjust it accordingly.
+
+R1: Do you generally have—
+
+I6: Because it is also the case that you just test the configuration and are in the discovery phase (? 49: 57) and then you start doing 50:00 tests, the system becomes the first Used correctly and then you notice so okay, at the point it is not performant enough and then you have to turn the adjusting screw again.
+
+R1: Do you have any general differences in configuration errors between technical and technical configuration?
+
+I6: Also aus Erfahrung kann ich sagen die fachliche Fehlkonfiguration landet meistens erstmal bei uns und wir stellen dann heraus, dass das eine fachliche Fehlkonfiguration ist und spielen den Ball dann letztendlich zurück.
+
+R1: Und das fixt dann jemand anderes, oder?
+
+I6: Ja, das muss letztendlich der entsprechende Fachbereich lösen. Wir können denen eventuell sagen „so pass auf, das mag jetzt so und so aussehen”, aber ausführen müssen die ensprechenden Fachbereiche das, weil wir in der Regel in der Produktionsumgebung keine fachliche Konfigurationen vornehmen können, weil dort keine Zugriffe haben dann. Wir können dort im Prinzip Logs einsehen und Deployments machen, aber wir können uns nicht einloggen und fachliche Konfiguration ändern in den Onlinetools.
+
+R1: Wie gehst du dann typischerweise vor um dann solche Konfigurationsfehler zu finden und zu beheben?
+
+I6: Ja, ich gucke in die Log-Files was so passiert ist, ich versuche den Grund dafür zu finden, muss meistens dann auch in den Code gucken, was da genau passiert und dann sehe ich okay, hier ist das System an sich verhält sich wie erwartet. Ich kann auch dann in die Datenbank schauen und sehen wie das fachlich quasi im Moment konfiguriert ist, das (?52:17 )-Nutzer. Und gebe das dann entsprechend so an den Fachbereich weiter.
+
+R1: Und bei deinen, die du selber fixt? Wie gehst du da vor um irgendwie Konfigurationsfehler zu finden und zu beheben?
+
+I6: Ja, im Prinzip ähnlich. Nur wenn das meine Konfigurationsfehler sind, dann sind das oft Sachen, die sage ich mal, Framework-Konfigurationen sind. Das heißt da kommt noch ein zusätzlicher Schritt mit einem Blick in die Dokumentation dazu von dem Hersteller.
+
+R1: Und StackOverflow oder sowas? Oder googeln oder Gespräche mit Kollegen?
+
+I6: Ja, das natürlich auch. Google ist dein Freund und Helfer. Always. Also nach Stacktraces suchen, ob die schon jemand anderes hatte, (?53:17) Fehlermeldungen.
+
+R1: Und den Kollegen, fragst du den auch, oder?
+
+I6: Wenn ich bei StackOverflow nichts finde und wirklich ganz ohne Rat bin, dann schauen wir da meistens zu zweit noch mal drauf, ja.
+
+R1: Also das ist eher so die letzte Instanz sozusagen?
+
+I6: Ja.
+
+R1: Welche Strategien hast du denn um Konfigurationsfehlern vorzubeugen?
+
+I6: Letztendlich vertraue ich so ein bisschen auf einen ordentlichen Review-Prozess von unserer Seite. Dass Konfigurationsfehler dort schnell oder ja, dass Konfigurationsfehler die vorgenommen wurden, dort eben schon entdeckt werden. Ansonsten wäre halt ein gewissen Vertrauen in die Tests, die wir auf den Umgebungen ausführen, bevor das ganze in die Produktion geht. Aber wie schon gesagt, man kann dort nicht alles finden. Wenn jemand Datenbankverbindungen nur für die Produktion geändert hat und sie falsch geändert hat, dann wird man das nicht vorher rausfinden im (?54:37)-Prozess.
+
+R1: Wir haben schon öfter mitbekommen, dass Dokumentation irgendwie zentral ist. Deswegen so eine Frage dazu, was erwartest du denn von einer guten Konfiguration bezüglich Konfiguration?
+
+I6: Wenn ich ehrlich bin, ist eine Dokumentation, die zentral irgendwo abgelegt wird, ist für mich immer etwas, was per se outdatet ist55:30\. Weil vergessen upzudaten. Weil sich irgendwelche anderen Bedingungen rund drumherum geändert haben. Deswegen ist die eigentliche Dokumentation der Konfiguration für mich unwichtig bis gefährlich. Was wiederum wichtig ist, ist eine zentrale Dokumentation der Datenbanken, die man hat und wenn sich da was ändert _muss_ das auch upgedatet werden. Und ich sage mal, also wenn man da irgendwie ein Tool hätte, wo man all das einträgt und, dass das gewisserweise im CI/CD-Schritt irgendwo überprüfen kann, dass umgebungsspezifische Konfigurationen wie URLs, Datenbankverbindungen und so weiter, stimmen. Das wäre in gewisserweise sowas, wo ich sagen würde, das wäre echt hilfreich.
+
+R1: Ja, an sowas arbeiten wir gerade.
+
+R1: Also kannst du vielleicht Beispiele nennen von einer schlechten Dokumentation bezüglich Konfigurationsoptionen? Also hast du das vielleicht schon mal selber irgendwo nachgeschaut bei irgendeinem Framework oder so und das ist dann ein besonders schlechtes Beispiel für Konfiguration?
+
+I6: Also bei einem Framework fällt es mir jetzt tatsächlich gerade nicht ein. Ich kann nur sagen, es in meinem alten Projekt schwierig die aktuelle Verbindungsinformation zu unserem Application-Server herauszukriegen, weil das hat sich fast täglich geändert und wurde aber nicht ganz fast täglich in der Dokumentation geupdatet und das hat es einem nicht unbedingt einfach gemacht seine CI/CD-Landschaft entsprechend richtig zu konfigurieren und auch seine Applikation so auch richtig zu konfigurieren, dass sie abhängige Services richtig benutzt.
+
+R1: Hast du irgendwie auch ein Beispiel vielleicht für eine besonders gute Dokumentation von Konfigurationsoptionen?
+
+I6: Spring. Also das Framework an sich selber und ich weiß nicht, ob man das dann für andere Frameworks, die Spring quasi bündelt, sprechen kann, aber ich würde ich sagen für die meisten, die im Springkontext auch mit benutzt werden, würde das gelten. Also die klassischen, wie Hibernate und so.
+
+R1: Welche Verbesserungen würdest du dir hinsichtlich Konfiguration von Softwaresystemen, Frameworks oder Tools oder so dir wünschen?
+
+I6: Im Prinzip, das halt—weiß nicht, das habe ich vorhin schon gesagt—es halt überprüfbar zu machen, dass in dem spezifischen Konfig 59:19 nicht in anderen Umgebungen schon vorgetestet werden kann, zu überprüfen, dass die richtig ist. Das würde ich mir wünschen und das halte ich echt für wichtig.
+
+R1: Und was würde dir vielleicht helfen schneller Konfigurationsfehler zu beheben?
+
+I6: Ich sage mal so die typischen Hilfen, die man mit der IDE schon bekommt. Die Pro-Version von IntelliJ, das ist schon sehr hilfreich. Wo man im Prinzip schon gesagt bekommt, okay das sind so die typischen Werte, die man da eintragen würde oder auch direkt, ich sage mal eine Kurzdokumentation, was dieser konkrete Konfigurationsparameter jetzt genau bewirkt und für was der steht.
+
+R1: Und zum vorbeugen, da einen Wunsch?
+
+I6: Ja, dieses Tool. Was ihr gerade baut.
+
+R1: Jetzt haben wir eigentlich nur noch ein paar Fragen zur Teamstruktur. Welche Hierarchieebenen gibt es denn bei dir in der Organisation und wo siehst du dich da?
+
+I6: Okay, das ist eine kompliziertere Frage. Also unsere Firma selber ist sehr sehr sehr hierarchisch aufgebaut. Die Projekte und Teams selber sind das aber nicht unbedingt. Also sprich in der Firma unsere Hierarchieebenen sind 13\. Von 1 bis 13\. Auf dem Projekt sind das meistens aber nur 2 bis 3 maximal. Und 3, das ist so das womit du dein alltägliche Arbeit machst und verrichtest.
+
+R1: Was sind denn die Vor- und Nachteile an dieser Struktur?
+
+I6:(?1:02:36 ) auf den Projekten, die nicht zu stark eine Hierarchie hat, das hat den Vorteil, dass du echt kurze Entscheidungswege hast. Dass du dich gut mit den Entwicklern als auch dem Management verstehst und verständigen kannst. Die doch sehr hierarchische Struktur der Gesamtorganisation ist denke ich einfach notwendig aus dem Grund heraus, dass unsere Firma wirklich sehr sehr groß ist. Wir reden da mittlerweile von 450.000 Mitarbeitern und da ist es irgendwann eben notwendig diese Hierarchie auch zu schaffen. Um das zentral irgendwie verwalten zu können.
+
+R1: Dann haben wir noch so ein paar Fragen dazu. Hilft dir Hierarchie denn, wenn dein Vorgesetzter deine Entscheidungen unterstützt oder absegnet? Sodass du dich besser auf die Arbeit konzentrieren kannst.
+
+I6: Ja. In any case. Wenn mein Vorgesetzter einem das unterstützt um dem Kunden da klar zu machen, was wir dann wirklich brauchen. Um Dinge dann in der Richtung schneller in die Wege zu leiten.
+
+R1: Ist das hilfreich auch die Hierarchie, weil du dann bessere Karriereperspektive hast? Vielleicht für einen Aufstieg oder so.
+
+I6: Ja, es gibt theoretisch den Weg aufzusteigen. Also wenn du eine flache Hierarchie hast, wie es bei meiner alten Firma der Fall war, da gab es quasi über mir genau eine Person und die hätte in Rente gehen müssen und dann hätte es viel zu viele Bewerber auf diese eine Stelle gegeben und dann wäre sie extern besetzt worde. Also ja, definitiv.
+
+R1: Verringert das auch irgendwie den Koordinationsaufwand so eine Hierarchie. Also vielleicht auch gerade im Vergleich zu deiner alten Stelle.
+
+I6: 1:05:25 die Hierarchie verringert nicht den Koordinationsaufwand, ne. Die erweitert den Koordinationsaufwand nur. 1:05:33 noch einer mehr zu reporten im Notfall. Wobei je nachdem, wie das gelebt wird, hast du selber auch eine sehr große Entscheidungsgewalt und Entscheidungsmacht und musst nicht unbedingt alles rechtfertigen. Und das ist bei uns relativ gut gelebt zum Glück. Weshalb es uns organisatorisch nicht zu viel Aufwand macht.
+
+R1: Würdest du dir lieber eine demokratischere Teamstruktur eigentlich wünschen?
+
+I6: Wir haben eine sehr demokratische Teamstruktur. Also würde ich sagen. Klar, mein Projektmanager hat das ganze letztendlich zu verantworten, aber er achtet auch sehr meine Meinung, weil er sagt „du bist in dem Thema drin, du kennst dich aus und ich habe noch zig andere Sachen zu erledigen und ich vertraue an der Stelle auf das, was du sagst”. Und wenn er sagt das ist totaler Mist und dann können wir da aber immer drüber diskutieren und kommen letztendlich eigentlich immer auf einen gemeinsamen Nenner oder auf einen Kompromiss. Deswegen ist es nicht so von oben herab, „du musst das jetzt genau so machen”. Deswegen würde ich sagen, es ist schon relativ demokratisch und mehr demokratisch ist vielleicht dann auch nicht gut.
+
+R1: Wen würdest du denn bei inhaltlichen Fragen über deine Arbeit fragen? Deinen Vorgesetzten oder Kollegen? Und warum?
+
+I6: Das kommt auf meinen Vorgesetzten an. Wenn man Vorgesetzter jetzt auch einen technischen Background hat und ich weiß, dass er das wissen könnte oder wissen müsste, dann würde ich auch meinen Vorgesetzten fragen. Ansonsten würde ich auf jeden Fall immer mal zuerst die Kollegen fragen, weil ich weiß wie viel mein Vorgesetzter zu tun hat im Moment.
+
+R1: Und ihr habt dann für verschiedene Themengebiete wahrscheinlich dann auch unterschiedliche Ansprechpartner, oder? Für was weiß ich, security-relatet irgendwie.
+
+I6: Ja. Haben wir. Wir haben im Prinzip ein DevOps-Team, ein Entwicklungsteam, ein Team, das sich um die fachlichen Anforderungen kümmert und was da so alles dahinter steckt. Die so die Anfragen von Kunden ein bisschen von uns wegleiten. Wir haben ein sehr sehr zentrales Team, was sich generell darum kümmert andere Mitarbeiter im technischen Sinn für Security zu schulen auch und da entsprechend Trainings erstellen.
+
+R1: Und da würden dann auch viele Leute diese Gruppe dann ansprechen innerhalb der Firma, wahrscheinlich oder?
+
+I6: Ja.
+
+R1: Und diese Position von diesen Leuten in der Organisation, ist der dann irgendwie herausragend oder so? Oder ist das einfach nur eine weitere Abteilung?
+
+I6: Ich würde sagen das ist eher eine weitere Abteilung. Nicht besonders hervorragend im Vergleich zu anderen. Ich weiß nicht, so eine Art Circle-Struktur intern. Da gibt es einen DevOps-Circle, da gibt es einen AI-Circle und so weiter und sofort. Und wenn du Fragen zu einem Thema hast, weil du eventuell auf deinem Projekt eine Person zu dem Thema brauchst, dann meldest du dich bei dem Circle und fragst da mal nach wie das aussieht, dann findest du meistens jemanden, der dir hilft.
+

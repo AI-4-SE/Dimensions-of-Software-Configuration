@@ -1,0 +1,407 @@
+R1: What do you do professionally in a job? So are you somehow a tester, team manager, DevOps and so on?
+
+
+I11: Yes, exactly. I'll just tell you a little something. I have been working for about 6 years now [here] and officially work here as a software engineer. That means I develop software. My main task is actually the development of, the further development of an existing product or an existing project. The project is [project]. There are two versions, first there is the open source for the community, everyone can get and test and use it and then there is a version that has commercial support that can be bought [here]. The whole thing is called Enterprise Application Platform, but EAP for short. Based on the same code base, but is a bit modified in that there is professional support and is better tested. That means there is such an upstream version, that is the community [version], because the new features flow in and I continue to develop and then from time to time this stand is frozen and this then becomes this EAP. And my part in software development is that they are smaller parts of the management APIs of [the software] and my main job is actually the development of the management console or admin console. This is almost my project, so until recently we were a team of two people. The colleague has now changed the team, which means that I am only responsible for this project here and my work actually looks like every day so that I have a pool of requirements, issues, RFIs - so we have such a ticket system my list of things that I have to do or have to do for a certain release and there, I usually work through in the end. Some of these are new features, some are bug fixes. This then flows into the code base as a pull request and eventually ends up in the product.
+
+
+R1: Okay, where do you mainly work? In the backend, in the frontend, DevOps area?
+
+
+I11: This is essentially the front end. The management console is a website and this website is based on a framework called the Google Web Toolkit. This is a toolkit from Google for developing websites or writing web applications. The whole thing happens in Java and is then translated by a transpiler according to JavaScript. The one (? 04:23) that was set years ago and actually still works very well for the web application, because it is such a single page application. That means the complete application is actually written in Java with few exceptions. There are a few HTML pages, but essentially the code is quite complex and Java is just very, very good for complex applications because you can then use the entire ecosystem: testing frameworks, web libraries and and and. And now these are - that's an application that is also quite complex, as I said. That's around 120,000 lines of code. That means it is quite a demanding application and the Google Web Toolkit translates it to JavaScript and the actual admin interface is then just a big chunk of HTML, JavaScript and CSS. That is what is ultimately delivered by the [product] and where we then act only behind it.
+
+
+R1: Then how long do you generally work as a software developer? So 6 years [here], but—
+
+
+I11: Exactly. I am now working - oh, let me think it over - so I did my diploma at the [university]. That should have been in 98. Or 99.
+
+
+R1: So for twenty years.
+
+
+I11: Yes, so I - exactly. And then I worked as a self-employed for a short time. [Where] I studied and then I'm relatively quick - I think it was two years - then I went [here], applied there as an IT consultant and then worked for a long time as a classic IT Consultant, that means I made projects and at the customer either on-site or in-house and then I had several companies, then I switched, worked for several companies [here] until I then changed six years ago [here]. And it all fits very, very well. I work there remotely, so I can work from home, of course, I can organize my time and work freely for the most part, under certain conditions. Exactly and that is easy, fun and right now it suits me wonderfully.
+
+
+R1: Awesome. In your daily work, what is the share of programming and software development?
+
+
+I11: So I still have a very large share of software development. That is why I like the work so much. I am a software developer with body and soul and that is also what I enjoy. And I would say, of course there is a lot of noise, there is a lot of email communication, a lot of consultation with the team, because the majority of the people work remotely. That means we don't have an office in the classic sense, but I just have to coordinate with the people (? 07: 28) email. That means there is always a bit of background noise, but I would say a minimum of 60 to 70% of my daily work is software development.
+
+
+R1: What frameworks and tools do you usually work with?
+
+
+I11: So my stack looks like I'm developing in Java. This is my programming language 07:53 with which I am developing now, also during my more or less my entire professional life. I always look a little outside the box and look at a few things. But that is more personal training, but now nothing that I also use in - for the work. So the programming language I use is Java. Of course, I get in touch with JavaScript by writing a web application, but thank God the Google Web Toolkit takes some things off me, so I'm only marginally involved. I just have to understand it and know what I'm doing. That said, yes, the Google Web Toolkit is one of the most important frameworks for my daily work. Has also been around for a long time and is now being used by many again and again - so it is no longer very popular, but it is a framework that is rock solid, that has been working properly for a very long time, the very, very high-performing code accordingly - JavaScript code generated that actually competes very well with the modern JavaScript frameworks or ultimately also surpasses in terms of performance and optimization options. Then there is ultimately an IDE that I use. That is the IDE of IntelliJ. I use it for testing. Because I write a Java application, write Java code, I use JUnit for testing. When programming, I try to separate things so that I have code that interacts with the user interface and then interacts with the browser. Something like that is very difficult to test, but then there is also technical code and I try to encapsulate it accordingly, so that I can then test the code with JUnit tests. Then there are certain things that we use. That means we have our code on GitHub. We work with Git as version control. We have an issue system based on Jira ba - Jira (? 09: 54). I work with it a lot. And then there are build tools. So most of our projects are based on Maven as a build tool. Then there is something like CI-Server, Jenkins-Server or from JetBrains there is also a CI-Buildtool, which we use. These are the things with which we ultimately create our projects.
+
+
+R1: Okay, so those are the general questions. And now maybe what do you mean by the term configuration?
+
+
+I11: Yes, for me, configuration is the adaptation, a possibility to adapt software afterwards, i.e. all things that are hardwired in the code forever and etched in stone, but ultimately variable parts that can then be subsequently adapted from the outside . That's how I would define it in general.
+
+
+R1: When do you configure software? So at what - compile time, runtime and?
+
+
+I11: Yes exactly, so that's a very good point. One can then differentiate between compile time and runtime configuration. For my specific case for the admin console, there are few configuration options, because one is essentially not much customizable. So there are some things you can customize. Many of them happen at build time, so while the whole is being built. An example of this is, for example, that the console looks slightly different depending on whether I use it for the [community version] or whether I use it for the commercial product, for the EAP. There is another theme and this theme is configured accordingly at build time. In my case it is configured by passing a certain, a certain parameter during the build. It looks completely different, for example, for the [product] itself. There is a very extensive way to configure it. This is also a kind of configuration. That is especially at runtime. This is based on an XML file that reads [the product]. A lot of things are configured there. Starting from the log level to the database used, which of course also has to be configured accordingly. This is also configuration and this is ultimately what I then use the admin console, what the user can adjust and what is then written into XML when the configuration has been changed.
+
+
+R1: Now you have already said that you have such technical things. We also differentiate between professional and technical configuration. Would you see it the same way and what would be the part of your work?
+
+
+I11: Yes exactly, so that is also a very good division, this professional and technical configuration. Technically in the sense that there is an example like (? 13:21). This is more like the technical configuration, which is then determined once and then has an impact on how the console looks. The technical configuration in the case of the [product] would be something like database, JMS queues, email configuration, log level and something like that. So I have - so I allow someone to configure it, but I actually use the technical configuration in my daily work.
+
+
+R1: Do you know interactions between functional and technical configuration? Perhaps also from your previous professional life and where it is now—?
+
+
+I11: Yes, there certainly are. I can't think of a good example of this now. Perhaps I have already come into contact with it there. So when I look back a bit on my previous career as an IT consultant, which we often did - that's actually the classic way in Java development. Properties files or XML files were then used. There was a time when XML was very, very hip I say. Everyone jumped on XML and - but in the end, they tried to outsource things from the source code and either in the form of properties files or in the form of XML files, which were then read in in some way, and evaluated were processed accordingly in the program. But if the separation between technical or how they interacted this technical and the technical configuration, I can not think of a good example.
+
+
+R1: We still differentiate between the technical configuration and infrastructure configuration. So I say is in the cloud and now has to define its ports and set up a database - and maybe also the developer infrastructure, such as configuring my CI / CD process, the stages. Does that also matter to you? Do you know any interactions there?
+
+
+I11: Well, I have less contact with the CI server. So there are people who take care that the whole thing goes on, that it is set up. I have three or four build configurations for my area, for my console and I created them myself from a template and manage them myself. But the main thing is that I - yes, of course you have to configure them - the main thing is that I adapt certain things, such as which Maven goals I would like to have implemented. On which computer do I want to have this done? So they should be Windows machines or Linux machines. Then what percentage of passed unit tests would I like to have, or what should it be (? 16:31). Such things are configured there. For me, that's just the way the CI system is configured. I do it myself, but there is a template, as I said, that gives me certain options to adjust different things.
+
+
+R1: So is it already preconfigured?
+
+
+I11: A part is already preconfigured and I can still determine a part myself.
+
+
+R1: Do you typically have to do with configuring a monolithic system? Or are they more distributed?
+
+
+I11: Well, as a monolithic system, I actually have little to do. These are always individual configuration fragments for the different areas. But you mean monolithic now probably in the sense of a large application, where everything is tried to configure. That less. One can perhaps be monolithic - the only thing - monolithic always sounds a bit problematic because there is - you only saw it from the point of view that it is uniform, that there is a configuration file and not scattered is about X different little snippets. And yes, you can already say [the product] has an XML configuration file. It is called standalone.xml and the complete configuration is stored there, which means that the user looks in this file and finds all the possible settings there and can then make the appropriate settings there. Or it goes to others - this file can be changed manually, which very few people still do today, but most of them then go over certain tools and tools. That's it, there is a CLI for [the product] or there is the admin console and both tools ultimately change the XML file.
+
+
+R1: You said there are a lot of configuration snippets and so on. Is that a problem or yourself (? 18: 42) or something?
+
+
+I11: Yes, sometimes configuration can be very complex. Especially when it tries to make it as generic as possible or as flexible as possible, try to be as flexible as possible. I think there are systems like this where you try to split the configuration over different layers and one layer overwrites the other and then at the very end you can overwrite something again using the command line. So that sometimes reaches a certain degree of complexity, where you then no longer know exactly if I now turn something at a switch, what happens in the end? What happens to my attitude? Is it still active or is it still active? Or will it be destroyed and overwritten by a third party or another mechanism? In my opinion, the configuration should be as simple as possible. Have a format that is as simple as possible, that is understandable and that is easy to read, which is now not only easy to read for the machine, but also easy to read and understand for humans and that offers as little indication as possible. In other words, in the sense of not wanting to invent a kind of programming language for configuration, in my opinion configuration should ultimately still be very, very simple. In the simplest case, simply key-value pairs as in the case of a properties file.
+
+
+R1: How far do you have to configure the tools you use and the frameworks and so on, infrastructure?
+
+
+I11: Well, the infrastructure that is - we basically have this CI - (? 20:37), it is set up, it is configured. Since I have little contact with it now like them - as I said, there are a few colleagues who take care of it. And now I can unfortunately not say so much about how the whole thing takes place or who, what exactly is configured there.
+
+
+R1: Okay, but with the frameworks like this GWT and so on now, does that have any configuration files and so on?
+
+
+I11: So if appropriate frameworks are used for the development, it is the responsibility of the respective developer who uses them accordingly. So my predecessor, from whom I took over the admin console, decided at some point that the GWT is a tool that is suitable for development, then discussed or suggested it with the larger one. That will be accepted or not. In the case - it is always a bit up to the developer, how well he represents it or what arguments he makes. In the end, the principle is that if it is the right tool for the right job, there are no exclusion criteria per se. And then it has to be guaranteed that the thing works. (? 21: 59) in which form the configuration then takes place, what exactly is used, that ultimately ultimately brings the framework or the tool with it and there are no exclusion criteria for now, where one would say that it works but not now.
+
+
+R1: Okay, how would you see the importance or importance of configuration in software engineering?
+
+
+R11: Yes, definitely very high. So in my opinion it is not possible without configuration. I can not imagine that you develop software where you really have no possibility or no handling at all (? 22: 38) or adapt the whole thing via configuration for the developer, in whatever form. But that everything is really in the code, I have never had that in my career and career. I can imagine that there is something like that, but I don't want to be involved in any way.
+
+
+R1: Are there actually differences in the importance of configuration in the individual software life phases? So maybe who you think from requirements to maintenance.
+
+
+I11: Yes, you should certainly remember relatively early on that you want to configure certain things. During planning, it should actually be clear relatively early on that you - or you should always have a feel for it or pay attention to it when requirements come in and when you consider how to implement things, that you somehow pay attention lays on it and realizes that these are things that make sense for a configuration or that you outsource them to a configuration and at the same time vice versa, so you develop a bit of a sense that you can also set things up. So that you do not make things public by configuration, because that is perhaps also an antipattern, which often arises during development, that you try to make everything configurable if possible, which then has the effect that you can do the thing or the software just waiting, caring for and developing further may be difficult. So there are also things that have nothing to do with the configuration, but they are just like that. And then you don't have to ultimately - or you have to decide, what makes it really configurable for the end user, what are easy - you can see the boundary between technical and technical configuration again, what are things that you as a developer already have can still configure, but ultimately - the end user no longer has any influence on the configuration of these things.
+
+
+R1: Were you actually prepared for this during your studies or training?
+
+
+I11: No, not at all. The topic of configuration was actually, if I remember correctly now, was not part of any lecture or subject. As I said, I studied at the university of applied sciences and it was more the classic things that were taught: software design, software architectures. Yes, there I am - at the end of my studies I programmed a little bit with Java for the first time. The programming languages ​​that we learned a bit beforehand, so C, C ++, there were actually, configuration was not so important.
+
+
+R1: Should that be taught during your studies?
+
+
+I11: I think so, yes, because every kind of software is configured somehow and it makes sense. You can keep it very general at first, you don't have to sort of break down to a programming language and toolkit or framework somehow, but you - yes, just as you said earlier. There are always things that one - the configuration as a general, very own topic, what makes it special, technical or technical configuration, different levels. In my opinion, it should be part of the lectures of the course.
+
+
+R1: How do you manage and document configurations?
+
+
+I11: Ultimately, the configuration is also part of the source code and essentially, then similar things apply that also apply to source code. That means it starts with the fact that it is version managed. It then continues with the fact that there may be certain rules in which such a configuration file must be (? 26: 58). In other words, it has a specific format and structure. So just as you can check that the source code has a certain format, i.e. with checkstyle or similar tools, you can also ensure that a configuration file has a certain format, a certain structure. Or maybe it doesn't exceed a certain length and size. I don't have an example in my project now, but I can imagine that there is something in other projects [here] and something is being checked. And then of course it goes on to test configuration files in some way. Yes, in my specific case, in my project, the configuration (? 27: 46), I just have technical configuration, but (? 27: 51) configuration, well that is version-managed. It actually ends with me in my project.
+
+
+R1: Okay, what's the biggest advantage of this kind of management?
+
+
+I11: Yes, then the basic advantages of version control come into play. In other words, I can have a look at what I have in version Xzy, what was in there and, above all, then of course that helps with troubleshooting, if something doesn't work now, but what still worked last week, you can just look at the changes and then you see, one of the changes was in the configuration file and then, since you get the status from last week, play through the whole thing again and then often realizes relatively quickly where the error is and it can of course also be in a changed one Configuration value or a change in the configuration.
+
+
+R1: And the biggest disadvantage?
+
+
+I11: Now for version management of configuration or configuration in general.
+
+
+R1: No, from version control. So how you managed it.
+
+
+R1: Honestly, I find it hard to find major disadvantages. So I've been working with version control for a very, very long time. You can then - because there are good and bad version management. It all started with CVS, which worked, but what had many, many problems and since I have now, yes, since I have been working [here], I have been working with Git and so on and that is compared to everything else that was before , a milestone and that is very, very good at (? 29: 45) and you have an infinite number of possibilities and that is a very powerful tool that you can get hold of and there is actually - the only disadvantage when you get it so it is quite complex, but you have to know what you are doing and if you do not know what you are doing, then you have to make yourself known or a little kneel down and work in there. And there is an infinite amount of documentation about it. So I see little disadvantages now.
+
+
+R1: Also save specifically for configuration then?
+
+
+I11: Yes, exactly, I do not know why the configuration - if that, i.e. if you have the configuration in the sense of a file and there is no business-critical data in it now, that is of course still an aspect to say what is there in that file? There may be cases where it is said that these things do not belong in version control. Then you have to think about how to solve this problem. You can also approach it differently. The fact that the configuration is divided into things that everyone can see can then be turned into version management and things that are really business-critical or sensitive data, which you shouldn't check into version management.
+
+
+R1: So you probably don't have critical ones now because you don't have any extra tools, do you?
+
+
+I11: Actually, since we work with Opensource and ultimately every line of code that we write can be found somewhere on GitHub, there are very few things that are really secret or that cannot be made public. This may already be a special case in the case of [my company] and my project. I can imagine that if I think back now, there are of course very, very often things that have nothing to do with version management and then it becomes critical and then you have to think carefully about what you do with it. So how do you solve this problem. This problem has kind of disappeared from my eyes, from my focus.
+
+
+R1: How do you communicate configurations in a team?
+
+
+I11: That is essentially, there are agreements. So when I think of configuration, for example, of the application server, this configuration is constantly growing, but it is also constantly changing with every new release and with every new version or every new feature, which is added accordingly, also grows the configuration or changes then. And it actually starts with planning such a new feature, then ultimately writing a small document about it and that's mostly something that is also managed on GitHub. Such a small AsciiDoc document is then created. The team will then discuss this accordingly. There are regular team meetings. Respectively, the link is then sent around, everyone can look at it, read through it and comment and in the end you eventually come to the end, where you say exactly how I want to implement it and this implementation or this small design document, we call this analysis- Document, then ultimately contains the new configuration values ​​that you want to introduce. Or in the case of if you want to change something, that certain things drop out of the configuration, new ones are added, something is renamed, ultimately the change to the configuration. And in the end it is actually known, because everyone in the team knows this document. For me, this means in a specific case, I now know okay, there are new configuration values, that means I have to change the admin console accordingly so that these configuration values ​​can be adapted accordingly by the user everywhere.
+
+
+R1: What's the biggest advantage of that, of the kind?
+
+
+I11: The biggest advantage of this is that it is very first, for me it is a very lightweight process, but a very simple process. You limit yourself to the essentials, there is no huge workflow behind it. There is also a separate GitHub repository for these documents. That means if someone is planning something new, he makes a pull request to this GitHub repository. Everyone knows how to use it, everyone knows where it is. It is now not an attachment in an email that is sent to a distributor somewhere, but I am not part of this distributor and then do not have the information and then this document is changed and forwarded again as an attachment and no one knows in which version now which document is valid. There are countless examples of how it cannot work. So I have to say, this method, what it is used for [us] or what I use in the team, actually works very well. We try as much as possible when we have documents or if we have any specifications or the like, that we end up somewhere, either in GitHub or in Google Docs, but not on anyone's hard drive or anyone's email attachment.
+
+
+R1: Okay and the disadvantage? Are there any disadvantages?
+
+
+I11: One disadvantage may be that it takes a little getting used to. (? 35: 38) that you have to know how things work and - I find it a bit difficult to find disadvantages. Ich kenne auch ein anderes Vorgehen eben aus meiner Arbeit als IT-Consultant, wo versucht wurde eben, ja, irgendwie auch ein File-Share, irgendwie eine Dokumentenstruktur aufzubauen. Das hat dann mal funktioniert, hat dann mal nicht funktioniert, weil dann jeder hat eine andere Verzeichnisstruktur dann plötzlich aufgebaut und dann wurden die Dokumente doch wieder in zwei verschiedenen Versionen irgendwo. Da lagen die Dinge dann drin. So eine Versionsverwaltung dafür zu benutzen macht eigentlich Sinn, weil es gibt dann halt einfach nur einen Ort, wo das Ding liegt. Von daher, Nachteile gibt es eigentlich wenige. Der einzige mag sein, dass man einfach alle davon überzeugen muss damit zu arbeiten. Im Falle von den Kollegen und von meinem Team sind alle davon überzeugt, da gibt es keinen der querschießt. Wenn man natürlich in einer Firma ist, wo es einfach unterschiedliche Vorlieben gibt sage ich mal und vielleicht gibt es den ein oder anderen Querullanten, der halt quer schießt, dann man das ein Problem sein, aber da muss man einfach, muss man als als Management oder als Organisation dafür sorgen, dass das einfach funktioniert.
+
+
+R1: So ein bisschen hast du es glaube ich schon gesagt, als in Code-Reviews werden auch Konfigurationsdateien gereviewt bei euch?
+
+
+I11: Ja genau, das ist also Teil von dieser, wenn ein neues Feature, wenn sowas entsprechend geplant wird, ist auch so eine Art Review. Das heißt einer schreibt dieses Dokument. Weil dieses Dokument hat dann eben den Einfluss auf die Konfiguration. Also wie sich das ganze entwickelt oder wohin die Reise geht und die werden auch gereviewt. Das heißt das lesen sich dann die Leute durch. In meinem Fall, wenn ich jetzt zum Beispiel sehe, dass das zu Problemen führen könnte, wenn ich dieses Feature in der Konsole umsetzen muss, dann kommentiere ich eben entsprechend im Dokument bei dem Pull-Request und dann hat eine Diskussion zur Folge und dann geht es in die eine oder andere Richtung, das ist dann auch entsprechend offen. Aber jeder hat die Möglichkeit auf jeden Fall seine Meinung zu sagen, also Einfluss drauf zu nehmen. Letztendlich liegt es dann trotzdem noch hauptsächlich in der Entscheidung desjenigen, der das umsetzen würde, aber in der Regel hat der auch ein offenes Ohr und ist dann auch gewillt entsprechend (?38:17).
+
+
+R1: Jetzt hast gesagt, es sind jetzt nicht so viele Konfigurationsoptionen bei dir selber drin, aber du machst die jemand anderes sich ausgedacht ja praktisch sichtbar für den Endnutzer. Weißt du nach welchen Kriterieren und zu welchem Zeitpunkt Optionen denn geplant oder implementiert sind? Also du hast es ja schon ein bisschen vorhin mal angerissen, man sollte nicht immer Optionen reinmachen, aber was sind denn die Kriterien neue Optionen zu planen und zu implementieren?
+
+
+I11: Das ist eine schwierige Frage, ja das ist, weil das nämlich sehr, sehr vom Einzelfall und vom Usecase abhängt. Ja, ich würde mal sagen, naja, es ist wirklich eine schwierige Frage, also es gibt ganz offensichtliche Dinge, da macht es Sinn da einfach die als Konfigurationsparameter an der Hand zu haben. Sowas wie Loglevel zu setzen braucht man ja eigentlich in der Regel bei jeder Art von Anwendung, das ist so ein ganz klassisches Beispiel. Man möchte in einer Anwendung, wenn man merkt irgendwas läuft nicht rund, dann möchte man ja eine Möglichkeit haben irgendeine Art von Analyse zu betreiben. Analyse kann jetzt vielfältig sein. Eine Möglichkeit der Analyse ist dann eben den Loglevel zu ändern und plötzlich ganz viel mehr an Dingen zu sehen, was passiert. Und gerade in meiner Anwendung in der Logdatei. Das ist so ein ganz klassisches Beispiel, was man die Applikation irgendwie an der Hand haben sollte. Und sowas muss man dann eben konfigurieren können, über Kommandozeile, über Konfigurationsdatei, wie auch immer.
+
+
+R1: Wenn du in Richtung denkst, was sind Gründe für Konfigurierbarkeit?
+
+
+I11: Ja, also Gründe für Konfigurierbarkeit sind zum einen eben, was ich jetzt gerade als Beispiel genannt habe, so die Analyse von einem Programm zur Laufzeit. Dann gibt es natürlich — eine andere Art für die Konfiguration ist so die Infrastruktur aufzubauen. Also da heißt wenn meine Applikation mit irgendwelchen anderen Systemen kommuniziert, dann muss man die Möglichkeit haben zu sagen wie sieht die Konfiguration aus. Sprich man gibt Hostnames, Ports, URLs oder dergleichen an. Und dann gibt es noch eine andere Art der Konfiguration, die geht dann mehr in den Bereich persönliche Vorlieben. Das heißt möchte ich lieber einen grünen oder einen blauen Hintergrund haben. So eine Art persönliche Einstellungen. Wie viele Einträge möchte ich in einer Liste haben. Ich möchte 20 haben und der andere möchte aber vielleicht 100 haben auf einmal. Das sind so die Userkonfigurationen, ja so diese Preferences-Settings.
+
+
+R1: Wie viel Aufwand betreibst du denn in der Entwicklungszeit um Konfigurationsoptionen einzubauen?
+
+
+I11: Ja, das hält sich jetzt in meinem Fall sehr in Grenzen. Es gibt in meinem Fall jetzt was den Endanwender angeht tatsächlich sehr, sehr wenige Optionen. Also ich kann eben in der Konsole einstellen zum Beispiel wie viele Einträge möchte ich in der Liste haben. Oder ich kann die Sprache einstellen. Ich kann einstellen — im wesentlichen sind es tatsächlich nur vier, fünf Sachen, die ich einstellen kann in der Konsole. Also jetzt was den Endanwender angeht. Das sind sehr, sehr wenige Dinge und die werden in meinem Fall dann eigentlich als Cookie beziehungsweise im Browser, im Local Storage werden die Dinge dann festgehalten. Das heißt ich verwende ja auch sehr wenig Zeit mich mit Konfiguration auseinanderzusetzen. Ich sage mal 90 % der Zeit, die verwende ich eigentlich wirklich dazu fachliche Dinge umzusetzen. Und bei dieser Umsetzung spielt die Konfiguration immer nur einen sehr geringen, kleinen Teil.
+
+
+R1: Wenn mal denkt, also Greenfield-Ansatz, also muss initial mal eine Software einrichten mit den Tools, mit den Frameworks, mit der Infrastruktur für das Deployment und so weiter, was würdest du denn da schätzen, was so der Aufwand ist bezüglich Konfiguration?
+
+
+I11: Also jetzt in meinem Fall, also für meine Anwendung. Wenn man jetzt jemanden hinsetzt und sagt, dass er in der Lage ist diese Software zu bauen und so zu erzeugen, da würde ich jetzt mal optimistischerweise sagen, ich setze es mal voraus, dass der derjenige sich mit Java-Entwicklung, mit GitHub und entsprechend mit Maven auskennt, dann sind das eigentlich im Bereich von Stunden würde ich da jetzt mal behaupten spielt sich das ganze ab. Also es gibt in meinem Fall gibt es einen, weil das habe ich als ein neues Teammitglied hinzu kam, der jetzt dann wieder das Team verlassen hat leider, da habe ich mich hingesetzt und habe mal eine kleine Beschreibung geschrieben, welche Schritte nötig sind, welche Voraussetzungen es gibt. Im Wesentlichen geht es damit los, dass ich das GitHub-Repository auschecke, dass ich einen Maven-Build anstoße und ich muss nicht viel konfigurieren, weil wie gesagt für die Konfiguration ist es nicht viel, da ist nicht viel nötig. Von daher—
+
+
+R1: Was ist, wenn du jetzt sagen wir mal nicht diese Art von Team hättest und jetzt wirklich von einer grünen Wiese aus starten würdest in einem Projekt und dann auch den Buildprozess aufsetzen müsstest.
+
+
+I11: Ja gut, dann wäre das natürlich schon ein bisschen komplexer und ein bisschen umfangreicher. Dann wären wir vielleicht schon, würden da schon mehrere Tage ins Land gehen, aber das ist auch was, was mir innerhalb von [meiner Organisation] eigentlich, habe ich es noch nicht anders erlebt, dass man dadurch, dass viele Dinge einfach auf GitHub verfügbar sind, dass viele Dinge auch Open-Source und öffentlich zugreifbar sind, da liegt es in der Natur der Sache, dass man einfach schnell oder schnell Dinge dann vom auschecken bis zur fertigen Software haben möchte. Weil viele Repositorys werden ja öffentlich geklont, also sind dann jeder will sich das mal anschauen. Und auch [die Software] selber, der ja noch das große Ganze, also mein [Projekt] ist ein Baustein, der da mit einfließt, aber [die Software] selber hat ja noch mal ein Vielfaches an Clientside-Code. Auch da ist es sehr einfach. Das ist ja auch Teil meiner täglichen Arbeit. Wenn eine neue Version rauskommt, dann hole ich mir die und baue mir die damit ich lokal damit testen kann und das ist im Wesentlichen auschecken, Maven-Build anschmeißen und benutzen.
+
+
+R1: Wie viel Aufwand betreibt ihr denn von Versionsänderungen, die konfigurationsabhängige Änderungen verursachen. Also wir haben mal so ein Beispiel, Spring Boot 1 auf 2. Da gab es irgendwie massive Änderungen an den Konfigurationsdateien. Habt ihr da auch Aufwand?
+
+
+I11: Ja, das ist natürlich schon, das ist wichtig, dass die Konfiguration, also so wie eine API abwärtskompatibel sein sollte. Über gewisse Versionszyklen hinweg, sollte natürlich auch eine Konfiguration abwärtskompatibel sein. Das gelingt nicht immer, aber es — manchmal muss man auch, gibt es auch Brüche. Eine Möglichkeit, wie wir das gelöst haben, das hat ein Kollege gemacht, es gibt so eine Art Transformationsprozess oder so einen Automatismus, der versucht alte Konfigurationen zu transformieren, damit das auf den neuen Versionen wieder lauffähig ist. Und manchmal hat man eben diese Brüche mit drin und dann möchte man das nicht alles händisch umstellen müssen, sondern dann gibt es eben so einen Automatismus um die alte Konfiguration in die neue zu überführen. Das ist ein Ansatz, wie wir das Ganze lösen.
+
+
+R1: Ja, was ist denn für dich, nach deinen ganzen Erfahrungen, der größte Faktor, der den Konfigurationsaufwand bestimmt? Also jetzt generell gesehen.
+
+
+I11: Ja, zum einen was ganz am Anfang steht und was halt einfach wichtig ist, denke ich mal, zu erkennen, was möchte ich konfigurierern, was lohnt sich oder was ist sinnvoll, sagen wir mal so, zu konfigurieren. Das ist wahrscheinlich einfach eine der schwierigsten Aufgabenstellungen und Herausforderungen zu erkennen oder zu bestimmen, was Sinn macht zu konfigurieren und was nicht Sinn macht zu konfigurieren. Und da gibt es halt leider kein Patentrezept oder keine Lösung dafür, sondern das hat viel mit dann Erfahrung zu tun, mit so ein bisschen Gespür zu tun und mit diesem Verhalten steht und fällt vieles oder das hat ja dann Auswirkungen auf das, was dann später entsteht. Und das ist so der wichtigste Aspekt denke ich mal bei dem Ganzen. Und da gibt es wie gesagt wenig, da gibt es jetzt kein Schema F oder kein Dokument, das man sich durchliest und dann weiß man, wie es geht, sondern das ist nun mal einfach so die Aufgabe der Softwareentwicklung oder das ist Teil der Softwareentwicklung.
+
+
+R1: Dann wäre jetzt so ein Konfigurationseditor ja implementierst in praktisch, weißt du denn ob deine Nutzer, wissen was Sinn macht und was nicht vielleicht?
+
+
+I11: Das denke ich jetzt mal, also ich möchte jetzt meinen Benutzern nichts absprechen, aber ich glaube jetzt nicht, dass sie jetzt wissen, was Sinn macht und was nicht Sinn macht. Das ist dann im meinem Fall, von dieser Adminkonsole ist es halt so die Frage, wie präsentiere ich die Konfigurationsmöglichkeiten der Benutzer in einer Art und Weise damit es möglichst einfach ist für die Benutzer letztendlich Dinge zu konfigurieren. Also das hat dann viel auch so ein bisschen mit Userinterface zu tun und mit Informationsarchitektur — wie führe ich die Benutzer durch einen Prozess, damit sie möglichst schnell Dinge konfigurieren können. Ein Beispiel ist zum Beispiel wenn ich eine neue Data-Source einrichte, dann muss ich eben bestimmte Dinge zwingend angeben. Das ist eben die JDBC-URL, das ist der Treiber, Username, Passwort und solche Dinge. Dann gibt es aber auch Dinge, die optional sind. Zum Beispiel Connection-Pooling, wie viele Connections möchte ich gleichzeitig haben, wie groß soll mein Pool sein, wie schnell soll er wachsen und so weiter und sofort. Und dann gibt es eben unterschiedliche Möglichkeiten, wie ich dem Benutzer das präsentiere. Ich kann natürlich ein riesen Formular haben, das ich durchscrollen muss, da sind meinetwegen die ganzen Konfigurationsparameter alphabetisch gelistet und ich muss mir dann durchscrollen bis ich dann unten bei Username bin um das ganze einzutragen. Ich kann es natürlich auch so machen, dass ich einen Wizard habe, der hat drei Schritte und da werden die wesentlichen Dinge abgefragt, die thematisch gegliedert sind. Da kommt 1, 2 dann 3 und dann kann ich zum Schluss testen, das funktioniert. Und wenn ich dann das Connection-Pooling einstellen möchte, dann gehe ich nach der Einrichtung dorthin und sehe dann auch wieder entsprechend thematisch sortiert die Einstellungsmöglichkeiten, die ich habe und dann kann ich auch alle anzeigen. Sprich, also was ich damit sagen möchte ist, es kommt dann irgendwie darauf an, wie präsentiere ich das dem Benutzer, die Konfigurationsmöglichkeiten, die er hat. Und da kommt es halt sehr darauf an, dass ich das in einer vernünftigen Art und Weise mache.
+
+
+R1: Habt ihr eigentlich auch eine Möglichkeit oder ein Logging eingebaut um zu wissen, was der Nutzer überhaupt bei euch konfiguriert und was nicht?
+
+
+I11: Ja genau, die Möglichkeit haben wir. Ich habe über Google Analytics kann ich dann nachvollziehen, welche Seiten meiner Anwendung entsprechend aufgerufen wurden, von wem die aufgerufen wurden. Das heißt das ist was, was bei dem Open-Source-Produkt, also wenn ich [die] benutze und die Adminkonsole aufrufe, dann ist es standardmäßig eingeschaltet. Das ist zum Beispiel eine Einstellung, die der Benutzer vornehmen kann. Er kann dieses Google-Analytic-Tracking auch ausschalten, aber standardmäßig ist es an. Und bei dem Produkt, bei dem EAP, ist es standardmäßig ausgeschaltet und der Benutzer könnte es dann, wenn er es möchte einschalten. Und sobald es aktiv ist, wird eben alles aufgezeichnet. Sprich also ein Google-Analytics-Tracking, was man bei vielen Webseiten kennt. Dann kann ich eben auch auf die, zu dieser Google-Analytics-Seite gehen und sehe dann, welche Seiten wurden von wem aufgerufen, wie lange, aus welchem Land, mit welchem Browser und diese ganzen Daten habe ich dann zur Verfügung.
+
+
+R1: Nutzt ihr diese Datein eigentlich auch um herauszukriegen, diese Option wird nie angefasst, die könnte man eigentlich mal rausschmeißen und so weiter?
+
+
+I11: Ja, genau. Das ist so Sinn und Zweck des Ganzen. Ich möchte halt sehen, was wird denn vor allem benutzt. Vor allem benutzt wird jetzt im Falle von der Adminkonsole Dinge wie Deployment, Datasources ist so ein typischer Usecase. Dann gibt es natürlich andere Dinge, die sehr, sehr wenig und sehr, sehr selten benutzt werden. Ich muss sie aber trotzdem vorhalten, weil die Adminkonsole hat halt ihren Anspruch, dass es die Konsole sein soll, wo ich letztendlich jede Einstellungsmöglichkeit, die es gibt auch tatsächlich umsetzen kann. Sprich, ich kann es jetzt nicht herausnehmen aus der Konsole, aber es ist natürlich interessant für die Fragestellung wo platziere ich denn die verschiedenen Optionen oder wo findet der Benutzer was. Also Dinge, die oft verwendet werden, sollen natürlich jetzt möglichst nicht versteckt werden, sondern sollten prominent irgendwo dem Benutzer ins Auge fallen. Und Dinge, die ich nicht so oft verwende, kann man dann irgendwo in einer Menüstruktur womöglich entsprechend ablegen. Dafür sind diese Daten sehr, sehr sinnvoll und dafür nutze ich die dann auch.
+
+
+R1: Spielst du diese Daten dann auch an die Entwickler zurück, die dann Optionen eingebaut haben von vor drei Jahren meinetwegen und immer der Default gelassen wurde?
+
+
+I11: Ne, das meine ich nicht. Sondern ich gucke da immer wieder mal rein und es ist dann auch interessant zu sehen, welche Versionen der Konsole wird gerade verwendet von wie vielen Leuten. Also es ist dann auch vor allem für mich interessant, wenn ich eine neue Version veröffentliche, zu sehen wie schnell wird die letztendlich verwendet.
+
+
+R1: Benutzt ihr eigentlich Konfigurierbarkeit auch um nicht-funktionale Eigenschaften, wie Performance zu tunen?
+
+
+I11: Ja, also in meinem Falle jetzt nicht, aber ich weiß, dass der [Server], da wird es dann schon verwendet, da gibt es dann aber eher, das sind dann halt so technische Parameter oder Kommandozeilenparameter. Oder Einstellungen, die die JVM betreffen, was jetzt nicht in unserem Verantwortungsbereich liegt, aber das wird schon verwendet um auch performancekritische Dinge zu addressieren. Also es gibt ein Team soweit ich weiß, mit dem habe ich aber wenig zu tun, die machen eigentlich nichts andere wie Performance zu testen. Verschiedene Setups haben die zur Hand und testen dort letztendlich Performance vom [Projekt] und das wird auch sehr implizit betrieben. Also jede neue Funktion wird meines Wissens auch irgendwann mal, ist Teil von so einem Performancetest. Weil man natürlich verhindern möchte, dass man, wenn man baut ein neues Feature ein und das hat zur Folge, dass der ganze Server oder das ganze Ding dann auf einmal stillsteht. Dafür sind dann diese Performancetests nötig und da gibt es soweit ich weiß ein Team dafür, die sich darum kümmern.
+
+
+R1: Stellt die Konfiguration von irgenwelchen Systemen, Tools, Infrastruktur vor Probleme?
+
+
+I11: Ja, oft ist es schwierig Fehler, die verursacht von einer Konfiguration, also die von einem Konfigurationsfehler verursacht sind, erstmal aufzufinden. Das liegt so ein bisschen an der Natur der Sache, weil Konfiguration ist jetzt kein Code im klassischen Sinne. Wenn ich irgendwo einen Fehler im Code habe, dann fällt mir das entweder auf, weil das tatsächlich ein Syntaxfehler ist, dann sehe ich das in meiner IDE oder sehe das im Maven-Build, da ist irgendwas falsch. Wenn ich einen Buchstabendreher in der Konfiguration habe, dann wird sich da kein Compiler drüber beschweren, sondern das flutscht einfach durch und ich muss dann halt irgendwie später erkennen oder herausfinden, dass der Username, dass da irgendein Buchstabe fehlt. Das liegt einfach so ein bisschen in der Natur der Dinge und das hat jetzt Konfiguration, welches Format sie auch immer verwendet, also wenn das eine externe Konfigurationsdatei ist, dann ist es erstmal einfach ein Problem, dass Fehler, die da drinstehen einfach erstmal schwerer zu finden sind, wie jetzt Fehler, der durch Code verursacht wird.
+
+
+R1: Wie unterscheiden sich denn Konfigurationsfehler von normalen Bugs?
+
+
+I11: Ja, sie sind in der Regel einfach schwerer zu finden. Hängt dann auch ein bisschen vom Format der Konfigurationsdatei oder welches Format man da verwendet, welches System man da verwendet. Da gibt es meiner Meinung bessere und schlechtere Konfigurationsdateien. Aus meiner Erfahrung heraus komme ich mit Properties-Dateien einfach am besten klar, weil das ein sehr simples Prinzip ist und sehr einfaches Prinzip ist. Da gibt es Key und Value und das funktioniert eigentlich in der Regel ganz gut. Je komplexer das ganze ist, umso schwieriger finde ich das ganze. Also geht dann weiter, wenn man XML hat, kann man noch eine gewisse Struktur erkennen und mag ganz gut sein, (?58:11) JSON, was auch noch ganz lesbar ist, weil es noch ne (?58:16) Struktur ist. Mit solchen Formaten wie YAML komme ich jetzt persönlich nicht so gut klar. Ich bin es halt noch nicht ganz gewohnt, aber ich tue mich auch schwer da eine gute Struktur drin zu erkennen und gerade jetzt im Bereich von Kubernetes, OpenShift und dergleichen wird sehr, sehr viel in YAML-Dateien letztendlich ausgeladert und das ist was, was mich manchmal wundert, dass die Dinge noch so gut laufen, weil es eigentlich fast alles irgendwie irgendwo in einer YAML-Datei liegt und, ja ich möchte nicht derjenige sein, der diese ganzen YAML-Dateien letztendlich pflegen muss und bearbeiten muss und da sehe ich sehr, sehr viel potential drin, dass sich auch Fehler einschleichen. Weil meines Wissens gibt es da kein — beim XML habe ich immer noch sowas, wie ein Schema vielleicht, das dahinter liegt. Das mir dann sagt okay, da sind aber nur Zahlen erlaubt und du gibst da einen String. Oder da dieses Tag kann nur die und die Kinder haben, aber dieses Element ist einfach falsch strukturiert. Bei YAML habe ich sowas glaube ich gar nicht. Also ich wüsste nicht, wie das — weiß ich nicht, ob es sowas gibt. Das heißt, also wenn Konfiguration, dann möglichst simpel und möglichst verständlich, entweder als Properties-Datei oder dann halt mit ein bisschen Möglichkeit das ganze auch zu überprüfen, wie eben im Falle von XML.
+
+
+R1: Was ist denn so mit der schwerwiegendste Konfigurationsfehler oder das schwerwiegendste Konfigurationsproblem gewesen an das du dich vielleicht erinnern kannst? Also schwerwiegend könnte sein seits Anspruch bis das gefixt ist, oder was Auswirkungen hatte auf—
+
+
+I11: Ja, das sind sicherlich so ganz einfache und einfache Dinge. So ein konkretes Beispiel fällt mir jetzt glaube ich nicht ein, aber ich meine mal, dass man einfach so ganz blöde Fehler drin hat wie, dass man mehrere Konfigurationsdateien hat, eine für Staging, Development und Produktion womöglich und man zieht halt immer ständig die falsche an. Ändert Werte in der Staging-Umgebung und wundert sich, dass nichts passiert. Wobei man dann halt wiederum beim Start des ganzen Systems sagt verwende bitte die Development-Konfiguration, man ändert aber ständig in der Staging und wundert sich, dass nichts passiert. Das ist so ein typischer Fehler, der mir auch schon häufig unterlaufen ist. Das ist dann halt, man hat ja mehrere Dimensionen der Konfiguration und ändert halt nur eine Dimension, fasst die andere aber nicht an. Oder dann einfach ganz simple Dinge, dass man halt irgendwo einen Buchstabendreher drin hat oder, dass man eine Zeile auskommentiert in der Konfiguration, sich dessen aber nicht mehr bewusst ist und man erwartet einen bestimmten Wert, der dann aber nie da ist, weil die Option einfach deaktiviert ist. Das sind so typische Probleme, wo man dann oft das nicht sieht und erst vielleicht am nächsten Tag dann, wenn man wieder irgendwie so klaren Kopf hat, das dann auf einmal so ein Augenöffner ist. Wo man sich dann denkt „Oh man, ich suche hier seit Stunden irgendwie rum und das ist ganz einfaches Ding letztendlich.”
+
+
+R1: Was sind die Ursachen für diese Probleme? Man hat keine Validierung?
+
+
+I11: Genau. Ja, also ich glaube viele der Ursachen liegen so ein bisschen in der Natur der Sache, dass einfach Konfigurationen nicht so klar strukturiert oder nicht so weniger (?1:02:21) wie jetzt echter Programmcode. Beim echten Programmcode kann natürlich sowas auch passieren, aber nicht so oft und nicht so einfach, weil es da einfach mehr Möglichkeiten gibt Dinge zu überprüfen. Auch schon während der Buildzeit letztendlich Dinge zu überprüfen. Vielleicht ist das auch eine Möglichkeit das Problem zu addressieren, dass man vielleicht versucht Konfiguration auch Teil des Buildprozesses, auch als Teil des Builds versteht. Wenn man es schafft irgendwie beim Bauen der Software schon die Konfiguration zu validieren oder entsprechend zu überprüfen dann hilft das diese Fehler zu vermeiden. Alles, was möglichst früh in dem Prozess stattfinden kann, Validierung, Überprüfung und ?1:03:18) letztendlich hilft, denke ich mal, diese Art von Problemen zu lösen.
+
+
+R1: Jetzt baust du ja auch so einen Konfigurationseditor. Validierst du eigentlich da auch die Werte, die der Nutzer eingibt?
+
+
+I11: Ja, es gibt da entsprechend eine Überprüfung. Also das ist Teil der Konfiguration oder sagen wir mal, das ist ein Teil von der Metakonfiguration. Jede Konfigurationseinstellung i[n der Software] hat einen bestimmten Datentyp und kann auch bestimmte Regeln beinhalten. Zum Beispiel, wenn ich irgendwie das Connection-Pooling, wenn ich im Connection Pooling angebe wie viele maximale Connections möchte ich haben, dann ist das erstmal eine Zahl und kein String, dann hat das eine bestimmte Range. Das geht von 1 bis 100. Und diese Dinge sind auch Teil — es gibt so eine Art Management-Modell und das heißt eine Konfigurationseinstellung besteht nicht nur aus dem Namen der Konfigurationseinstellung, sondern da hängt auch noch mehr dran, wegen Datentyp, eine Validierung womöglich oder woher kommt dieser Konfigurationswert, also gibt es Querbeziehungen zu anderen Konfigurationswerten. Und diese Daten und diese Informationen nutze ich wenn ich meine Oberfläche aufbaue, dass ich dann entsprechend auch jede Eingabe überprüfen kann.
+
+
+R1: Kennst du ein besonders schwer zu konfigurierendes Tool oder Framework und warum genau das?
+
+
+I11: Ja, ein Beispiel ist halt Kubernetes, wo ich mich ein bisschen schwer tue mit diesen ganzen YAML-Dateien da Herr zu werden. Ich erkenne da keine Struktur dahinter. Also ich habe jetzt nicht so das Problem mit der YAML-Datei an sich, sondern mit den vielfältigen Konfigurationsdateien. Vielleicht arbeite ich auch noch zu wenig mit Kubernetes, aber ich erkenne da momentan noch kein Muster. Ich lese dann immer Codebeispiele und versuche das zu verstehen, aber und versuche dann immer ein Muster zu erkennen, dass sich Dinge ähneln, weil wenn man dann so ein Prinzip dahinter sieht, dass es immer nach Schema F läuft. Aber es gibt da so — also zumindest kommt es mir so vor — so unzählige Arten und Varianten und Versionen und Möglichkeiten Dinge zu konfigurieren. Ich sehe dann einfach immer nur noch es wird eine Ebene eingerückt, dann kommen ein paar Striche und eine Liste von irgendwas, aber was kann ich jetzt da reinschreiben? Kann ich da irgendwie irgendeinen beliebigen Wert reinschreiben? Also da tue ich mich sehr schwer sowas zu konfigurieren. Ja, da komme ich wesentlich besser klar mit irgendwie, mit einer Properties-Datei, wo ich weiß, okay und dann noch ein Stück Dokumentation, wo ich sehe die und die Werte gibt es und da ergibt es sich meistens schon aus dem Kontext, was ich da entsprechend konfigurieren kann.
+
+
+R1: Bereitet dir denn eigentlich die Konfiguration von interagierenden Tools und Frameworks dir Probleme?
+
+
+I11: Jetzt, wie zum Beispiel?
+
+
+R1: Zum Beispiel, hat ein anderer Interviewteilmehmer gesagt, in Spring Boot kann ich zum Beispiel File Upload Limit eingeben und das bewirkt aber, oder es interagiert mit dem Tomcat-Server als Applicationserver, der auch so eine Attribut hat zur Konfiguration. Und die sind interagieren, aber er wusste das gar nicht.
+
+
+I11: Ah, verstehe. Also das heißt so Konflikte, die dann auch auftreten können oder man kann die Dinge in zwei verschiedenen Systemen kann man das gleiche auf unterschiedliche Art und Weisen konfigurieren. Ja, das ist sicherlich ein Problem. Im Falle von meinen Projekten, die ich jetzt betreue, also im Falle von [meinem Projekt], ist es jetzt nicht so offen ein Problem, weil der [Server] eben als Einheit eine Konfiguration hat und da wird im wesentlichen alles konfiguriert. Das ist dann mehr ein Problem, wenn der [Server] dann mit Drittsystemen entsprechend kommuniziert und dann könnte es schon sein, dass es zu Überschneidungen kommt, dass man auf der einen Seite etwas konfiguriert, das Drittsystem aber dann wieder eine eigene Konfiguration hat und dann kann es zu Konflikten kommen, aber ich habe jetzt kein konkretes Beispiel dafür.
+
+
+R1: Was sind denn so häufige Auswirkungen von Konfigurationsfehlern nach deiner Erfahrung?
+
+
+I11: Ja, häufige Auswirkungen sind einfach, dass man dann, dass das System nicht so reagiert, (?1:08:08) nicht so sich so verhält, wie man das erwartet. Dass man aber nicht genau weiß, erstmal nicht genau weiß, dass das aus einer Konfiguration heraus entsteht, sondern, dass man möglicherweise erstmal an anderer Stelle sucht. Dass man erstmal sich die Funktion selbst anschaut, vielleicht dann schon merkt, dass es irgendwo eine Konfiguration ist, aber dann auch erstmal herausfinden muss, welche Konfiguration wird denn letztendlich damit verwendet. Das ist auch nicht mehr ganz trivial oder nicht ganz offensichtlich, was jetzt zum Beispiel der Wert 80 da einfließt oder wenn der Wert 80 einfließt, dann muss man erstmal nachvollziehen können wo stammt denn der her. Also wenn man dann eben so ein komplexeres Konfigurationssystem hat, das vielleicht mehrere Ebenen hat oder mehrere Möglichkeiten, wie man die Dinge konfiguriert, da muss man erstmal nachvollziehen können wo kommt denn jetzt dieser Wert letztendlich her und wer setzt den und in welcher Umgebung muss ich — oder wie muss ich das Ganze nachbauen oder da geht es dann auch so um die (?1:09:18) Reproduzierbarkeit. Was muss ich tun damit ich genau diesen Zustand bekomme und erstmal erkennen kann, okay jetzt habe ich diesen Fehler reproduziert und jetzt möchte ich wissen wo kommt der letztendlich her.
+
+
+R1: Gibt es für dich einen Unterschied zwischen falscher und schlechter Konfiguration?
+
+
+I11: Ja, ich denke schon. Also falsch ist — ja, falsch und schlecht liegen schon denke ich mal nahe beieinander. Ich meine wahrscheinlich eine falsche Konfiguration ist jetzt, wenn ich jetzt in meinem Beispiel die Anwendung, die ich habe, also meine Adminkonsole, die ist mehrsprachig. Das heißt es gibt sowas, wie Resource-Bundles, da liegen dann drin und die werden dann entsprechend übersetzt und dann habe ich (?1:10:13) eben in verschiedenen Sprachen. Ein schlechte oder falsche Konfiguration wäre es zum Beispiel, wenn ich mir eine Anwendung baue, die ich nur im englischsprachigen Bereich verwendet wird, ich aber auf Teufel komm raus jetzt irgendwie Dinge in drei, vier Sprachen vorhalte. Das ist einfach unnötig. Ja und Dinge, die einfach unveränderlich sind, die für immer und ewig so bleiben werden, da muss ich nicht eine Konfiguration hochziehen, weil das ganze macht es dann unnötig kompliziert und komplex. Das wäre einfach eine schlechte Konfiguration.
+
+
+R1: Ja, den Konfigurationsfehler hast du schon rekapuliert, oder? Was dir jetzt besonders schwierig in Erinnerung war. Das ist das mit den Stages, ja?
+
+
+I11: Ja, das mit den Stages zum Beispiel. Oder einfach auch Dinge dann auskommentieren womöglich man — es gibt ja auch sowas wie, wie viele Dinge, das ist auch noch so eine Ebene der Konfiguration, für wie viele Dinge gibt es Defaultwerte. Das heißt, das ist ja dann auch, manchmal ist es ja auch ein Feature oder es ist ja auch so, wenn ich jetzt zurückdenke an den Bereich (?1:11:41) oder Java EE. Das ist ja so ein, hat so eine gewisse Historie und da gab es ja in den vergangenen Versionen gab es eine sehr komplexe Konfiguration meiner Meinung nach. Viel auch XML-Dateien. Sehr kompliziert und sehr mühselig zu konfigurieren, so eine Java-EE-Anwendung und dann gab es irgendwann mal einen Schnitt und man sagte man hat jetzt sowas wie Convention over Configuration, war so dann das Stichwort. Das heißt man möchte weg von dieser ganzen Konfigurierbarkeit. Es gibt für alles eine Konvention und wenn man das nicht alles konfiguriert, dann gilt diese Konvention. Sprich man hat Defaultwerte oder man hat vernünftige Standardwerte, die man da angenommen hat, die für 80 % aller Fälle gelten und wenn man es anders haben möchte, dann kann man das machen, aber je weniger Konfiguration man hat, umso weniger Fehlerquellen gibt es auch. Und sprich (?1:12:37), also man hat eine Konfigurationsdatei, man kommentiert bestimmte Dinge aus, dann gibt es einen Defaultwert, der verwendet wird und man denkt aber nicht daran, dass man eben das auskommentiert hat. Das ist so eine Fehlerquelle bei Konfiguration von Systemen.
+
+
+R1: Ist das also eher so Nachteil von diesem Convention over Configuration Trend?
+
+
+I11: Ja, ich möchte das nicht unbedingt als Nachteil hinstellen, weil eigentlich ist dieses Convention over Configuration schon eine gute Sache. Je weniger Konfiguration man hat, umso besser finde ich eigentlich. Das heißt man sollte sich eben auch genau überlegen was möchte man denn konfigurieren und vor allem, was sind denn sinnvolle Defaultwerte. Wenn man eine Datenbankverbindung anlegt dann hat meistens (?1:13:27) sage ich mal 10 Verbindungen im Connection Pool oder die Größe des Connection Pools ist 10. (?1:13:38) das sind die Werte, passt für fast alle. Und dann macht es keinen Sinn diesen, dass man zwingend eine Konfiguration für die Größe des Connection Pools angeben muss. Dann sollte man eben einen Defaultwert entsprechend haben. Macht aber trotzdem Sinn das ganze konfigurierbar zu machen, aber nicht eben zwingend.
+
+
+R1: Wie häufig treten denn Konfigurationsfehler bei euch in der Projektarbeit auf?
+
+
+I11: Also jetzt in meinem Projekt sehr wenig sage ich mal. Was so den größeren Kontext angeht. Was den [Server] selber angeht, da denke ich mal schon sehr häufig. Da wenn man sich dann in den Mailinglisten umschaut sieht man dann schon immer wieder Beschreibungen von Usern, die dann halt irgendein bestimmtes Problem haben und sagen das und das Problem habe ich und hier ist meine Konfiguration. Weil die Konfiguration ist auch immer Teil des Problem meistens. Also wenn man sich so auf StackOverflow ansieht wie — oder irgendwelche Issues sich durchliest, dann ist ja immer im wesentlichen die erste Frage des Entwicklers wie sieht denn deine Konfiguration aus. Weil das ist nun meistens dann so, dass das eben einen wichtigen Teil der Beschreibung darstellt und auch der potentiellen Lösung dann.
+
+
+R1: Wann treten denn typischerweise Konfigurationsfehler auf in der Projekthistorie? Also wenn du von Anfang deiner Entwicklung über Maintenance—
+
+
+I11: Ja, typischerweise treten die dann oft auch zur Laufzeit auf, also während des Betriebs von der Anwendung. Und ganz schwierige Dinge, also schwer zu findende Fehler sind es dann halt dann, wenn man eine exotische Umgebung hat vielleicht, die man so am Anfang gar nicht damit gerechnet, dass sowas auftreten könnte. Das sind dann meistens die Fehler, die am schwierigsten zu finden sind. Ja, einfachere Fehler sind dann so, dass man dann Konfiguration in einer Art und Weise verwendet für die sie eigentlich nicht gedacht ist. Die könnte man dann wahrscheinlich schneller finden, aber oft treten solche Fehler halt leider dann zur Laufzeit auf, deswegen auch je mehr Konfiguration man überprüfen kann, umso besser. Das ist auch noch mal wieder ein Argument dafür, dass man man möglichst viele Dinge vielleicht beim Bauen der Software schon überprüfen sollte. Das ist nicht immer möglich, aber wenn möglich dann schon.
+
+
+R1: Und wenn du jetzt den Lebenszyklus einer Software anguckst, ist es eher in der Entwicklungsphase oder dann erst wenn es beim Nutzer ist?
+
+
+I11: Ja, leider erst dann wenn es beim Nutzer ist. In der Entwicklungsphase wäre es noch besser die Dinge zu erkennen, weil es dann natürlich auch viel einfacher ist die Dinge zu beheben, aber leider treten dann solche Dinge oft auch dann erst beim Kunden oder beim Benutzer letztendlich auf.
+
+
+R1: Gibt es nach deiner Erfahrung Unterschiede zwischen fachlichen und technischen Konfigurationsfehlern? Also auch vielleicht im Hinblick der ganzen Fragen davor.
+
+
+I11: Ich denke weniger, weil Konfiguration ist erstmal Konfiguration. Ob das jetzt für die technische Seite verwendet wird oder für die fachliche Seite spielt dann eigentlich nicht so sehr die große Rolle. Wie gesagt, man sollte bei jeglicher Art von Konfiguration einfach immer gut überlegen ist es, muss ich das konfigurierbar machen, ist es was, was wirklich nötig ist um die Software gut zu verwenden zu können und gibt es dafür eben einen vernünftigen Defaultwert, den ich setzen. Solche Art von Fragen sollte man sich dann einfach stellen, egal ob es jetzt technisch oder fachlich ist bevor man dann die Konfigurationsmöglichkeit einbaut.
+
+
+R1: Okay, wie gehst du denn typischerweise vor um Konfigurationsfehler zu finden und zu beheben?
+
+
+I11: Ja, ich versuche mir einfach möglichst viele Informationen vom Benutzer zu holen, bei dem der Fehler auftritt und versuche möglichst dann diese Umgebung möglichst so nachzustellen, nachzubauen wie sie der Benutzer, bei dem der Fehler auftritt, dann im Einsatz hat und dazu zählt eben auch die Konfiguration. Wie ist das verwendete, in meinem Fall der verwendete Browser, die verwendete Version der Software, wie wird die betrieben, in welcher Sprache, mit welcher Version des [Servers], also sprich das ganze nachbauen, nachstellen und dann, ja dann geht die eigentlich Fehlersuche los.
+
+
+R1: Ist denn auch StackOverflow, Dokumentation lesen dabei?
+
+
+I11: Ja, genau das auch. Also sprich, wenn es dann irgendwo, wenn der Fehler dann irgendwo in einem Toolkit oder Framework oder Bibliothek liegt, das man verwendet, dann muss man halt entsprechend da die StackOverflow-Einträge wälzen oder da wühlen und gucken, ob es irgendwo ähnliche Probleme gibt und damit man einfach möglichst das ganze nachvollziehen kann.
+
+
+R1: Und Kollegen fragen, kommt das dann auch noch irgendwann in Frage?
+
+
+I11: Ja, das ist auch auf jeden Fall hilfreich, hilft oft auch weiter. Hängt davon ab, wo das Problem so ein bisschen liegt. Also in meinem Falle, wenn ich jetzt an der Konsole arbeite, bin ich momentan so der einzige Entwickler, der daran arbeitet und dann läuft es mehr darauf hinaus eben StackOverflow da zu gucken oder auf GitHub in den Issues zu wühlen, ob es ähnliche Probleme schon mal gab, wie die gelöst wurden und welche Möglichkeiten es gibt die entsprechend zu lösen. Kollegen sind immer dann hilfreich, wenn man gar nicht mehr weiter kommt und vielleicht einfach mal einen Blick von jemand anderem braucht, der mal vielleicht gar nicht so viel damit zu tun hat. Oft hilft es auch schon, — es ist ja ganz oft so, das hat jetzt weniger mit Konfiguration zu tun, sondern wenn man dann das Problem schildert und jemand anderem erzählt, oft reicht das schon aus um selber dann eine Lösung dafür zu finden.
+
+
+R1: Welche Strategien hast du denn um Konfigurationsfehlern vorzubeugen?
+
+
+I11: Ja, also ein sehr wichtiger, oder eine gute Strategie Konfigurationsfehlern vorzubeugen ist, dass man es gar nicht konfigurierbar macht. Also sprich bezogen auf die Frage, einfach so die Sinnfrage zu stellen „Muss ich das konfigurieren oder nicht?” und dann eine andere Strategie ist vielleicht einfach sich ein gutes Strategie zu überlegen wie mache ich Dinge konfigurierbar. Es ist vielleicht einfacher Dinge dann irgendwie in einer Propertiesdatei konfigurierbar zu machen, als eine Datenbank dafür herzunehmen. Für eine Datenbank brauche ich viel mehr Infrastruktur und viel mehr Dinge um DInge dort abzulegen, die selber konfiguriert werden müssen. Also dann sprich, je einfacher es ist Konfigurationswerte oder Konfiguration zu pflegen oder zu zu verändern umso besser.
+
+
+R1: Und so der letzte Teil praktisch: Verbesserungsbedarf. Was erwartest du denn eigentlich von einer guten Dokumentation über Konfiguration?
+
+
+I11: Das ist auch ein sehr wichtiger Aspekt, ja. Also Konfiguration alleine ist eigentlich wenig wert, wenn die nicht gut dokumentiert ist. Und daran scheitern auch viele Systeme, das ist eine sehr gute Frage eigentlich. Also was ich mir auf jeden Fall erwarte von einer Dokumentation ist, wozu ist diese Konfiguration da, sowas wie welchen Datentyp hat diese Konfiguration, also was kann ich da letztendlich hinterlegen. Ist das ein Boolean, ist das eine Zahl, ist das ein Datum. Einfach so dieser Datentyp, weil viele Konfigurationsmechanismen sind erstmal, sind nicht typisiert sondern basieren auf Strings. Da kann ich alles mögliche reinschreiben. Das ist manchmal einfach, das liegt in der Natur der Konfiguration. Aber dann muss die Dokumentation sehr klar sein. Also dann muss genau dokumentiert sein, was für einen Wert kann ich denn da hinterlegen. Das ist einmal der Datentyp und dann vielleicht auch sowas wie eine Semantik. Also ich kann ja wegen mir eine Zeitspanne eingeben, aber welche Zeitspanne macht denn Sinn? Also wenn ich hier zum Beispiel eine Zeitspanne eingebe, sind das jetzt Millisekunden, sind das Sekunden, Minuten, Stunden? Es ist immer eine Zahl, aber diese Zahl hat eine bestimmte Bedeutung. Also auch das muss dokumentiert sein. Und dann muss es dokumentiert sein, ist es eine zwingende Konfiguration, ist es optional, muss ich die angeben oder muss ich die nicht angeben? Und dann das i-Tüpfelchen wäre vielleicht noch, welche Auswirkungen hat diese Konfiguration, hat die irgendwelche Seiteneffekte auf andere Werte oder hängt die zusammen? Muss ich dir nur angeben wenn ich einen anderen Konfigurationswert angegeben habe? Ist die dann zwingend, wenn ich ein bestimmtes anderes Flag gesetzt habe oder ist die immer optional? Also so die Zusammenhänge zu anderen Konfigurationswerten? Das erwarte ich mir von einer guten Dokumentation.
+
+
+R1: Hast du denn ein Beispiel von guten und schlechten Dokumentationen?
+
+
+I11: Ja, also eine gute Dokumentation ist denke ich mal schon die Dokumentation für den Wildfly-Application-Server, weil wir da dieses Meta-Modell haben für jeden Konfigurationswert gibt es irgendwie genau diese Angaben, die man machen muss: Zwingend, ist das optional, welchen Datentyp, dann auch so was für ein Wert ist das, ist das ein Millisekundenwert, ist das im Sekundenbereich und sowas. Das ist auch, über eine Webseite kann man das entsprechend abrufen, weil das eben automatisch generiert werden kann diese Art von Dokumentation. Ein schlechtes Beispiel habe ich jetzt keins parat, gibt es aber bestimmt wie Sand am Meer. Das ist immer dann wenn halt die Dokumentation fehlt, also wenn ich halt irgendwie, ich habe Properties-Dateien, die halt nun mal einfach string-basiert sind, aber ich weiß nicht was muss ich jetzt darein schreiben. Oder gerade ganz oft hat man halt hier so Zeitintervalle oder Zeiten, die man angibt und da stellt sich mir jedes Mal die Frage, ich gehe dann mal davon aus, dass das Millisekunden sind, weil viele Entwickler benutzen Millisekunden, weil das einfach, da müssen sie nicht groß rumrechnen, aber dann ganz oft ist es so, merkt man dann im Nachhinein, ah, was er eigentlich will sind Sekunden. Und dann ist es natürlich, so einen Fehler zu finden ist natürlich dann die Hölle.
+
+
+R1: Welche Verbesserungen würdest du dir hinsichtlich von Konfiguration von Frameworks und so weiter wünschen?
+
+
+I11: Ja, also einfach gute Dokumentation. Sich auf die wesentlichen Dinge beschränken. Nicht alles konfigurierbar machen. Und was man vielleicht meinte man müsste konfigurieren, sich auf das wesentliche beschränken und eine gute Dokumentation liefern. Also diese zwei Dinge, die würden schon mal 80 % der Schwierigkeiten oder der Probleme vielleicht vermeiden.
+
+
+R1: Was würde dir helfen schneller Konfigurationsfehler zu identifizieren?
+
+
+I11: Ja, da sind wir wieder bei der Idee, dass man möglichst viel zur Buildzeit überprüft. Also wenn man die Sachen deployt oder wenn man die Sachen baut, dann schon alles, was möglich ist zu überprüfen. Also wenn da irgendein Wert von 30.000 drinsteht, aber man meint damit aber Minuten und keine Millisekunden, dann könnte man schon mal einen dezenten Hinweis, zumindest so ein Warning ausgeben, dass man da vielleicht einen Wert drinstehen hat, der keinen Sinn macht.
+
+
+R1: Und die schneller zu beheben? Also das fixen.
+
+
+I11: Da ist es wichtig, dass man genau dem Benutzer als Feedback dann gibt wo steht dieser Wert, in welcher Datei, wo finde ich den und wo muss ich dann entsprechend was ändern. Also so ein bisschen Analogie zu wenn ich einen Syntaxfehler habe, dann kriege ich den Dateinamen, dann kriege ich die Zeile 23, womöglich auch noch die Spalte 25, da fehlt ein Semikolon. Dann weiß ich genau, was ich zu tun habe. Wenn ich ähnlich gute Fehlermeldungen bei Konfigurationsfehlern bekommen würde, wo ich dann sehr schnell dann finde erstmal Name der Datei, womöglich noch die Zeile und den Wert und aber nicht nur sagen da ist was falsch oder ungültiger Wert, sondern wie heißt der Konfigurationsparameter, wie heißt der Wert, wo finde ich den? Diese Angaben brauche ich alle letztendlich und dann kann ich auch den Fehler schnell beheben.
+
+
+R1: Okay, letzte Frage, die wir haben, was würde die helfen besser Konfigurationsfehlern vorzubeugen? Außer weniger Optionen jetzt zu haben.
+
+
+I11: Ja, das ist so die Summe der Dinge. Also da spielt dann vieles zusammen, von vielen Dingen, die wir jetzt so im Laufe der letzten Stunde besprochen haben. Also das Format der Konfiguration, die genaue Fehlermeldung, möglichst frühzeitig darauf hingewiesen zu werden. Auch eine gute Überprüfung und Validierung von Werten, die da eingegeben wurden. So die Summe der vielen Dinge, die, wenn die dann alle zusammenkommen und zusammengreifen, dann macht es auch Spaß Konfigurationsfehler zu beheben.
+

@@ -1,0 +1,467 @@
+R1: What are you doing professionally in your job? Are you somehow a consultant, tester, team manager, developer?
+
+
+I10: So I'm a consultant, tester and software developer.
+
+
+R1: In which domain do you work? So with the domain rather a bit, let's say backend, frontend, DevOps, web development or—
+
+
+I10: full stack.
+
+
+R1: full stack. OK. And what is your role in software development? So project manager included, or—
+
+
+I10: developer.
+
+
+R1: What part of your daily work is the actual software development or programming?
+
+
+I10: So if you include the reading of tickets and stuff like that, it certainly makes up about 75% if you stop testing now.
+
+
+R1: How many years do you have experience in software development?
+
+
+I10: 7 years.
+
+
+R1: How long have you been in your organization?
+
+
+I10: January 2018.
+
+
+R1: And in your current position as, yes, consultant or something?
+
+
+I10: Now only related to the company, right? So I was a consultant before.
+
+
+R1: Okay, since when?
+
+
+I10: I have been a consultant since September 2014.
+
+
+R1: And maybe as a final question, which frameworks and tools do you usually work with?
+
+
+I10: So, Tools is IntelliJ. Frameworks is Spring, Spring Boot. Otherwise use Apache tools. So what is there, Apache POI, is reading and writing Microsoft Office formats. Then Apache Formatting Objects. It is about generating reports from an object structure. It can be a PDF or XML or whatever. Otherwise Javers, this is a tool to make object diffs. So you simply have two instances of a class and you can drop it into this tool and that will calculate a diff over which you can then navigate. So, these are the ones that come to mind spontaneously. Otherwise, if I take a look at what we are using: We use JAXB to do XML-to-object transformations. So we work on XML data and from that we create a class network, which is then basically instantiated with the XML data on which we can then work later. Otherwise we use, well, Vaadin as a web framework. We use logging tools SLF4j. Then we use JGit, FasterXML, we already had Apache.
+
+
+R1: CI / CD anything?
+
+
+I10: Yes, Jenkins, GitLab. And then we use FreeMarker as a library.
+
+
+R1: Containerization?
+
+
+I10: We use Kubernetes for our internal deployment and for testing.
+
+
+R1: Well, that was already detailed. Now it's time to start, configuration in general. What do you mean by the term configuration?
+
+
+I10: Yes, I was also wondering what you actually want to know from me, because it actually comprises different levels with product line and variant management background, which means for me to configure a product line. That means I have a model, a feature model, which describes all valid variants of a product line and then configuration is just the result of a valid selection of the options that the product line provides me or this model. To keep spinning on everything that I see now, you can of course configure your software and frameworks and all of that on different levels. Be it in any YAML files or XML files or whatever. And that is certainly also part of the fact that in the end - or part of the configuration and that a finished software product runs exactly as it is intended.
+
+
+R1: When do you configure software? So what binding time, so to speak?
+
+
+I10: is compile and start time.
+
+
+R1: So far in the interviews we have differentiated between technical and technical configuration. Is that also the case with you? Or can you imagine something under the terms?
+
+
+I10: Well, purely technical are just things for me, such as we develop a web application and there is technically for me something like on which port it runs. Shut up your web application and just say it should now run on port 1234 or something. That's when I think about it, I think that would make up a large part of what we do with configuration. Then also regarding which paths are used. Then there is the fact that we have a web application and that also exchanges data, for example. For example, I can upload data and download data. And then for uploading data there is just allow me to specify which file sizes are still accepted and which request sizes are still accepted. These are typical things that are configured. At least in the spring boot environment. Purely technically, let me think, we actually have one. So there are things that have a technical reference, but it's not about configuring the technical model or something yourself, but it always has a technical reference in the sense of a URL or something similar or how a URL is constructed or similar. For me, this now has no technical reference in the sense of this technical model of what we are doing to control and monitor, but rather to describe the technology that allows us to work in the professional environment.
+
+
+R1: The next question is actually there are interactions between functional and technical configuration. Now that you don't have much technical expertise, maybe that's more of a theoretical question, or maybe in your consulting life, have you seen something like this?
+
+
+I10: Between professional and technical? So if I should shoot on the hip now, yes. And actually more in the product line environment. There were cases that we configured things that actually related to versions and not to variants to make defects in the technical illustration. So that was actually a technical illustration to control versions, but to implement defects between technology and professional.
+
+
+R1: Can you maybe give that again, maybe an example? Now it's difficult to understand what you mean.
+
+
+I10: Maybe the example doesn't fit as well or whatever. At least, we had the case that we have a product line from which we can derive a lot of variations. Then we come to a certain point where we just say that we have to introduce new variants under technical control. So specifically related to versions in order to be able to map the professionalism. That we actually, well, have more technical variants than we actually had now.
+
+
+R1: Okay, so the reason for the configuration was technical shortcomings right? Or did you want to fall back on older versions?
+
+
+I10: Yes, you just wanted to preserve older technical things and had to do it with such a technical trick, because you could still agree to represent it purely professionally. Rather, it was because of the problem that you couldn't agree to say that we just switch off old braids, but you want to support both old and new at the same time that you have now.
+
+
+R1: Do you typically have to do with the configuration of a monolithic system?
+
+
+I10: So with monolithic systems, Linux comes to mind. Rather not, no. Basically, this is always a smorgasbord of different libraries, frameworks that we use, which then have to be configured together.
+
+
+R1: Exactly, are there actually interactions between the entire configurations for tools, frameworks, infrastructure and so on?
+
+
+I10: Yes, I know at least one specific example that I came across recently. It's about an interaction between Vaadin and Spring Boot. So Spring / Spring Boot is a framework for the control of, originally for dependency injection. But it also offers opportunities to support, to develop web applications. Specifically, that means I can build web controllers that basically represent behind a URL and behind these controllers I can, for example, set something like file size. So what we had before, so I can now say that a client can only upload files of a certain size to this application. Let's say 100 megabytes. And I can also send requests there, which are 200 MB in my case, in case I want to upload more than one file, for example. Now Vaadin offers as a web application, offers something similar. So that's what it offers because it actually wants to control something. Because Vaadin basically maps this component of web applications. Second, think for a moment. No, that was wrong and it is not Vaadin, but Tomcat in the background. So not Vaadin but Tomcat. And Tomcat is doing exactly the same thing now because it actually controls the controller itself by doing file exchange. And there is an interaction between what I configure in Spring and Spring Boot and what Tomcat has. And so the configuration options of Spring / Spring Boot now overlap those of Tomcat. Yes, that's what we come up with specifically.
+
+
+R1: Okay, maybe something like this interaction between your CI / CD infrastructure and your software?
+
+
+I10: CI / CD infrastructure and software? Think for a moment. No, I can't answer that. When I didn't know about it myself, no.
+
+
+R1: Do you have one - or are you building your own infrastructure to develop or do you have a team for it?
+
+
+I10: Please clarify the question.
+
+
+R1: Do you build your own Continuous Integration / Deployment Service or Docker and the Jenkins until it lands on the testing stage and then maybe Prod? Or do you have special departments there that maybe put you pre-configured?
+
+
+I10: It is a bit double-edged and although we have, we have support from our IT department for this. The just as basic as here there is just a cluster to throw your Kubernetes with your Docker images on it. However, it is supported by developers who also work on the team.
+
+
+R1: But there are others then, yes?
+
+
+I10: I am not myself, no. These are other colleagues.
+
+
+R1: How would you see the importance or importance of configuration in software engineering?
+
+
+I10: Yes, not much works without, right? As I said, you can have the greatest application in the world, if you have configured it incorrectly, it won't work.
+
+
+R1: Since you already have a little insight into research, how would you rate it, does research take into account the needs of practice?
+
+
+I10: Oh, I don't know. I can not say it. So at least as far as this configuration aspect is concerned, I have no idea how far something is being done or not. So I just see what these libraries are already doing and how they work there and if I have any problems, I don't end up in any papers or anything, but I usually end up on StackOverflow where maybe people might that describe problems that I also have. But that means reading manuals, reading specifications.
+
+
+R1: Okay, are there differences in the different software life phases with regard to the effort or importance of the configuration?
+
+
+I10: I can not say, because at least in the projects in which we are currently working, we are actually not so prototype and development phase. That means I can't say anything about maintenance, testing or later support. I was never in a project myself where that was the case.
+
+
+R1: Were you prepared for this configuration aspect during your studies or training?
+
+
+I10: All-inclusive: Nope.
+
+
+R1: Should it be taught?
+
+
+I10: So it would certainly make sense to deal with it, but whether that should be a big topic now and now I am a lot involved in the topic of doing and doing that and you will certainly learn some of it and what the aspects are now of it, but that now in the scope of what I know, a software project at university or a programming task or something similar to do - I don't know, I think it goes a little too far.
+
+
+R1: So now we are going to move on to the second topic: How do you work with configuration, so to speak? The first question would be, how are configurations managed and documented by you?
+
+
+I10: So configurations are with us, because they are also part of the application, as they will run, are checked into the git, into the git repo. You will, so that divides again some of these configuration options, which we take into account, only partly affect our application, but also partly of it, or the libraries and frameworks that we use. The ones we introduce ourselves are basically not configured or not documented. If there are such decisions that are not intuitive, let's say. Then there is a comment about why, why, why. Similar to what you would do with source code now. If it is not self-explanatory, then there is also an explanation of why, why and why the value was set so.
+
+
+R1: Where's the comment?
+
+
+I10: The is next to the configuration option directly in the configuration file.
+
+
+R1: What is the biggest advantage of your administration?
+
+
+I10: consistency. That means I can just restore the stand, can always restore it as I still have it today.
+
+
+R1: And the biggest disadvantage?
+
+
+I10: It does not create a coherent picture, because configurations are often distributed across different files. But of course also depict different aspects. Be it now that I am - our project consists of several small sub-projects. There is a configuration in the case of Maven. Then our application itself is Spring / Spring Boot. There is a configuration for this. Yes, so I haven't had it myself, but it can certainly, if not exclude, cases where these are overlapping. Correct: They are also comprehensive, that means we do one aspect, and we create profiles in Maven and these profiles are intended to control deployment on different systems, on the one hand with us, and on the other hand with the customer. And there are configuration options stored in the profiles, which have an impact on the spring boot application, for example. This affects, for example, under which port a system is started, under which URL and something. There are connections and if you don't know, they are not so easy to see.
+
+
+R1: Okay, there are interactions, dependencies in there?
+
+
+I10: Yes, exactly.
+
+
+R1: And then they are also managed by different stakeholders or the values ​​are said yes?
+
+
+I10: No, a colleague set up the infrastructure for this, with the help of other colleagues. Stakeholders in the sense who are of course interested in it are now different parties, but simply because the system should be simple or our application should run on different systems. But the infrastructure itself only affects one person.
+
+
+R1: Do you have any special tools other than Git to manage configurations?
+
+
+I10: Nope. There are files themselves, they come in different formats. So there is the `application.properties` from Spring. These are just key value stores. Then there are the YAML files and then there are YAML files for e.g. GitLab control and continuous integration and then there are XML files for Maven.
+
+
+R1: Dockerfile probably still.
+
+
+I10: Exactly, yes.
+
+
+R1: And you don't have your secret keys in a vault or something?
+
+
+I10: Please?
+
+
+R1: The secret keys or something, so confidential things. Don't you have another tool then?
+
+
+I10: No.
+
+
+R1: How are configurations communicated in your team?
+
+
+I10: So there is a basic readme file in the project itself, which you can do from GitLab, it is just a markdown file with which you can display the basic structure. Otherwise the project follows, at least as far as the maven part is concerned, standard maven structure. We have a parent project and then child projects, which is clear to the developers. Otherwise it would be task-driven. This means that if there is a task, there is an extension to be made, which also requires adaptation to the configurations. Then the architect or the associated developers or those who are familiar with the information are then passed on to the developer who should now take care of this new task.
+
+
+R1: How does this distribution take place? Personal or email, chat?
+
+
+I10: Jira. And personally.
+
+
+R1: What is the biggest advantage of this communication?
+
+
+I10: So in the case of Jira, which you can basically read again, how it was and everyone stops for himself, if he just processes the ticket and can understand it again. If it is personal, it is usually always a 1-to-1 on the computer, where it is now a question of specifically pointing out if there is a problem. But otherwise that's actually recorded in Jira.
+
+
+R1: What do you think is a disadvantage, perhaps the biggest?
+
+
+I10: That people may not do it consistently to do it that way. And that would rather do that in a 1-to-1 or say, I call quickly and then it will not be recorded afterwards.
+
+
+R1: Do you review configuration files for code reviews?
+
+
+I10: Yes, it is a component that you look through this and we are now also moving on to being able to look directly at the deployment and to see it on a Kubernetes cluster. Regardless of - that is, if the continuous integration has gone through, you just run your unit and integration tests - that you can also do an application test. So there is a possibility. Has not existed with us for very long, but I don't think it will be implemented consistently.
+
+
+R1: According to which criteria and at what time are you planning or implementing new configuration options?
+
+
+I10: So what are the criteria? Well, basically it is, we have a procedure, so we work sprint-based after sprints, together with the customer and he just works out new stories and the architects break them down so far that you can just tackle the story. It can be a direct component that an adjustment or expansion in terms of configuration is necessary. Or it just comes out with consultation when the developer has started working on the ticket.
+
+
+R1: Okay, and then the criterion is what we need, we have to create testability or this option should always - or the code should be backwards compatible, right?
+
+
+I10: No, this is not the case in our case. But this is certainly also a special case, because we are currently building a prototype and that the things we have to do are not backwards compatible.
+
+
+R1: And in your consulting experience, do you have anything like that? Or generally such kind of criteria?
+
+
+I10: So it is certainly an issue and I know that from other areas, from other domains. That means if you also deal with the topic of configuration management in general. But that I can now report on concrete cases where I knew about them, I was never so far involved in the topics.
+
+
+R1: How much effort do you spend in the development time, if you can estimate it so roughly to incorporate configuration options?
+
+
+I10: So I try to remember tickets that I edited myself, where it was just about installing something new. Yes, so break it down, the tickets themselves, which I edited in the course of this for configuration myself, were usually no more than one or two days.
+
+
+R1: Okay and how much effort do you put into configuring things?
+
+
+I10: So to create configurations yourself?
+
+
+R1: Yes. Then of course they are valid, for example.
+
+
+I10: So it's just an estimate. I wouldn't say less than 5%. Because configuration is in place, adjustments are only made if there are any problems. Because, what do I know, like the other day this case, I had an example, I just wanted to upload a larger amount of data to our server and that just didn't work. There was an error message in the interface and it was then clear to me that I had just violated the request size for what was in the background. Or what was allowed in the background by Spring and then in the end by Tomcat. And that was the interaction I was talking about earlier. And after I found this position and then saw that there was an interaction, I was busy for an hour or two trying to fix it. But it is now not a continuous, recurring activity, because we actually work more on the technical side and our configurations are more technical and I then have less to do with the configuration myself.
+
+
+R1: How much effort does it take, I say to your team, to initially set up a configuration for tools, frameworks and infrastructure and so on?
+
+
+I10: So it is actually - I don't know if it can be estimated at all, because it is more likely, the project started from a small core, so little configuration was necessary and grew over time. In the beginning, it was not foreseeable that which configuration options are now necessary in total in order to bring the system as such to production readiness. I don't know. I can't guess.
+
+
+R1: How much effort do you make, if, that is, if there are version changes or other configuration-dependent changes? For example from Spring Boot Version 1 to 2.
+
+
+I10: So far we haven't had major jumps. We try to take versions of the library upwards while we are doing the development. So most of them we are dealing with now are just patch releases. I know, it happens regularly at Vaadin, because they release new versions quite often, and then, in the course of a new release, the version is adjusted. And there are now usually not necessary to make things backwards compatible or something similar or whatever. That means we always try to work on the ravages of time in order to be up-to-date so that we don't have to continue working with any older stands that you have to maintain in the long term. Otherwise, I know from our architect, who also builds the releases, who does it every three weeks, who then takes two or three hours to do all of this. There are other things that are necessary, because of course tests have to run in the background and the artifacts that are then uploaded to repositories. Apart from the fact that he is now handling some configuration, there are other things necessary, but that usually works quite well.
+
+
+R1: What is the biggest factor for you that determines the configuration effort?
+
+
+I10: The biggest factor? I'm going to interpret that a bit further, right? So that's the sense, when I look at libraries that provide configuration options, the greatest effort for me is to understand exactly what this option does within the framework and to what extent this applies to the application and how I use the framework , reflects back. That is surely, let's put it that way, the greatest effort that then read the specifications or other problem cases in the network with Stackoverflow or other websites to understand how far, yes what effect the configuration basically has on my application. That would certainly be now, I just forgot where the biggest factor - yes.
+
+
+R1: Do you also use configurability to tune non-functional properties such as performance?
+
+
+I10: So yes, yes. I would not now know it in my application, as I have it now. I know things are related. I know your work on it, but specifically from the cases and projects that occur to me spontaneously, not so now, no.
+
+
+R1: Then we now have the last part, it's about configuration errors and problems and so on. And the first question, does the configuration of systems, tools and frameworks pose any specific problems?
+
+
+I10: Only if this leads to a state in which the application is not running, that is to say that I cannot find a configuration where I say it is running. We had such a case. It was just a matter of implementing such a file upload in Vaadin and we could not find any configuration from Spring, which is used in the background, and Vaadin, so that we could implement a multifile upload. This is basically a bug that is also known. I will continue to follow this until there is a corresponding new release from the frameworks, so that we can set the configuration as we need it.
+
+
+R1: Can you name one of the most serious problems, or what took you the most time to configure?
+
+
+I10: That was a case, for example. I was busy for half a day trying to find out, to read bug reports on GitHub and try to reproduce this exactly and understand whether the scenario, what we have with us and how we use Vaadin and Spring fits exactly , as it was described there in the error description, so that I could just say okay, we can not find a valid configuration for it.
+
+
+R1: In your opinion, what are the causes of configuration difficulties that you may have?
+
+
+I10: Well, there are interactions that are not necessarily noticeable. So like this Tomcat spring issue that I had earlier. At the beginning it wasn't clear to me, because at first I only knew okay, the start of what I'm building on the surface is Spring. That this in turn has an effect on what is going on in the background, so there will be a Tomcat server and for me, at least as a developer, it is not transparent. It was not clear to me from the start that it would still have an effect and then make an impact. And that was a problem.
+
+
+R1: What is a tool or framework that is difficult for you to configure and why exactly?
+
+
+I10: A tool that is difficult to configure?
+
+
+R1: Or framework.
+
+
+I10: So I only know whatever we are doing now, just tools for which I found it difficult for me to work in and just understand them because they offer a lot of options. But at least I can't say that for the current case.
+
+
+R1: Quiet your consultant experience in general or from your development experience.
+
+
+I10: Oh well, there are always cases and examples where I see systems, where I think they are badly done. I know of an example where you basically took FeatureIDE, expanded it and used it in a company and created a whole lot of configuration options for a product line. And that was just a few thousand pieces. And in the end wondered why they could no longer be mastered, because no one could configure it, because the dependencies between the options no longer existed. They weren't explicitly modeled, so it was very easy to create incorrect configurations. It is an example. Otherwise there are usually very, very large tools and things that just try to make things very clever in the background, tools that just don't get through to the outside are difficult for me to grasp. But that probably doesn't really help you either.
+
+
+R1: What are the configuration errors and how do they differ from normal bugs?
+
+
+I10: So I would not say that they differ, because, as I said, configuration is part of the application and an application only works as a whole if the configuration also fits. Now entering a wrong value somewhere, which can be variably parameterized and leads to the application not doing what it is supposed to do, is a bug for me and then indistinguishable from that when I use an algorithm, for example implemented incorrectly.
+
+
+R1: Even if the value concerns the infrastructure?
+
+
+I10: Well, I would rule that out now. Yes okay, Environment is a good point because I can't always fully control the Environment itself.
+
+
+R1: In your experience, what are the effects of configuration errors?
+
+
+I10: Well, an example like that - I develop on Windows and the system is tested on Linux on one setup and runs under a second setup. (?43:33) dass halt, sagen wir mal, die Umgebung, wie zum Beispiel in Java, wie werden halt Pfade interpretiert, Slash, Backslash oder wie wird die Anwendung standardmäßig auf dem System, mit wie viel RAM wird das Ding hochgefahren oder ähnliches. Das schlägt sich halt durchaus durch, auch auf die Anwendung hinein. Wenn ich sie nicht explizit setze, muss ich eben mit dem Leben, was mir halt die Umgebung, also in dem Fall Windows oder Linux selbst, eben vorgibt. Das ist ärgerlich, weil etwas aufwändiger und schwieriger zu finden und man braucht halt ein recht gutes Verständnis um das zu sehen.
+
+
+R1: Gibt es denn für dich Unterschied zwischen falscher und schlechter Konfiguration?
+
+
+I10: Nein.
+
+
+R1: Kannst du das begründen?
+
+
+I10: Läuft in der Regel für mich auf das gleiche hinaus: Die Anwendung tut nicht, was sie soll.
+
+
+R1: Wie häufig treten denn bei euch Konfigurationsfehler bei der Projektarbeit auf?
+
+
+I10: Also Bauchgefühl, einmal pro Sprint.
+
+
+R1: Und sind die — okay, ihr seid sowieso gerade in der initialen Phase. Du kannst wahrscheinlich nicht abschätzen, ob das weniger oder mehr wird in der Maintenancephase, oder?
+
+
+I10: Nein. Nein, kann ich nicht.
+
+
+R1: Vielleicht noch von den älteren Projekten noch, mehr aus den Gedanken, gibt es generell Unterschiede bei diesen ganzen, weiß nicht, Häufigkeiten von Konfigurationsfehlern und so weiter, zwischen fachlicher und technischer Konfiguration?
+
+
+I10: Also da kann ich es nicht sagen, weil ich da eher als Berater tätig war und nicht so Einblick in die Entwicklungsartefakte habe. Ich kriege das bisweilen so Anekdoten zu hören, dass es eben Änderungen an der Umgebung gab und dass dann halt Testfälle nicht mehr liefen oder ähnliches. Aber in wie weit die jetzt technisch oder fachlich bedingt waren kann ich nicht sagen.
+
+
+R1: Ein bisschen hast du schon gesagt, aber vielleicht noch mal im (?46:30) oder strukturierter: Wie gehst du denn typischerweise vor um Konfigurationsfehler zu finden und zu beheben?
+
+
+I10: Also in der Regel (?46:40), dass irgendwie eine Funktion nicht geht. Also ich habe halt eine Exception oder einen Error in meiner Anwendung. Die meisten Fehler mit denen ich jetzt zu tun hatte, hingen damit zusammen, dass entweder vom Webserver dann eine Fehlermeldung kam. Was weiß ich, ein 500 oder ein 404 oder ähnliches oder ein 401 zum Beispiel. Und ich dann anfangen konnte damit und dann eben zu wissen hey, ich habe zum Beispiel eine fehlerhafte Anfrage gestellt, dann halt zurückzugehen und dann halt weiter das abzufrühstücken. Ich mache es in der Regel dann halt so, dass ich halt unsere Logs durchgehe oder dann auch im Falle der Fehlermeldung selbst mir den Stacktrace anschaue um dann eine Debuggingsitzung zu starten um das eben runterzubrechen. Für den Fall, dass ich schon sehr, dass ich halt aus den Stacktraces eben herauslese, wie für den Fall, dass ich lade größere Dateien hoch als mir das Backend erlaubt, da konnte ich aus dem Stacktrace zum Beispiel herauslesen, dass dort eine Anpassung in der Konfiguration notwendig war, weil ich bei der initialen Umsetzung eines Features für den Dateiupload involviert war und dann wusste, dass ich dort eben Änderungen machen kann.
+
+
+R1: Und wenn du hast ja auch vorhin gesagt, du liest dann auch mal bei StackOverflow und so weiter nach. [Zustimmung von I10] Gespräche mit Kollegen auch?
+
+
+I10: Ja.
+
+
+R1: Was ist so die Reihenfolge da? Also zuerst, du hast gesagt Logdateien, Stacks und dann?
+
+
+I10: Also Fehlermeldung selbst durchgehen, Stacktrace, Debuggingsitzung — Debuggingsitzung, Stacktrace parallel zu online schauen — und in der letzten Instanz ist dann einen Kollegen dazu fragen.
+
+
+R1: Habt ihr spezifische Strategien um Konfigurationsfehlern vorzubeugen?
+
+
+I10: Nein.
+
+
+R1: Was erwartest du denn von einer guten Dokumentation bezüglich Konfiguration?
+
+
+I10: Also wenn sie in irgendwas vom Standard abweicht. Also Standard ist das eben, was ich aus Spezifikationen, Handbüchern herauslesen kann. Wenn es dort in irgendeiner Form konkret abweicht oder sich halt auf einen Fehler oder auf ähnliches bezieht, dann würde ich es an der Stelle, wo die Konfigurationsoption eben definiert worden ist, auch gerne sehen. Und deren Quereffekte auf weitere Konfigurationen, die wir innerhalb der Gesamtanwendung haben, eben auch.
+
+
+R1: Also wenn jetzt zum Beispiel, müsste jetzt Spring Boot dokumentieren, dass es auf die Konfiguration von Tomcat Auswirkungen hat?
+
+
+I10: Ja. Im konkreten Fall habe ich auch so gemacht, dass ich halt darauf hingewiesen habe, dass es eben zwei Fälle gibt. Also es betrifft im Grunde, im Falle von Spring Boot gibt es halt so eine `application.properties`, wo man eben verschiedene Einstellungen zum Verhalten von Spring Boot halt definieren kann. Und daran sind auch die Sachen, Konfigurationsoptionen involviert, die zum Beispiel für den Tomcatserver auf dem dann wiederum Spring läuft, eben im Hintergrund gemacht, auch mit drin stehen. Und an der Stelle hätte ich gerne gesehen, dass das zusammenhängt. Vielleicht habe ich es übersehen, aber ich musste mir das erst selbst erarbeiten. Und in unserem Fall ist das jetzt intern so dokumentiert, dass es da eine Interaktion zwischen diesen beiden Fällen gibt. Das sind drei Konfigurationsoptionen. Zwei beziehen sich auf Spring, eins bezieht sich auf den Tomcat-Server. Und dort gibt es dann eben von mir einen Kommentar dazu, der eben genau das umfasst, dass diese beiden miteinander interagieren.
+
+
+R1: Hast du vielleicht ein Beispiel von einer guten Konfiguration, wo du vielleicht schonmal sowas gelesen hast oder so. Also von einer guten Dokumentation über Konfigurationsoptionen oder—
+
+
+I10: Müsste ich nachschlagen, habe ich nicht spontan parat.
+
+
+R1: Ja, welche Verbesserungen würdest du dir denn eigentlich wünschen hinsichtlich Konfiguration von Frameworks, Tools, Infrastruktur und deren Interaktion?
+
+
+I10: Also dass sie explizit schon auf solche Fälle hinweisen. Denn im Grunde, also wenn es solche Interaktionen gibt — dann ist das halt schwierig jetzt sicherlich zu sagen, weil niemand genau weiß, wie sein Framework in welchen Umfängen jetzt das halt irgendwo eingesetzt wird und da kann es halt Interaktionen geben, die der Entwickler des Frameworks halt nie vorhersehen konnte, weil es einfach eine Kombination aus Frameworks oder sowas gibt, die er nie auf dem Schirm hatte. Kann es ja durchaus geben. Aber wenn es halt in manchen Fällen so bekannt ist und bekannt sein kann, wie, weil es ist einfach sagen wir mal, wie in diesem — ich weiß, wir bemühen das sehr oft —, aber wenn wir jetzt sagen wir nehmen dieses Tomcat und Spring Beispiel, dann hätte ich das schon gerne gesehen, dass es da zu sehen ist, weil im Grunde Spring auf Tomcat aufsetzt und dass es dort dann eben auch leicht widersprüchliche Konfigurationen geben kann, das hätte ich schon gerne gesehen.
+
+
+R1: Was würde dir denn helfen vielleicht schneller Konfigurationsfehler zu identifizieren?
+
+
+I10: Weiß ich nicht. Also die Bibliotheken mit denen ich zu tun habe, die sind in der Regel was das angeht halt schon dokumentiert. Also, was diese Optionen machen. Wenn jetzt halt irgendwas nicht geht oder funktioniert, dann alle möglichen Fehlerfälle abzudecken und sagen ey, hast du vielleicht schon daran gedacht oder jenes könnte vielleicht unter Umständen helfen um halt noch ein bisschen außerhalb des Scopes zu denken und zu arbeiten. Heißt aber am Ende natürlich, dass es mehr Dokumentation gibt, die ich am Ende auch lesen muss. Aber vielleicht ist das so vielleicht eine Idee oder ganz sinnvoll. Ich meine, ich kenne es halt aus Handbüchern zu Haushaltsgeräten, da steht ja auch so drin, wenn du dieses und jenes siehst, wie hier leuchtet irgendwas, dann checke mal das und das und jenes. Das kann halt unter Umständen sicherlich schon helfen um dann vielleicht so ein bisschen so Denkanregungen zu geben und da fällt mir zumindest jetzt spontan nichts ein, dass ich sowas schon mal gesehen hätte. Für den Fall, dass irgendwas nicht geht und dass irgendwas nicht klappt, das wird immer erst dann sichtbar, wenn man halt, was weiß ich ich, von StackOverflow von anderen Leuten eben darauf hingewiesen wird, dass man vielleicht irgendwas falsch macht.
+
+
+R1: Und jetzt zum Beheben, gibt es da was, was dir was helfen würde?
+
+
+I10: Ne, nur die Zeit und lesen zu verstehen, warum, wieso, weshalb ich das Framework, Bibltiothek jetzt eben falsch verwende und was sich eben bei uns tun muss, dass das halt (?54:22). Für mich ist halt eine Zeitfrage.
+
+
+R1: Und jetzt als letzte Frage, was würde dir helfen um deinen Fehlern vorzubeugen?
+
+
+I10: Weiß nicht. Also wenn ich daran denke, dass die Webseiten haben in der Regel  schon Dokumentation, die halt einem in der Regel halt so eine Empfehlung von der Standardkonfiguration machen. Wenn ich davon abweiche, dann ist es natürlich mein Problem und ich muss mich halt darum kümmern, dass es halt zueinander passt. Also fällt mir zumindest jetzt spontan nichts ein, was jetzt im Sinne von vorbeugen helfen könnte.
+

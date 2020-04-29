@@ -1,0 +1,252 @@
+R1: So, goal of the interview: We want to find out how software, but also including infrastructure as code, is configured, which problems occur, how they are fixed and where there is still room for improvement in all of these processes. In the academic field, it is often not so clear what role the configuration plays, whether it is irrelevant or causes problems in daily work and it is actually the case that in the academic world it is said that you now take Open Source projects - so you look at GitHub there - and so you just look at the issues for configuration problems or something, but that might not be very meaningful. So because that (?) The developer (?) Has to do and so on. And that's why we want to ask developers, testers, DevOps and so on what we do (?). In the end we want to ask a little bit about team structure, so that we can classify it a bit. (?) Hierarchies and so on and (?) So managers will probably have less to do with configuration than testers or (?). Exactly, then I think I said something about the benefits and so on and what we do with it, so the goal of the research is clear, too, and then we start with the general questions.
+
+Which domain do you mainly work in?
+
+I5: What does domain mean now? So customer domain right?
+
+R1: No, so as a developer, whether you are developing web, front-end, microservices, back-end, DevOps, security ... testing
+
+I5: Then in any case rather backend up to date. That's always (?) A bit difficult, I say, because you have to do Visualforce Pages and something like that. That is also the front end. And a little bit of microservices alongside, also in the direction of DevOps and yes. In my private life I also take a look at the frontend, but that's more like that ... I don't know. 10% of my free time. Well, I would really say more in backend and DevOps.
+
+R1: Okay, then what role do you have in software development?
+
+I5: That would be a senior software developer.
+
+R1: Okay, senior software developer.
+
+I5: You mean the position?
+
+R1: Exactly. Right, yes. Project manager, sub-project manager or do you also have a team, what do you do?
+
+I5: Not currently. I had it once. Currently not. I'm just a team member and then.
+
+R1: Okay. What part of your daily work do you have with software development or direct programming? What is (?)?
+
+I5: Software development / programming is almost 100% of my time. Approximately.
+
+R1: Okay, then I always ask, what is it like - the question of whether that is true - how often are you in meetings of your daily time? Scrum and so on there is everything.
+
+I5: Yes, so relatively rare. That is, so we are in Scrum. One of these is a meeting, we have a review and a planning, they are in direct succession and there is a Monday in two weeks, half a Monday in two weeks. That is the time that you are definitely in a meeting. Otherwise such ad hoc meetings, if you somehow built a prototype and you let the others look at it and stuff. That my knowledge has to pass on or — JavaLand now or something, any conferences. But the pure working time is already, so up to this Monday in two weeks, this half Monday, it is already 100% development.
+
+R1: How many years of experience do you have in software development?
+
+I5: Well, it should be 11 years and a month or so. Approximately.
+
+R1: Well, that's pretty accurate.
+
+I5: If you count the course, I don't know whether you want to count it or not.
+
+R1: Yes, probably more professional.
+
+I5: Yes, yes, since I was a student, it's about eleven years.
+
+R1: And how long have you been working in your organization?
+
+I5: In the current organization one year and two months exactly.
+
+R1: And since when have you been so senior. So that we can classify it like this, senior software developer.
+
+I5: I would say two or three years. Approximately.
+
+R1: Okay, so last question for the general part: Which frameworks and tools do you usually work with?
+
+I5: Yes, definitely Docker. Then Docker-Compose mainly. Otherwise frameworks… We do Ruby on Rails, I did a lot of UI microservices. Yes and otherwise - so that's really mostly work now - and otherwise on work, so that's not a framework now, but Heroku. So if you allude to such cloud applications. Exactly, would now be Heroku, Hetzner, AWS and something like that. Otherwise tools too? (I: Yes) IntelliJ, Visual Studio Code and Mercurial. Databases and something like that? (R1: Yes, (?)) Ok, MongoDB, Postgres, NGINX and I think it was so slow. So these are the ones that I would immediately think of. Then ANT. This is mostly Salesforce deployment. Yes.
+
+R1: Yes okay, great. Then we now have such an impression, practically a general one. And now we can move on to the configurations. And then the first question is always: What do you mean by the term configuration?
+
+I5: Well, configuration for me is to create a state in your software. So you actually control by configuration you control states in your software, yes? So how it behaves. Yes, that was actually it. That's actually go — my definition is actually relatively short. So ideally you just have a configuration file, you start the software with it and don't actually change this configuration again. So at runtime I would almost not understand that, that would be more, I don't know, because the application controls itself and configuration is always that part for me that you simply define when starting the software and thus you define the state of the Software and how it should behave and then it simply does. And then you don't actually touch a configuration like this anymore, right? You do that then, you only configure again when you shut down the software and then start it up again. I would rewrite it like this. So what it means to me.
+
+R1: Okay, to what extent does technical and technical configuration play a role in your daily work? So can you differentiate what we mean by professional and technical?
+
+I5: Not directly. Professionally configured ... yes I do not know now. So for me the technical configuration plays the decisive role. Below that, everything is stored with me, because we have to configure a lot of software components. But what is meant by technical configuration.
+
+R1: What is practical for the end user if he has a tool that you can develop or configure your (?). So maybe a webshop can configure the look, language and so on. (?) practically the configuration in the professional world of the application. And technically in the DevOps area would be Dockerfile, for example.
+
+I5: Yes, that even plays a role for us. So our software, which we are now building with Salesforce, for example, must also be adapted relatively strongly by the users. Or just through a consulting team, what just goes through the business processes of the company and they have to ultimately, so the end customer has to configure a lot with us, I say, right? In order to then adapt the software so that it brings what he wants.
+
+R1: (?) With configuration options that somehow have to be built into the program or rather (?)
+
+I5: (?) So you try to avoid something like that extremely. Well, you don't want to leave the software very customizable, because you want a standard and you want it - every configuration option that you install always poses a risk, you have to test it all. This is a huge problem and that's why you actually want to avoid that and definitely want to reduce it, but we have to deal with that from time to time. We just have to build the software in such a way that it can then be easily configured for the end user and that it also makes sense that he sets something there at all. And only if he has to.
+
+R1: Okay then but also with you is mostly the technical configuration (?)
+
+I5: Most of the technical configurations. So this technical configuration only affects us when we have to test certain things, right? So then we just have to go through our documentary, just have to look, what can he set, I now have to create the software and the status, then we have to do it ... too. And then it affects us again. Cases where you have to test a lot is bad, so I say where you have to set a lot. It is not that cheap.
+
+R1: How long do you think you work on a configuration as a percentage per week? That you have to change configuration files there, Build File, that's all configuration.
+
+I5: Technically relatively little. So if you put your microservices or something, for example, then ideally you do it once and then it stops. So you want to build such a stable system that you just have to keep it running and then it's good. But when it comes to the technical side, so if you define it that way, it happens that we come across quite a lot, because we have to change the cases, so to speak, or change the features, then we have to also testing. And then it affects us a bit, right? So we just have to test what the customer can configure, we have to do it often, so that's not to be sneezed at the time you spend on it.
+
+R2: Can you guess that somehow?
+
+I5: gut feeling ... so I would say it is more so with us, if you really have a case that you are testing, then, then ... I don't know, I would be 30% of the time, so if you, now So now roughly, roughly over the entire test period, I say there are maybe 30% of them now - but that's really a very rough, valued gut feeling - where you really have to adjust and configure things and so. But it feels like a lot and it is also annoying to have to do something by hand. It would be nicer if you also had automatisms with you to do it, but ... Now there would be more, how do you test at all, and I would guess, I don't know, so we test 50% of the time We are more DevOps QA engineers than that. So we not only develop, we test what we have developed, we also test ourselves in a team. I also find it much better than just developing and somehow having someone else test it. That's still ... I say a smack. In my opinion, there is no good software quality. Yes, but otherwise, I would say we test 50% and of the 50% I would say 30% of them is then, the configuration sneaks in. So in the shoot.
+
+R1: Do you then typically have to do with configuring monolithic systems or rather frameworks, tools, libraries, infrastructure?
+
+I5: We are often divided. So we are building a new software architecture and we have to configure a lot with frameworks, with containers that talk to each other and things like that. We have to configure that. But that's only again, you do it once. That's relatively low compared to all the other things. And otherwise, what we test in cases, that's really all in such a rather monolithic system, although our app is still relatively small. But you just have this Salesforce monolith with you and you have to test it.
+
+R1: How would you see the importance or importance of configuration in software engineering or software development?
+
+I5: So that's very important. So in principle, if you look now when you write integration tests, then theoretically all combinations of a possible configuration have to map them. Now even if you test, you just have to look, yes, I'm going through all the combinations now. That means the more you can configure, the more exponentially the test effort expands. And that's important. Because you don't want to, so test the ten combinations and then the next 210 just pops. You don't want that, so now in extreme cases. Yes, and that's why it's actually very important to have everything configured and tested.
+
+R1: So practically for you, if we take the software now, (?) It is more important for you (?) Testing configuration and less for the implementation, right? (?)
+
+I5: Two parts. So it is with us, we have 100% test coverage, which means that we actually have to look, so you usually go through this, you achieve this through unit tests and try to write quite a few developers tests and there you look also hold that you always in the code, so whenever there is an if condition or something, you somehow try to do it so that the test coverage is always there. So you don't want to have any places in the code where any if conditions just don't go through with the test cases you wrote. And that's why it affects us both in implementation and in testing.
+
+17:09
+
+R1: Okay, so this was the general configuration part. Now we want to do it the way you work with it every day and so now the first question is, if you take configuration from any tools or from the infrastructure, cloud configuration or something, do you have any special problems that that caused, that is, the configurability?
+
+I5: Special problems? Yes, I would say if you add such a new framework, then you first have to see what you have to configure. So most of the time you have the problem, if you want to achieve something special in the framework, you have to look first, have a look what value is responsible for what and it should actually be documented somewhere or better documented how you can control the thing at all can. That means, what can you hand in everything. For example, if you have good Dockerfiles that always work in a very encapsulated manner, that's the way it is, the lists mostly, so if you really have good documentation, they always list what you can do for environment variables, mostly in that case it is always limited to what you can hand in and what they do. And if you just have bad documentation, then you have some framework that just doesn't list it as well, then it's just missing and you always have to read it. This makes it a bit difficult to configure. And what is difficult, we usually do not have such an AWS environment or something, you just have the problem sometimes that it just overwhelms you with all the things that are quasi possible. I'll just say AWS's rights system, for example, which is quite complex with this AEM model. And there it is that you think "Oh well my god, that's probably well documented then, right?", But it is just the sheer mass that simply overwhelms you. You can just _ set too much_, I say, so that's not nice to use anymore.
+
+R1: Do you have any special tools or frameworks where you now know "Oh, if I touch that now, there will be problems"?
+
+I5: I don't know. So if I do now, I don't know. No idea. So if you mess up something in any database, there are of course candidates, you shouldn't change them, I say, or a RAID, there are also a few variables that you shouldn't touch, but I wouldn't have that special now so big concerns. It's more a question of what you don't know. So what really concerns me most of the time is, well I could add something that would make the whole thing more performant or something. So I find it rather problematic the things that you actually don't know, what you could possibly still do _to solve problems. I think that's always a shame.
+
+R1: So you don't have one, you practically don't know what the influence of the configuration option has on performance and things like that?
+
+I5: Yes exactly. You just don't know if you could optimize anything, I say. Whether there are any clever best practices or something. If that were better documented, it would be nice.
+
+R1: What do you think is the combination of several tools if they are (?) Or multiple frameworks (?) Problems? So either really no configuration errors or problems with deploying or testing. So especially the combination.
+
+I5: Well, basically, the more you can adjust, the more you can break. So if you put in the wrong combination now and the more configuration options you have, the higher the combination of those that could be wrong. Usually, you only have a few combinations, where I don't know if the system will work properly. The likelihood of misconfiguring something is of course quite high. And therefore, the more you can actually configure such a tool, the higher the probability that you will somehow do something wrong. The higher the effort will then actually be. I would roughly rewrite it.22: 16 But once you have found a configuration, the variety of configurations in the tool can of course also solve exactly the problem that you might actually want to solve and that is perhaps better than such a tool where you can’t set anything. I don't think you can generalize that somehow.
+
+R1: Did you have any problems in your daily work due to the combination of things (? 22: 40)?
+
+I5: Yes, so clear when starting up any service architectures. So if you misconfigure something or I don't know if you somehow do something wrong with a Nginx, that's a problem, you have to solve it. So something does not work, I do not know, it does not pass SSL or it does not do the redirect at that point. This is usually a Nginx config story and you have to fix it, you have to solve it and that is already a problem, but that is also an initial problem. Once you find that and it works, it works. Then you hardly look at it again.
+
+R1: Are there any more - you now have a lot of configuration here with me, I think, deployment configuration, CI configuration and all that. How do you manage all the configurations? Do you document that? And maybe others (? 23:45)
+
+I5: So we have one, so for the technical configuration there is, if you really do a deployment, so you always have to differentiate whether it is now in development mode, there are any passwords in it, which then just stand in the code or just have to be selected. So you don't manage them separately, but for deployments we have a password manager tool that is used. Then certain people simply have access to it and can then pull out the passwords, i.e. these configuration environment variables. So they all have to be in there. And they are also on the servers, but if that smokes away because they are just Docker containers, it would be a shame. I mean that's a file system and so, but you have to get into the web UI somehow without having to go directly to the server, in the container or on the server on the file system and all of it Look through env files. So that's already in one tool with us. Otherwise, the technical documentation that our customers have to take over and I don't know how it is regulated in our support and customer success team. I can't say whether they'll remember what they set up for customers, so to speak, whether it's somewhere. So not as detailed ... how it works. But of course it makes sense to do this somewhere centrally and even if changes happen and so on, you never know.
+
+R1: Now you've talked about the password manager tool, but where do you have yours, I say Dockerfiles or (? 25:36) Travis, there are certain configuration files, you have somehow central or project-wise or
+
+I5: At the moment it is, we are still building it ad hoc and we have one, we also have Docker Hub, which is also private. But that is only for the reason that we can download it faster in the pipeline. So that we don't have to build it in any complicated way again.
+
+R1: So are you more likely to have the configuration files on your developer computers?
+
+I5: Well, the configuration files ... well, that's a thing. If a developer wants to pull it up, then he has it on ... so from Git, but that's not GitHub but is Bitbucket, then he has it first, but there are only dummy values ​​in it. 26:24 These are values ​​that everyone can take. Then you pull it up locally, you throw it away again. So there is the whole configuration history, so there is practically no need to pay attention to it. It's just next to the Docker Compose file and then it's good. Only as soon as it comes to any server, you have to actually save the configuration, because it will be worth saving. And our Docker files are not only on Docker Hub one, but there are also some, for example in AWS in this ... ACR is called? Is that the ACR? You have to have a look at the Amazon Container Registry, I think it's called ACR. Or I think ECR is called: Elastic Container Registry. Something like that. In any case, they have their own registry, but that's just a Docker Hub. And there are Dockerfiles lying around with us. So the images for the files.
+
+R1: What do you think is the biggest advantage and disadvantage of this type of administration?
+
+I5: Well, the biggest advantage is that you have access to the passwords at first and things like that. Which is a small disadvantage, theoretically you would have to reset the passwords automatically after a certain time and then make them quasi accessible to the entire container. This is a bit of a disadvantage. That would have to be built into the infrastructure somewhere. But normally you want it to be that way - there is a security aspect to it - normally you don't want to change configurations. But you don't want to now either, you only want to change the configuration at this point because you have this security aspect. So your password, which you use to access the UI or the database, should be generated from time to time. In case it is guessed somehow or something. Or if an employee has left the company and something. They could theoretically write it off and then I just don't know what to do with it. And that is such a disadvantage, you should actually have to tackle it somehow. But with us, that actually affects us more when it comes to this service architecture concept, not yet, because they are practically not yet live. So there would have to be a process behind it that will do it automatically, but that would also be extremely difficult. So I see a huge disadvantage of doing this. You simply have the effort to regenerate the passwords. That means you would have to theoretically, the difficulty is, you would have to have your password management tool, you would actually have to network with your infrastructure that this would happen automatically. Because nobody wants to go through 100 servers and change passwords everywhere and then enter everything in the password tool. You would have to solve that somehow.
+
+R1: Yes and for you now really only the passwords are important, because there is also IP and such, port and all that… is it not important for you to set them somewhere correctly and to save them.
+
+I5: What else is there? I have the first—
+
+R1: Yes, IPs and ports and so on from the—
+
+I5: Oh yeah. It all counts in there. So that's exactly the same thing, if you somehow have such a changing IP for any service, that can of course be, especially in the cloud business and so and there (? 30:08) the IP very quickly. It is also stored there with us.
+
+R1: Okay, so you have everything in one tool. I don't know if you can save that if you can't or can't say that (? 30:27) configuration ... is that a commercial tool (? 30:31)?
+
+I5: Yes, it is a commercial tool. That's 1Password, that's easy. I think it's pretty popular too.
+
+R1: Okay, yes how do you communicate configuration in a team, so now for example someone changes an IP of a service or something, how is that communicated?
+
+I5: First of all, he has to update it in the tool and then it is in some vault and there are different people accessing it, so you should always have a limited operations team, for example, which then - support doesn't need, for example Access to servers, I don't know where any infrastructure is running or something. That's just because you restrict the group of people and the person who has to update it also has to make sure that it is up to date in the password manager, so to speak, that it fits and then it is for everyone else who has access on it, that is also visible. This also affects us, for example, we have such developer orgs, that's just a real Salesforce instance, I say. And there are also access rights and they are also included in the tool and all developers have access to any org just theoretically. And who can also log in there, what can test and something. So it’s sort of sent back and forth. 32:05 That is also - I had forgotten - that is also a huge configuration effort, so it is not without. Yes, and you have to keep that up to date. So if you change your password from your org - it is always intended for a release - then you have to update it in this tool. So that others also have access. Some then forget to enter it and so, then it is always difficult, then you have to look up the source code again in the respective branch and then get the credentials out there, that's (? 32: 40) pending various positions. But that's not a critical thing either, practically everyone can do it. The only thing is that you can figure it out and use it.
+
+R1: What do you think, so basically you communicate through a tool that I drive longer with configuration options (?), So to speak. You don't tell them right now?
+
+I5: No, you don't need either. You always look in the tool, there is always the current value in it and then you can just connect where you need it. Or you can, so get to the server you need or get access to any - I forgot too - we still have a lot of such payment provider test accounts, I say. Or to third-party providers, there are also a number of accounts. And whenever you need something like that, you go into the tool and then it should be the current value. So you need to communicate almost zero. You just do it, you set it to the current value or everyone else who needs it then has the current value ... if he goes in there and pulls it out.
+
+R1: What's the biggest advantage and disadvantage of it?
+
+I5: Well, the biggest advantage is that you always have the current version, I say. So what you need. It is always up to date. The disadvantage is that you have to make sure that you enter the current one there. This is very important. So you have to manually compare this world of the password manager with the reality, you have to check it yourself somehow. There is no automatism or anything like that again. But that's also what I want to do, so that in the end, the person is responsible if you somehow change the password somewhere ... write in, get out.
+
+R1: Maybe what you have there ... so you probably don't save your configuration of your database (? 34: 40), but ...
+
+I5: Well, yes. So for some servers you can do that directly. There are also extra sections in these password manager tools, where you say you just want to save the access data for a server. And I mean, where else do you want to save it? So if you write it down somewhere, it’s unsafe because there’s just—
+
+R1: Ich meine vielleicht jetzt nicht nur Zugangsdaten, sondern auch die Datenbank an sich jetzt, bezüglich wenn ihr jetzt Konfigurationsoptionen, die die Datenbank jetzt mitbringt, die müssen ja auch irgendwo gespeichert werden.
+
+I5: Naja, wenn du—also  ich habe das meistens so gehandhabt, wenn du irgendwelche Konfiguratiosdateien änderst oder sowas, dann trägst du die ja ein. Aber weil es grundsätzlich alles welche gibt, das… glaube ich nicht. Also sonst müsste man halt die Defaults nehmen oder so. Also wenn du es nicht geändert hast, dann ist es meistens auch nicht bekannt, was da die Defaults sind. Die müsste man halt dann da eintragen. Also wirklich (?35:40 ) nur die Werte rein, die wir auch angepasst haben, wo wir auch wissen, die sind customized sozusagen.
+
+R1: Gut, gehen wir mal zu den Fehlern, den Konfigurationsfehlern (?35:57 ) auftreten. Hast du schon selber Konfigurationsfehler erlebt und was war so der schwierigste oder schwerwiegendste Fehler, den du so erlebt hast?
+
+I5: Naja, der schwierwiegendste Fehler, also wie gesagt, so ein Nginx oder sowas mal misskonfiguriert, das war aber alles noch in der Entwicklungsphase. Weil normalerweise wird das so sein, die Fehler die du am Anfang machst, die kommen dann irgendwann nicht durch die Pipeline und im Release sollte quasi nichts landen, was da irgendwie schlecht konfiguriert ist. Und da hast du halt gerade bei diesem Structure-as-Code, hast du halt den Vorteil, dass du was du am Ende ausrollst, hast du vorher genau so getestet. Das heißt wenn du jetzt einen Konfigurationsfehler machst und das kommt durch die Pipeline durch und ist schlecht konfiguriert, dann ist deine Pipeline schlecht. Und dann musst du an der arbeiten sozusagen. Dann hast du die falsch konfiguriert oder sowas. Auf jeden Fall ist der schwerwiegendste Fehler wirklich in der Entwicklung, dass man da irgendwas falsch gemacht hat und das hält sich im Rahmen. Das begrenzt dann halt nur deine Entwicklungszeit oder sowas wenn du dich lange mit so einem Fehler aufhältst und da gibt es schon manche, wo man sich einfach mal länger aufhält wenn das halt irgendwie schlecht dokumentiert ist oder man hat das halt noch nicht oft gemacht. Oder man findet halt keine Beispiele dazu oder sowas. Und das ist dann schon extrem nervig, aber so jetzt in der Produktion und so quasi nichts.
+
+R1: Kann das irgendwie schon mal länger aufhalten, kannst du auch mal sagen, könnten das auch ein paar Tage sein oder?
+
+I5: Jaja, also wenn du einen richtig doofen Konfigurationsfehler hast und findest es echt nicht raus, dann kann das schon sein, dass dich das zwei, drei Tage auch einfach mal aufhält. Wenn du das Problem wirklich findest. Und das wäre dann aber schon das Maximum, also wenn du so lange Zeit da rumgurkst, dann sollte man sich dann wahrscheinlich auch irgendwie Hilfe holen oder sowas. Aber das kann schon mal vorkommen. Also gerade bei diesen Microservices, wenn du die halt aufbaust und die funktionieren halt irgendwie nicht richtig miteinander und es hat halt einen bestimmten Grund und du findest die Ursache nicht. Klar, das kann—da auf Fehlersuche zu gehen und es ist schlecht dokumentiert—das kann einfach schon mal richtig aufhalten. Aber das ist eher die Seltenheit. Meistens kriegt man sowas hin und es ist auch dann begrenzt, das ist halt in O(1) anstatt, dass das ewig auftritt sage ich mal. (?38:24 ) nur immer am Anfang der Entwicklung und dann siehst du eigentlich so eine Sachen eigentlich nie wieder. Deswegen ist der Schmerz auch nicht so groß auf so ein Problem zu treffen.
+
+R1: Und fachliche Konfigurationsfehler?
+
+I5: Ohja, ja. Da gibt es viele. Also es gibt schon öfters Probleme, das sind halt auch die ganzen Sachen, die so im Support aufschlagen, wenn die Kunden ihr Programm halt schlecht konfigurieren. Oder konfigurieren es halt aus bestem Wissen und Gewissen und dann funktioniert es halt nicht so wie es soll, das kommt schon recht häufig vor und das beschäftigt dann auch die Leute im Support, das geht dann bis zu den Entwicklern. Also das ist schon so Daily Business. Das liegt aber auch dadran, weil es wirklich hochkonfigurierbar ist und die Kunden dann auch meistens irgendwelche Geschäftsprozesse ändern oder irgendwas anders haben wollen oder genau ihr Problem sozusagen abbilden wollen und dann passiert es halt einfach, dass da fehlkonfiguriert wird. 39:31 Viele lesen sich quasi auch die Doku nicht genau durch, das kann man eigentlich auch viel verhindern und dann kommt das eins zu eins zusammen und dann passiert sowas einfach.
+
+R1: Wenn du so eine Projekthistorie hast, ja dann startet irgendwie das Projekt initial so einrichten bis zur Maintenance-Phase. Wann treten denn typischerweise Konfigurationsfehler auf?
+
+I5: Aber da kann ich gar nich so viel zu sagen, weil das ist quasi gar nicht so meine Abteilung. Wie häufig das passiert, man hört es halt immer nur, aber das ist dann halt, also das kann ich nicht mit konkreten Zahlen quasi hinterlegen. Aber gefühlt ist es halt schon recht häufig, weil man kriegt dann halt meistens immer Anfragen, wo dann die Abteilung, die vor uns geschaltet sind, das dann halt auch nicht rauskriegen, aber die wirkliche Dunkelziffer ist dann halt eher unbekannt. Das kann schon weit drüberliegen die Zahl. Oder vielleicht ist es auch genau die Zahl, die wir jetzt halt mitkriegen, dann kommen sie halt mit allen Problemen zu uns, aber meistens ist so, dass die schon viele viele Sachen auch abfangen, weil die die dann auch von der Häufigkeit her schon kennen, sage ich mal, im Support und die Consultants. Und ja, das weiß ich nicht, aber gefühlt ist die Ziffer doch recht hoch.
+
+R1: Wenn du jetzt so einen Konfigurationsfehler hast, wie gehst du da typischerweise vor um den zu finden und zu beheben?
+
+I5: Technische Konfiguration oder fachliche Konfiguration?
+
+R1: Beides. (?).
+
+I5: Also fachliche Konfiguration ist so Doku lesen. Ganz klar. In dem Fall unsere eigene und versuchen das Problem halt herauszufinden. Dann muss man halt schauen, steht das nicht in der Doku oder ist das halt ein echter Bug. Ansonsten bei der technischen Konfiguration auch ganz klar, versuchen das Ding mit der Doku herauszufinden und/oder ein Beispiel zu finden und im schlimmsten Fall wenn man jetzt halt gar nichts findet, also du hast kein Beispiel, du hast kein Tutorial und du hast die Dokumentation nicht, dann ist es dann am Ende einfach auch ein bisschen ausprobieren. Dass du halt sagst ich setze jetzt mal den Wert dies, das, hier und jenes oder vielleicht ist eine Kombination mit einem anderen Konfigurationsvalue, den man eventuell noch gar nicht ausprobiert hat und versucht da dann irgendwie was zu reißen, aber das wäre dann sozusagen die Notlösung.
+
+R1: Kannst du da ein Beispiel geben, wie versuchst du Beispiele zu finden?
+
+I5: Ja, weiß ich nicht. Irgendwas, zum Beispiel so ein Elastic Search oder so, weiß ich nicht, wenn du da irgendeine Größe einstellen musst, also das hatte ich mal das Problem, dass die Instanz auf dem man das hochgefahren hat, dass die einfach zu wenig RAM hatte und da irgendwie weiß ich nicht. Da musstest du irgendeine Environment-Variable einstellen und das beschränken und dann musstest du auch noch irgendeinen Sicherheitsmechanismus aushebeln und so. Ich meine sowas findet man dann immer meistens. Aber das kann auch sein, dass du da an Größen und so ein bisschen was umherschrauben musst auch. Oder wenn wir unsere eigene Software haben, dass du dann halt sagst du hast jetzt irgendwelche REST-Pakete, da sind halt, weiß ich nicht, tausend Objekte drin, dann konfiguriert man ein bisschen rum und versucht das zu optimieren, dass man halt im Endeffekt mehr Objekte sozusagen pro Zeit dann halt dadurch kriegt oder sowas, durch die REST-Anfragen. Ja, sowas. Oder wo es auch so ganz krude Beispiele gibt, zum Beispiel wenn du Lambda-Funktionen in AWS hast, da kannst du halt auch gucken. Gibst du dem Ding mehr RAM und machst die Pakete kleiner, dann funktioniert das vielleicht im Endeffekt mit weniger Kosten oder versuchst du da halt was einzustellen. Das ist halt auch reines probieren und da gibt es halt auch nicht so die Lösung. Da kann man halt immer noch mal so ein paar Stellschrauben irgendwie drehen und optimiert dann halt für sich sein Ergebnis so ein bisschen. Oder fixed dann halt ein Problem. Aber das ist dann halt meistens wirklich so das allerletzte, was man noch versuchen kann, weil man wirklich gar nichts dazu findet.
+
+R1: Okay, neben Doku lesen, (?43:50 )
+
+I5: Sonst gibt es ja nicht mehr viel würde ich jetzt mal so sagen. Also wenn du keine
+
+R1: Google oder StackOverflow oder so?
+
+I5: Jaja, also das zähle ich ja mit dazu—
+
+R1: Das ist für dich Doku, oder?
+
+I5: Nene, Doku oder du suchst dir halt ein Beispiel wie es jemand anderes gemacht hat. Also da zähle ich solche Sachen mit dazu, weiß ich nicht, StackOverflow und all sowas natürlich. Also das ist ganz klar. Da zählt für mich halt nach so einer Recherche, da ist immer das Netz mit dabei. Also einfach googeln und gucken hatte das Problem schon jemand und ja, da findet man eigentlich immer meistens was. Und ansonsten wenn das jetzt halt alles nicht hilft—das meinte ich jetzt eigentlich damit im Vorfeld—dann müsste man halt einfach rumprobieren.
+
+R1: Kollegen… wird da irgendwie bei Kollegen gefragt, oder?
+
+I5: Natürlich, klar. Also wenn man jetzt gar nicht weiterkommt, dann fragt man natürlich auch einen Kollegen. Das ist halt immer so sein, erstens Doku lesen, zweitens nach dem Problem googeln, drittens Kollegen fragen und ansonsten halt rumprobieren wenn es gar nicht geht. Vielleicht drittens, viertens würde ich vielleicht auch noch mal tauschen, also vielleicht kann man vorher auch noch mal ein bisschen rumprobieren und dann vielleicht einen Kollegen fragen, aber ja… ansonsten, genau.
+
+R1: Welche Strategien hast du denn um solchen Konfigurationsfehlern vorzubeugen?
+
+I5: Vorzubeugen? Ja, man guckt sich halt, wenn du jetzt zum Beispiel ein neues Docker-Image dir ziehst und willst halt irgendwas ausprobieren, dann gucke ich mir meistens immer schon mal so eine Readme an wenn es die gibt. Und ich entscheide auch welches Dockerfile ich nehme, ist es immer, ich will es von der Firma am liebsten direkt haben, also nicht irgendwie von so einem privaten Repo oder sowas, keine Ahnung. Und gucke einfach, ist das gut dokumentiert, steht alles drin, schaue mir mal halt so ein bisschen an, was kann man alles einstellen und was kann man eventuell auch nicht einstellen, versuche dann auch mal auf GitHub sozusagen mir dann dazu noch was anzugucken, da stehen auch immer noch mal ein paar interessante Sachen drin. Und ja, versuche das eigentlich dann im Vorfeld schon mal ungefähr abzutaxieren(?46:06 ), was mich da erwartet. Und dann liest man sich halt, weiß ich nicht, ein paar Tutorials noch durch, da sieht man auch immer noch mal, was die Leute für Probleme hatten, also das ist immer ganz interessant, wenn man die Kommentare zum Beispiel unter einem Tutorial durchliest, wo dann einfach nur steht „Ja schön, dass du das gemacht hast, aber bei mir funktioniert es einfach nicht. Und dies und das und jenes und das sind die Probleme.” und da kann man auch schon mal sehen, was könnte einen erwarten und dann kann man sich auf ein bestimmtes Problem auch schon mal ein bisschen einschießen und guckt dann schon mal nach was es da schon dann auch an Lösungen gibt, die da halt auftreten.
+
+R1: Okay, also Kommentarsektion auch wichtig (? 46:45 )
+
+I5: Ja, auch. Also wenn du halt ein Tutorial findest, was gar nicht funktioniert, dann programmierst du es halt nach, kommst selber zu dem Fehler und dann kannst du sowieso schon mal da nach gucken. Das kannst du halt auch schon im Vorfeld machen. Und suchst dir dann eventuell ein anderes Dockerfile aus oder sowas. Also Dockerimage. Was das Problem dann halt vielleicht besser löst. Yes.
+
+R1: Okay. Dann… welche Verbesserungen würdest du dir denn wünschen? Also wenn du jetzt irgendwie dir was wünschen würdest hinsichtlich Konfiguration von Softwaresystemen, Frameworks und Infrakstruktur und so weiter. Was könntest du dir da vorstellen?
+
+I5: Naja, cool wäre—also ich glaube Docker Swarm fehlt das so ein bisschen—es gibt diese Docker Secrets, also es wäre halt richtig cool wenn man die—das geht in Kubernetes glaube ich auch—wenn man die zentral verwalten könnte, die ganzen Secrets. Du hast halt irgendeine Service-Architektur, die fährst du hoch und dann hast du halt irgendwo eine Sektion oder irgendein Tool, was diese ganzen Secrets verwaltet und die in dein System bringt. Die dann auch dafür sorgst, wenn du die mal updaten willst, dass die das einfach macht. Du willst nicht jeden einzelnen Part deiner Anwendung halt ändern musst. 48:06 Die auch vielleicht ein bisschen guckt, wann müsste ich ein Secret einfach mal ändern. Wie lange gibt es dieses Secret schon und muss das eventuell mal neu gemacht werden oder so was. Welche dürfen nicht geändert werden? Das ist ja auch noch mal so ein Punkt, ne? Also wenn du irgendwie was in deiner Datenbank encryptest und hast dann—so in RAIDs gibt es das zum Beispiel, da hast du so einen Secret Key und auf Basis dessen encryptest du irgendwelche Sachen in der Datenbank, dann darfst du den auch nicht ändern, weil dann kannst du das nicht wieder decrypten und so Geschichten. Also das sollte so ein Tool dann halt auch können. Und dann wäre es halt cool, wenn man eigentlich die Möglichkeit hätte das irgendwie quasi einheitlich zu verwalten und wenn man da irgendwelche Alarme hätte und sowas in der Art.
+
+R1: Und was würde dir jetzt vielleicht helfen um schneller Konfigurationsfehler zu bemerken oder zu identifizieren oder zu beheben?
+
+I5: Na, die kriegst du eigentlich immer relativ schnell mit. Also wenn es nicht funktioniert, dann funktioniert es nicht. Das sollte eigentlich deine Pipeline abfangen. Also wenn du irgendwas falsch konfigurierst, also selbst wenn es bei der technischen Konfiguration so, dann wird dir das deine Pipeline abfangen. Bei der fachlichen Konfiguration sieht es natürlich ganz anders aus. Also da müsste es mehr Prüfmechanismen geben, also die irgendwie, wenn eine Konfiguration zum Beispiel keinen Sinn ergibt. Du hast halt, weiß  ich nicht, du willst halt zwei Sachen gleichzeitig abrechnen oder du hast irgendwelche Abrechnungszeiträume, die sich überlappen oder irgendsowas. Also es gibt garantiert irgendwelche Kombination, die fachlich in deiner Anwendung gar keinen Sinn ergeben, die zum Fehler führen. Und das wäre natürlich cool, wenn man die ausfiltern würde. Aber dazu bedarf es halt Integration Tests. Also die sollten eigentlich durch gute Tester im Vorfeld halt auch abgefackelt(?) werden. Das es halt gar nicht dazu kommen kann. Aber das wäre schon cool, wenn man das auch irgendwie abprüfen könnte. Also wenn so eine Möglichkeit auftritt, dass man halt eine Fehlkonfiguration gemacht hat, dass das irgendwie dem Nutzer auch sichtbar gemacht wird, dass es keinen Sinn ergibt, was jetzt getan hat oder so. Dass es halt irgendwie überprüft. Oder dass es überhaupt erstmal ein Tool gibt, also das betrifft uns jetzt halt auch, dass man sieht was hat man an Einstellungen vorgenommen überhaupt, das das irgendwie erstmal auflistet. Wie unterscheidet sich das vom Standard? Solche Sachen halt.
+
+R1: Okay, super. Dann haben wir eigentlich bloß noch hier ein paar Fragen zu dem Team… ja, Hierarchie kann man ja so—Hierarchieebenen in Organisationen. Und zwar, habt ihr, also ist eure Organisation in Hierarchieebenen aufgeteilt? Und auf welcher Ebene würdest du dich da sehen?
+
+I5: Eher nicht. Ich glaube wir haben nur zwei Hierarchien, das ist der Chef und der Rest sage ich mal. Und das ist eigentlich nicht so aufgeteilt, dass mal da irgendwie einer über dem anderen ist. Das ist mehr so alles eine Ebene. Es gibt halt so eine Art Teamlead und den Chef und das war es halt, glaube ich.
+
+R1: Was sind da für dich die Vor- und Nachteile davon?
+
+I5: In Bezug auf Konfiguration, oder?
+
+R1: (? 51:37 ) für dich persönlich für diese Hierarchieweise.
+
+I5: Naja, Vorteil an einem Teamlead ist halt, wenn man halt ein Problem hat, entscheidet der das am Schluss. Weil was ziemlich gefährlich ist, wenn du so ein flaches Team hast und jeder hat halt eine andere Meinung, dann kommt man nie zu einem Ergebnis. Wenn dann irgendwie alle anderer Meinung sind. Das ist dann an einem Teamlead schon ganz gut. Wo so ein Teamlead einen halt ein bisschen ausbremsen kann, wenn es um neue Ideen geht oder sowas. Also wenn der Teamlead halt irgendeine Meinung hat, die er vorgibt, dann ist es manchmal auch schlecht da andere Wege zu finden, andere Lösungsansätze. Das ist immer so ein bisschen Nachteil für mich und ja, ansonsten ist eine flache Hierarchie eigentlich recht cool. Macht das Arbeiten halt schon leicht.
+
+R1: Wenn du jetzt eine inhaltliche Frage hast, gehst du dann eher zum Teamlead oder zu deinen Kollegen? Und warum zu denen?
+
+I5: Das ist halt ein bisschen die Gefahr. Der Teamlead wird dann halt immer so als derjenige angesehen, der alles weiß und der sowieso dann halt entscheidet. Da ist dann halt immer die Gefahr, dass man seine Teamkameraden dann einfach quasi gar nicht fragt, weil im Endeffekt, weil im Endeffekt entscheidet das sowieso dann der Teamlead. Ja, das ist schon ein bisschen Thema denke ich. Aber ansonsten könnte man ja trotzdem jeden anderen auch fragen. Also das ist schon—
+
+R1: Also gehst du nicht wirklich nach (?)-Wissen, sondern eher wer macht am Ende die Entscheidung?
+
+I5: Ja, so in der Art. Wenn man die Entscheidung trifft, dann hat man halt auch quasi das Wissen. Das ist immer so ein bisschen miteinander verkoppelt sage ich mal. Also zumindest vom Gedanken her. Also oder vom Empfinden her sage ich mal.
+
+R1: Gibt es denn für verschiedene Themen, die ihr habt, verschiedene Ansprechpartner bei euch?
+
+I5: Also wir sind ein relativ kleines Team, es sind vier Entwickler und… eher nicht, also kannst du jeden alles fragen. Das ist eigentlich relativ offen.
+
+R1: Wenn dann aber im Team irgendwas nicht beantwortet werden kann geht ihr dann auch zu anderen Teams bei euch?
+
+I5: Das trifft bei uns eher nicht zu, sondern wir sind immer eher so die letzte Instanz sage ich mal. Wenn bei uns was nicht beantwortet werden kann, dann kann das quasi keiner beantworten, dann müssen wir irgendwie anders eine Lösung finden oder es wird halt das Problem untersucht und es wird ein Bug draus gemacht, keine Ahnung oder sowas. Von daher fragen wir dann auch niemand anderes, weil wir müssen es beantworten im Endeffekt.
+

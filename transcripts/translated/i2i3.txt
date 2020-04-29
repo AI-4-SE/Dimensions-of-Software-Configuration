@@ -1,0 +1,638 @@
+R1: We want to find out practically how software - yes, in your environment - is configured. So it's really about configuration, what problems arise, how you fix them, what processes are there, how to manage it, where there is room for improvement. The problem is, in the academic world it is that real practice, let me put it positively, has limited insight and you often come up with problems because they can be complex, but we don't know really where problems happen somehow in daily life, so to speak. And I have not intentionally said what we mean by configuration so as not to pre-bias you in any way, i.e. to bring it in any direction. Exactly ... and what is still, we are still interested in the second part, a little bit like team structures in general. So in a second, let's say, research direction, we analyze team structures of open source projects, who is working on which file and when, can be seen through the commit history and we want to find out a little bit whether that is also the communication structure are in the team. So whether people talk to each other and so on. Or whether it stops then ... So Conway's Law is somehow so (I2: on a smaller level, so to speak) exactly. These are so practical the goals and what we're going to do practically with the answers, we'll sort of label them, group them and so on, then we'll also adjust the questionnaires accordingly and then we practically want to make a certain theory of what are now actually software problems, how can you solve them, what are strategies from developers and then it is also practical feedback to use for all those who take part, to see how others do where the problems are and then hopefully we can then show the solutions or at least say "here researchers, have a look" and they will solve the problems you may have or something. Exactly, that's a little bit the practical use and second use maybe that you yourself reflect on the work you do. So most of the time you have a tunnel view and now you are through the questions, maybe you have to, you can take a step back and say "oh yes, I actually do that and that's somehow most of what I do" and such continue. Exactly, that's how it is in the preliminary discussion. Are there any questions or anything?
+
+I3: No, not at first. We are looking forward to the right questions.
+
+R1: Okay, so we get on very easily with such a general part. So that we can first ... classify and the first question would be, in which domain you work, mainly.
+
+I3: Professional?
+
+R1: Yes ... technically and technologically maybe.
+
+I2: Nagut, technically, you can answer that very easily. We are in the food sector, in the food e-commerce sector, so we just sell food through online trading.
+
+I3: Whereby the platform actually gives everything. So it's not limited to food. So there is, in principle we are working on an e-commerce platform. Is currently mainly used for food, with various fulfillment models actually at the end, i.e. delivery service, pick-up service, package. In other words, different shipping channels with different fulfillment structures that are behind it. Stop on the ... business is conditional, house door is delivery business, you have a different workflow than when you send a package. Exactly, that is, so to speak, this very high — high flight level, as the saying goes.
+
+R1: If you look at ... the ... in software development in the domain, so you, frontend, microservice, DevOps, backend, security, what's your domain?
+
+I3: So microservice is, our architecture is microservice-based. The concept is such that we usually also provide front-end components in the microservices. So we have our own service, which then generates a large page from these snippets, so to speak. In theory, this means that there is a front-end component in every microservice, but it doesn't have to. So in my team, for example, there is - we just generate invoices - there is no front end. We just consume data, generate invoice -
+
+R1: Where would you position yourself now exactly?
+
+I3: Then more like a backend developer in the case, so to speak.
+
+I2: Exactly, from my side, we definitely have UI components in it and we are a completely cross-functional team. So we have people with us who do the frontend, myself I am a backend developer, some of whom have DevOps tasks. Yes, so we share it very well. But also everything microservice-oriented.
+
+I3: That's just the way it is. We have cross-functional teams everywhere. So we have DevOps tasks in the team, frontend and backend. So there is no dedicated frontend team. So every team will do it if necessary.
+
+R1: Okay, almost like a curriculum. So what is your role when you think maybe in Scrum or something? What would be your role there?
+
+I2: In the Scrum environment, normal developer.
+
+R1: developer.
+
+I2: Yes, exactly.
+
+R1: So there are also testers or product owners or scrum masters or whatever.
+
+I3: So the tester itself, we don't have it. This is also more of a cross-functional story that is also lived on the team ... that is, in the team. But Scrum Master and Product Owner are also roles that we have.
+
+R1: Yes ok, all right. Yes, maybe now what share would you actually do programming and software development directly, probably then a high proportion or something. Don't know what is the proportion of your daily work with you?
+
+I2: Actually high. So ... of course you have a lot of meetings through the Scrum workflow and you always have something around it, but I would say 80% determined, right? (I3: Yes) So two days in a sprint are already lost for meetings.
+
+I3: I would say yes.
+
+I2: One can say
+
+I3: But what we just don't have is that we don't have such a high proportion of requirements. So speak, we do not first write a specification and just model everything, but it is implemented immediately according to requirements, so mostly ... Because you have small, manageable services thanks to the microservices architecture. Most of the time you only have changes in a service that somehow relate to such a story. Accordingly, there is also the know-how about this service in the team and then you have to document the interfaces externally, but not what is actually in your service.
+
+I2: A lot of the documentation work is passed on to us at the PO, (I3: exactly) because it specifies a lot of things and then it says in the user stories what the requirements are and that's mostly what is after is communicated outside, outside the team. That is why we have very little documentation effort within the team.
+
+R1: Ok. How much experience do you have in software development? Maybe in years, that's the easiest.
+
+I3: When did I start? 96?
+
+I2: You probably have longer than me.
+
+I3: 96? 22.
+
+R1: 22 years. And maybe in the environment now?
+
+I3: Where am I now? Probably 12, 15.
+
+I2: Exactly, so I've actually been like this since my studies, I've definitely been working in the e-commerce environment and that's now 9 years. 9 years, whereby I worked as a tester in the e-commerce environment for the first 5 years. But also as a test engineer, which means that I accompanied the software developers while writing the tests and wrote automated tests, load tests and the like. So actually software development only with a focus on testing.
+
+R1: How long have you been with your organization?
+
+I3: So I since June last year, almost 1.5 years.
+
+I2: And I since September last year.
+
+R1: Ok, so ... exactly, and that's a little bit important for us for this network, so a question, since when have you been in your current position.
+
+I2: So since September last year, that's relatively easy to answer.
+
+I3: Actually, since June last year. I only change next week.
+
+R1: Oh, okay, just ascending, or I hope it is an ascent.
+
+I3: No, there are not so many positions here to be honest. So especially here in [location] there are agile teams and here there are only product owners, Scrum masters and developers. And with us, because we tend to work internally, so to speak, there isn't the junior, the senior and I don't know what is coming, principal.
+
+R1: And what will it be? Scrum master?
+
+I3: There is, so to speak, a bit of an overarching role — squad architect — that's what we are. This is a bit based on this Spotify organizational model. I don't know, do you know that?
+
+R1: Ne.
+
+I3: So that means we have several platforms and these platforms are then organized by Tribes - as if they call themselves Tribes - that's just the group of people who look after them. And then they are organized again in squads that manage a domain, so to speak. And in E-Com, that's just a little bit divided on the customer journey in the shop. There is site landing, that's all there is to landing pages. Then there is product discovery, which is about product detail views, catalog views and everything (I2: Search) ... Search. Exactly, then there is checkout, that is the actual checkout process and then there is shop fulfillment, that is where we belong. This is the downstream process after the customer has ordered. And because we have three real IT architects who take care of the tribes. But because you just stay in the tribe, I don't know, 20 or 25 teams make it a bit difficult for such an architect to look after everyone and then there is such a squad architect at squad level who does it a little bit of support for the teams ... in their implementation. So also a little communication between the teams, then it helps with rough and detailed planning workshops and something like that.
+
+I2: Exactly, problems are passed on to the architects.
+
+I3: Exactly, that is, the communication of the architects also passes on to the teams.
+
+R1: Yes, that's an interesting communication hierarchy too.
+
+I3: Exactly, and then there is also on the other levels, then there is also, there is just the product owner in each team, but then there is also a chief product owner who works at the tribe level is responsible ... not, that is not story level and not (? [12:03]), but then initiatives have to be planned and then the coordination with the teams, who does what and who is involved in which initiatives to share.
+
+I2: It is important to mention that we also have a squad architect, who is technically a bit higher, but he does not have direct authority to issue direct instructions to the teams. The teams are still autonomous, but they can turn to the architects if there are any problems and of course the advisory function should be maintained somehow. But it is not now that the squad architect now says "So, but now you are using _the_ technology, because I think it's cool right now."
+
+I3: So that's all this servant leadership issue, it happens on all levels, actually then. (I2: Exactly) So only supportive and enablend that they can just do their job.
+
+R1: Okay, then the last question from this general part. Which frameworks and tools do you use so often? We want to get a certain impression.
+
+I2: Yes, the question is very interesting because the teams are extremely autonomous with us. That means we can develop freely with regard to frameworks and tooling. By default we are from, we are bound to the JVM. Which is only half true. So we also have teams that program with Go, which is not necessarily now ... (I3: I've already told you, there are just such exceptions -) there are just exceptional things, but in general, it's mainly languages ​​that we use who are supported by the JVM. So Java, Kotlin, Scala ... Closure too?
+
+I3: Closure ... there is also a service in Closure.
+
+I2: Yes.
+
+R1: And what are you doing now specifically? Because we have to sort of answer the questions to your
+
+I3: So we are, so I would say in total I think 70% is written in Java I would appreciate. (I2: Yes, Java) So we make Java. Actually all teams here.
+
+I2: And mostly due to the microservice structure, also with Spring Boot. So there are probably very few who program with Java and then do not use a spring boot, right? (I3: I would too, I think so too) So most will be. Yes and so when it comes to tooling, whether Maven or Gradle, that's totally versatile, right? (I3: Yes) So even at our location there are differences. Some with Gradle, some with Maven. It's up to every team. Otherwise, it might be interesting from the deplyment point of view: We use Ansible for deployments. The whole thing, of course, in the Docker. Technologically speaking.
+
+I3: We use Jenkins for CI.
+
+I2: Exactly.
+
+R1: databases?
+
+I3: Postgres is just a database, is used everywhere as a database and I mentioned Kafka as a measurement - actually an asynchronous event bus, not a message broker. Event bus.
+
+I2: There are a few exceptions to databases. When it comes to search, product search (I3: yes, clearly). Of course this is not done in Postgres, it is done with sonar. Now we have no shares here at the location.
+
+I3: Otherwise there is still, so we do monitoring with Prometheus, Grafana. Logging, so this typical ELK stack. At least now, as far as our teams are concerned. So it still looks a little different when you look at those who are in the Google cloud, because you have other technologies that the cloud simply provides. So there is Stackdriver and whatever. Exactly. And at the moment we are building, so ... we are building Docker containers from our services, so to speak, and they will then be deployed and at the moment we are still in our own, with a hoster in our own environment with Docker Swarm and will change later when it is goes to the Google Cloud on Kubernetes. But that's actually just the final deployment. We will continue to build Docker containers for now. So there it stays.
+
+I2: Yes, not much will change for us to build the services, right? (I3: Ne) This is actually just the deployment, which changes a bit and there is mostly shared stuff. (I3: Yes) Exactly.
+
+R1: Okay, great.
+
+I3: Otherwise there is still ... in some cases Redis is still used, a little bit like this (I2: Ahja, exactly. We also use that) such a datastore. What did I really want to say? Maybe for the test. So many write their tests with Groovy and Spock.
+
+I2: UI tests then with Geb and Spock (I3: Exactly). That is a very good combination. But we also use JUnit, so it's very classic.
+
+R1: Okay. Yes Perfect. So, that's now so that we can get practically an insight into where you are in software development, now we come to the configurations. And the first question is, what do you understand, what would you understand by the term configuration in your daily life now? So not everyday life — work life, yes?
+
+What is configuration for you?
+
+I3: This is a very diverse topic.
+
+I2: Exactly, it could be natural in the simplest environment, that's all that can be dynamically taught to a service, right? On parameters. So be it somehow communication to any authentication services, keys that you have to reconfigure somewhere for something to work. Exactly in the area where he is running.
+
+I3: Well, im — so you could, I would go a little further, actually it is, so to speak, when I can control a piece of software from the outside so that I can adapt it. So that it works differently. So that I can just give him a configuration to control his function. So theoretically, I have a couple of classes that offer me a certain functionality, which I can instantiate multiple times with a different configuration, which then do something different. Or act differently. Depending on how I configure it.
+
+I2: Yes, that's right. If you don't need to go outside of the service, that's true of course.
+
+I3: So, we have special, so we have something like that. We have templates that we use to generate PDFs and that is actually always the same template, but it is also easily configured from the outside to ultimately produce something completely different. Because it only changes in two or three places.
+
+I2: Yes, that's the whole world of jumping in itself, right? So since the whole class hierarchy in there, it is constantly reconfiguring itself. Yes exactly.
+
+I3: Yes, and outwardly you can keep opening it up. So you have your application that you are configuring. Then you just have your application in the respective environment and that it is deployed and then you have a new configuration that differs again there.
+
+R1: Exactly, then maybe the connection question fits somehow, to what extent does a technical and a technical configuration play a role in your work? So from a technical point of view something with food or e-commerce would be a certain configuration and would be technical, yes—
+
+I3: Yes, you have. So the technical configuration is something like, what does a log file look like, what the application writes. So what patterns are used to structure that. And from a technical point of view, we also have, so from which date on which invoice format is created. Or which cost center number must be on the invoice, such things. Or in what format I have to transfer what to a third-party system, so.
+
+I2: It could be technical, it could also be that you simply switch certain features on and off. We do that pretty well, right? That you somehow don't have certain things in the shop at all, if you don't belong to a certain user group or so on, is also possible.
+
+I3: Yes, there is also the fact that you stop something… just decide on the basis of the customer who is now using our system. So that you are not actively configuring as a team now, but that on hand - so the best example is, for example, when you come to our shop, you first have to enter the zip code and based on your zip code it is decided which services are available to you. So whether you can have it delivered, or whether you can only pick it up or whether you just keep the package, so that will be decided there. In the broadest sense, this is actually something that actually corresponds to the functionality of the entire platform.
+
+I2: So actually configuration from a user perspective, right? (I3: Yes) I didn't even mean that, but from a technical point of view, our PO can decide which panel he would like to have displayed somewhere, because they may already have reached a certain level of maturity. That is stop, it can also be configured. So at least we design it so that it can be configured. Yes.
+
+I3: There is also another aspect that is a little bit like that, so that's a little bit like it. Due to the autonomy of the teams, it is also desirable that you just use this toggle when you have implemented a certain feature - you already mentioned this - so when you are finished as a team with this feature, you can do it correctly put into production, it is just deactivated via such a toggle. But is actually already present in the productive code. So that when the time comes, so to speak, that all teams are finished with their implementation, then everyone just turns on their functionality and then a feature, so to speak, that affects several services is then activated. Everything is not necessarily configured and redeployed again, but everything is already available and can then be switched using a UI.
+
+R1: So that's pretty broad, so technically and technically the deployment process is probably also included, which you then write in the Docker container here, which port and so on.
+
+I2: Yes, maybe we can differentiate between two things. Between the things that you can reconfigure in live operation and the things that can only be reconfigured by deployment. We have always had experiments in the past. Usually it is the case that you can actually deploy such a microservice relatively quickly, which means that in many places it is actually not necessary to say now that you need dynamic configuration. You just reconfigure something in a file and just deploy it again and then the container is rolled out again and that's just there. But there are also scenarios where this is not the case. For example, we have an old application that is very sluggish, it first takes a minute to boot up, I know, then it is somehow ... so we are currently converting it, that it is somehow better according to our microservice principles works, but currently we still have the problem that we cannot roll it out at any time. That has other technical problems. And if you just want to switch it on or off or change things, you can't even do it on-the-fly and a dynamic configuration is also necessary. I mean you’re doing something like that, right? Don't you use — what is it called? - (I3: Well, Toggles) toggles.
+
+I3: Exactly, that just stops, so you can incorporate feature toggles into your application and get it - that will automatically generate a website that you can use to switch these features on and off, which can provide parameters.
+
+I2: That would be the dynamic variant. Operational.
+
+I3: So for example we have systems that collect orders from us. You can just say that, it doesn't get any automatically at first and then you can just unlock individual orders and see if the system works properly and if you then just said "ok, works" with two or three orders, you can stop switching back to this automatic mode. Without you having to deploy every time.
+
+R1: So with you, that sounds technical again, would switch these technical features on and off again.
+
+I3: That is also partly for a technical acceptance. Especially if you do too. We also have systems that are in [Company Name 2], which do not belong to [Company Name], which is sometimes a longer process. Where they sometimes need a day to look at something. Whether the content is correct, so you need something like that.
+
+R1: And what would you assess what is the relationship in your daily work, how do you look at the configuration of your continuous integration, deployment things, or rather the technical direction, or both?
+
+I2: So with us in the team, we usually do the configuration once and then we don't need to look at it for a long time. So right now when it comes to configuring our services, we set it once and then nothing happens for the most part, unless new technical requirements arise that require new configurations, but then that happens that happens rather rarely.
+
+I3: Well it is with us, well, it always depends on what topics are to be implemented. What always plays such a big role is whether this feature should be available in the production environment and to what extent. And then it is always decided whether we need an extra configuration for this. And you always have to consider whether — well, you often already have components that are configured in some form, but then you have to decide, this is now a configuration that is for the application, but the same in all environments , or is it necessary, do you have a different configuration for integration, preproduction, production? So the effort is different if you have to implement it. But actually the configuration part of the daily work is not that big, so to speak.
+
+I2: Yes, it could increase in part if you just work locally and just develop something new, where you always have to switch something, have to reconfigure it, but normally that's also the case that we have preconfigured our local surroundings so that there there is actually little to do. Can (I3: So especially ...) just be in individual cases—
+
+I3: with Spring you can also have local configuration files that activate with different profiles, so it can also work relatively well locally without you having to reconfigure the entire application so that it runs locally, but you just have it a profile that is active and then gets an environment that it runs locally on your computer.
+
+R1: So you would say as a percentage per week, more like this ...
+
+I3: below 10%.
+
+I2: Yes, I think so too.
+
+R1: Ok. Yes, a question I have heard a little bit about whether you typically work with the configuration of a monolithic system. So let me say, maybe an example, you could configure Postgres if you use Postgres. So you could configure the database that you use. Or you configure your monolith that you have, so to speak. Or whether you configure one, the infrastructure, rather overarching. So what's more, typically. Or don't you configure your Postgres, your databases?
+
+I3: Ne. Usually not.
+
+I2: Usually not, actually.
+
+I3: However, the Postgres database configuration also happens in the same way as the configuration of our application. So Ansible is also used to roll out and they also use a Jenkins who rolls out the postgres. So speak, everything is actually automated. Even setting up the Jenkins, there is a Jenkins that builds Jenkinse. And that rolls out to the teams. So you also have a configuration file - it is also configuration, we may not have mentioned before - where you basically preconfigure your Jenkins and it will then be rolled out. And then it's always the same. That's what it's really about. So that you don't now configure your Jenkins so that it goes for your projects and then the team member may not be there and the thing is gone and then the other team members do not know "what did he configure there?", But there actually this Infrastructure as Code, so that's an important topic in the whole company.
+
+I2: That's right.
+
+I3: But we have, especially this type of configuration, which we have relatively little to do with. So that's just when you set up a new service, you initially enter it in your Jenkins configuration, for example. You configure in your service yourself how the Jenkins should build, but that's proportionately all pretty low. And such large infrastructure components, such as databases and such, there are extra platform teams that configure and provide this infrastructure, I say.
+
+R1: Yes. Ah okay. So there are special teams.
+
+I3: So there are platform teams too.
+
+R1: Ok, so -
+
+I3: I don't know, is that enough? Does it answer the question?
+
+R1: Yes, that really answers the question. Perhaps one last thing about these rough configuration questions, whether you, how important would you rate this in general in software development / software engineering for this configuration aspect? That you can configure and that everything is configurable or something. Would you say, well, if you - so I may not want to now - rather on the importance (?).
+
+I3: Do you want first?
+
+I2: Well, I ... we are already faced with the problem that we have different environments in which we re-deploy. And against the background alone, it is immensely important, because depending on the environment where you are, your own system, what you want to deploy, has to behave completely differently. Or at least behave differently in parts. Be it just that you have to talk to other services because they are in a different environment. That is actually enough to be configurable. Or can also simply, I want to go back to the topic of features, that can also be. You're just testing in one environment, maybe you're testing a feature that you don't want to have live in production. Muss aber zwischenzeitlich natürlich trotzdem irgendwas auf Prod noch ausrollen können und will sich ja da auch nicht versperren. Also braucht man eine unterschiedliche Konfiguration und ich denk schon, extrem wichtig.
+
+I3: Ja, dann hast du halt auch, also was halt auch noch reinspielt ist zum Beispiel das Thema Security, ich meine du hast ne Produktionsdatenbank, da soll vielleicht nicht jeder das Passwort kennen. Während in dem Int-Environment, da gibt es halt irgendwie, da kann von mir aus jeder drin rumschreiben, aber du hast halt dann auch diesen Datenschutz-Ansatz, wo du auch sowas verhindern. Also auch Zugriffe auf Drittsysteme, da dürfen halt auch die Zugangsdaten nicht einfach jedem verfügbar sein. Und  du kannst ja auch nicht für jedes Environment dann eben eine eigene Version deiner Applikation bauen. Das ist ja auch, daher halte ich eben Konfiguration für extrem wichtig.
+
+I2: Genau. Also wir können halt auch Information, Zugangsdaten für das Produktivsystem können wir selbst auch nicht einsehen. Das wird uns halt generiert im Vault. (I3: verschlüsselt) Wird AES-verschlüsselt, da kommen wir also selber auch nicht dran. Das Plattform-Team stellt das dann eben zur Verfügung. Teilweise auch automatisiert und dann liegt das eben dadrin und ist halt auch für niemanden mehr einsehbar. Das ist eigentlich schon ganz gut. Das heißt auch selbst wir als Team, wenn wir auf Produktivsysteme wollen, live, müssen wir beim Plattform-Team anfragen wenn wir da was wollen. Also da haben wir schon einen ziemlich hohen Standard, glaube ich.
+
+R1: Vielleicht, das steht jetzt zwar nicht drauf, aber was für mich so aufregend ist auf die Frage, ihr sagt ja, dass es extrem wichtig ist. Habt ihr eigentlich in eurer Ausbildung, wurdet darauf denn vorbereitet, sage ich jetzt mal? In Lehre und so weiter? Auf diesen extrem wichtigen Aspekt?
+
+I3: Puh, das ist schon lange her. Ne, das ist glaube ich eher Erfahrung ja auch erstmal. Und hier kriegst du natürlich schon sozusagen, wenn du jetzt hier anfängst, diese, wie wird das halt bei uns gehandhabt, das kriegst du halt schon irgendwie vermittelt. Also, das ist halt. Du kommst ja dann halt auch als neues Teammitglied dann üblicherweise zu einem Team, wo schon, oder bist dann halt eben zumindest für eine gewisse Zeit lang bei einem Team, wo so ein bisschen Know-How-Transfer stattfindet und dann kriegt man das halt auch mit.
+
+R1: Aber ihr habt früher jetzt keine, sage ich jetzt mal, Ausbildung —
+
+I3: Ne.
+
+I2: Ne, also tatsächlich an der Uni ist es ja meistens auch so, also ich komme selber von der FH, die ja sehr praktisch orientiert ist, selbst da ist es so, dass man in den einzelnen Projekten, die man hat, ja meistens einen kleinen Service baut für einen ganz bestimmten Usecase, den man auch nur irgendwie für einen Monat braucht und da braucht man nicht viel konfigurieren. (lacht) Also das ist halt so. Der ist halt so eng zugeschnitten.
+
+R1: Ok, (?) in diesen Software-Lebensphasen (?), Requirements-Engineering, sonst was, meint ihr, dass da Konfigurierbarkeit unterschiedlich wichtig ist, in den einzelnen Phasen und…  also sollte man vielleicht schon in der ersten Phase, Requirements aufnehmen, da auch schon auf Konfigurierbarkeit achten? Wahrscheinlich dann auf fachliche eher.
+
+I2: Naja, bei uns ist es ja so, dass das Thema Requirements-Engineering relativ knapp gehalten wird, weil wir halt agil auf die Bedürfnisse reagieren. Also das heißt wenn wir halt es für nötig befinden, dass wir an irgendeiner Stelle konfigurierbar sein müssen, aus irgendwelchen Gründen, dann kommt das halt agil dazu das Thema, ne?
+
+I3: Obwohl halt auch manchmal schon solche Anforderungen auch wirklich mir reinkommen. Also ich kann mich auch erinnern, dass es dann heißt, naja wir müssen das jetzt so konfigurierbar machen, dass ab einem bestimmen Datum wird sich das ändern, das muss also konfigurierbar hinterlegt sein, damit wir das ändern können. Aber du hast auf jeden Fall recht, es ist eigentlich Sache des Teams. Also das Team kann halt auch entscheiden einen gewissen Teil der Konfiguration fest im Code zu hinterlegen und wann dann das umkonfiguriert werden soll, ne neue Implementierung zu machen. Also das ist… durchaus in der Autonomie der Teams würde ich jetzt mal behaupten.
+
+I2: Ich meine Konfigurierbarkeit bringt ja auch Nachteile mit sich, ne? Da haben wir ja jetzt bisher noch gar nicht drüber geredet.
+
+R1: Genau, das ist so der zweite Teil jetzt. Also, ja…aber…
+
+I2: Konfigurierbarkeit sorgt ja auch in der Regel dafür, dass der Code etwas komplizierter wird. Das heißt man muss irgendwie mehr Dinge tun um es irgendwie konfigurierbar zu haben. In der Regel ist es ja nicht nur so einfach so an-aus oder irgendwas, sondern… dann hat man, wenn man aus-aus hat, hat man zumindest schon mal zwei Pfade, die man irgendwie bearbeiten muss, anstatt einen. Also das macht es dann schon irgendwie komplizierter und im Team überlegt man sich dann schon, was braucht man wirklich? Gerade so im täglichen Betrieb und wenn man es nicht braucht, sollte man es halt einfach lassen.
+
+R1: Okay.
+
+I3: Ja.
+
+R1: Ja, genau also super Übergang. Thanks a lot. Das nächste Thema ist „Arbeiten mit Konfiguration“. Ja, genau. Das ist die erste Frage, ob das so tägliche Probleme gibt, wenn ich so mit Frameworks—Spring Boot, kann ich ja auch sehr viel konfigurieren mit Annotation und so weiter im Code—habt ihr da irgendwelche Probleme? Meinetwegen mit der Infrastruktur-Konfiguration, oder?
+
+I3: Ja, ich meine das erste Problem sitzt immer vor dem Rechner, das ist sowieso klar. Das hast du halt auch häufig mal, dass das Datum im falschen Format spezifiziert ist oder irgendwie bei dem Konfigurationsparameter wäre es halt irgendwie ein „a“ groß und in dem, auf der anderen Seite ist es klein geschrieben, also das kommt halt auch vor einfach. Dass du dann eben dich wunderst, warum deine Konfiguration an der Stelle zum Beispiel nicht angezogen wird, sondern er halt auf irgendeinen Default zurückfällt, der da. Also das kommt halt dann auch immer drauf an, wie gut ist deine Anwendung implementiert, dass du das halt vielleicht schon siehst, weil sie eben vielleicht deine Konfigurationsparameter irgendwie auflistet oder was auch immer.
+
+I2: Was ja teilweise auch so eine Sache ist, was du gar nicht willst. Du willst ja zum Beispiel irgendwelche Schlüssel oder nicht, willst du ja nicht mit rausloggen.
+
+I3: Ja genau, aber dann hast du halt auch, genau und das vor allen Dingen bei den verschlüsselten Dingen, die du gar nicht einsehen kannst, die dir dann eigentlich während des Deployments von irgendeiner Drittpartei sozusagen bereitgestellt werden. Ich meine, wir sind jetzt noch in dem, wir haben ja jetzt sozusagen unseren Container wird ja direkt konfiguriert. Ich meine, das gibt ja auch solche Varianten, wo du so Config-Server hast. Da musst du dir halt auch Gedanken machen. Wenn du sowas nutzt, ich weiß nicht, ich glaube [andere Firma], die benutzen sowas. Was passiert wenn das Ding nicht erreichbar ist? Funktioniert deine Anwendung noch so wie du das willst? Also das ist halt auch, je komplexer die Konfiguration wird, desto mehr Fehler gibt es natürlich.
+
+R1: Was waren so eure schwerwiegendsten Konfigurations-Fehler, die ihr vielleicht mal hattet?
+
+I2: Naja, jetzt in der Entwicklung selber kann es natürlich, weiß ich, dass wir bei uns im Service, mit unseren Services immer mal das Problem hatten mit einem Auth-Service, dass du vielleicht mal die falsche URL irgendwo drinhattest und dann geht der Service halt gar nicht. Ja, also wenn wir, wir benutzen ja OAuth für die Kommunikation untereinander und wenn man eben mit dem falschen Service redet und der andere versucht das Token zu prüfen und das geht halt nicht, weil das von einem anderen Service stammt, dann ist halt kacke. Ja, das funktioniert dann eben nicht. Aber ich glaube viel schwerwiegender sind solche Sachen, wie Spring Security wo dann irgendwie halt irgendwelche—Spring Security macht dir so Autokonfigurationen oder gibt dir bestimmte Defaults vor, die vielleicht nicht immer so optimal sind. Und naja, es kann dann halt schon mal passieren, dass man vergisst bestimmte Dinge auszuschalten oder so, die dann vielleicht… unter Umständen auf bestimmten Umgebungen halt vielleicht nicht so gut wären, ne?
+
+I3: Naja, Spring Security ist sowieso eben so ein Thema, also da speziell eben wenn es komplizierter wird. Also wir haben hier zum Beispiel auch einen Service, der hat halt eine OAuth-Komponente und hat halt dann noch zwei mal Basic-Auth mit unterschiedlichen Credentials auf unterschiedlichen Endpunkten, weil halt da zwei unterschiedliche Systeme drauf zugreifen. Ja, das kannst du halt auch schwer, also automatisiert, da weißt du nicht, ob du da alle Testcases abgedeckt hast, dann musst du halt dann manuell noch mal prüfen und dann stellst du halt fest „ah, da gibt es plötzlich doch noch einen Fallback, dass du dich mit dem anderen Basic-Auth auch dort authentifizieren kannst.“. Also solche Dinge, die sind halt sehr sehr kritisch dann auch häufig. Vor allen Dingen speziell eben, weil es halt auch eine Security-Geschichte ist.
+
+I2: Ja, alles was security-relevant ist, ist dann halt einfach immer noch mal ein bisschen… heftiger.
+
+I3: Ja und was wir halt auch noch ab und zu haben, dass wir eben manchmal Funktionalitäten von anderen übernehmen, wo wir dann halt über so einen Stichtag gehen. Also die hören halt zu einem bestimmten Datum auf und wir müssen halt an der Stelle übernehmen. Da musst du dann eben auch sicher stellen, teamübergreifend, dass wir auch, also rein die Definition, ich schreibe da jetzt 20.12\. 0 Uhr rein. Du musst auch sicher stellen, dass wir dann das eben mit dem richtigen Datum vergleichen von der fachlichen Seite her. Also der eine nimmt dann halt die aktuelle Uhrzeit, der andere guckt auf das Creation-Date der Order und der andere guckt auf Last-Modified oder was auch immer. Also da muss man sich halt auch, ist halt auch so eine Abstimmungskomponente drin, wo man, wenn du dich da nicht abstimmst, dann kommt es halt zu einer Doppeltverarbeitung über einen gewissen Zeitraum oder es entsteht eine Lücke, die vielleicht nicht entstehen darf. Das ist sowas, was wir halt häufig haben wenn wir so eine Migration macht, dass wir dann über solche… Dinge gucken und… achten müssen.
+
+R1: Welches Tool erachtet ihr, oder Framework erachtet ihr, als schwer konfigurierbar vielleicht?
+
+I3: Spring Security ist (?) —
+
+I2: Spring Security. Naja, aber das liegt aber auch an der Mächtigkeit des Tools —
+
+I3: Je mächtiger es wird, genau, desto komplizierter kann es werden.
+
+I2: Also Spring im Allgemeinen ist ja schon sehr stark konfigurierbar und damit halt auch ziemlich, teilweise ziemlich schwer ne? (Zustimmung durch I3) Ja, es bringt… ich finde konfigurierbar bringt auch noch ein Problem mit… was so Wartung betrifft und veraltete Konfiguration und so weiter, ne? Also das muss man auch irgendwie im Auge behalten. Wir hatten schon immer mal irgendwie einen Service aufgemacht, die leben noch nicht lange, leben ein halbes Jahr und trotzdem guckst du rein und du hast fünf, sechs Properties drin, die irgendwie schon nicht mehr gebraucht werden. Also auch das geht.
+
+I3: Ja, das ist das eine, aber was halt ist, zum Beispiel was uns auch letztens passiert ist, dass du eben auch eben von deinem Framework abhängig bist. Also auch da kannst du ja dann, wenn du auf eine neue Version migrierst an den Punkt kommen, wo dann der alte Weg der Konfiguration plötzlich nicht mehr funktioniert oder anders funktioniert. Wo man halt auch achten muss, also das ist dann halt manchmal so, dass deine Applikation zwar noch startet, sich aber plötzlich gar anders verhält vielleicht.
+
+I2: Ja, stimmt.
+
+R1: Okay, habt ihr noch so Erfahrungen wie jetzt die Kombination vielleicht aus gewissen Services oder Konfigurationen oder Infrastruktur-Sachen zu Konfigurationsproblemen geführt hat? Also nicht (?) weil ein Teil vielleicht kompliziert war, sondern weil ihr zwei Tools, zwei Frameworks miteinander reden müssen oder so? Es geht tatsächlich um Interaktionen.
+
+I2: Es gab mal eine Zeit lang, gab es Probleme mit Kafka, weil das falsch konfiguriert war. Das betrifft natürlich dann gleich mehrere Teams. Aber das liegt halt auch nicht bei uns im Teamhand. Da kümmert sich auch eher das Plattform-Team.
+
+I3: Ne, das war eher auch so ein übergreif— aber das war auch so ein Tooling-Problem, also das lag halt daran, dass wir… also bei Kafka gibt es halt ein Format, also ein Format wie, also richtig so ein Message-Format, wie so eine Message aufgebaut ist und da kommen halt, je nachdem, mit höheren Versionen kamen halt zusätzliche Felder dazu. Und wir waren halt noch auf einer etwas älteren Version unterwegs und noch nicht alle Services hatten umgestellt und dann haben sie aber so ein Monitoring-Tool draufgesetzt, was das das Monitoring aber dadurch erreicht hat indem es zusätzliche Felder in die Messages injeziert hat. Also ohne, dass das die Services selber wussten. Und da wurde dann halt an bestimmten Stellen eben schon ein Feld hinzugefügt mit dem einzelne Services nicht umgehen konnten, wodurch es dann zu Problemen kam. Das war dieses Message-Timestamp irgendwie. (?) oder wie das heißt. Ja, also das war zum Beispiel mal sowas, wo du eben auch sozusagen durch eine zusätzliche Komponente, die plötzlich in deiner Infrastruktur verfügbar war, plötzlich die ganze Konfiguration nicht mehr funktioniert hat.
+
+R1: Okay. Habt ihr noch was, oder?
+
+I3: Nö.
+
+R1: Wir schreiten schon voran. Ja, ihr habt ja schon ein bisschen über veraltete Konfiguration geredet. Erstmal so die Frage wie verwaltet ihr denn eure ganzen Konfigurationen, die ihr habt?
+
+I2: Naja… also wir haben die Möglichkeit, das was für den Service jetzt spezifisch ist, also jetzt was jetzt einzeln ist und was eigentlich auch zwischen den Deployments nicht groß verändert wird, das bleibt halt ganz normal in den Services drin. Ist meistens Spring-Konfiguration, ganz normal in einem Textfile, wird mit Git gepflegt und ist da halt eben verwaltet. Dann können wir allerdings auch über Ansible, wenn wir Container eben Container bauen, Konfiguration injecten in die jeweiligen Sachen und da haben wir eben ein eigenes Konfigurationsprojekt, wo eben auch teilweise verschlüsselte Files drin liegen, wo sich dann Ansible drum kümmert, dass die Settings dann eben in die jeweiligen Container kommen.
+
+R1: Also richtig so Github-Projekt oder sowas (I2: Genau) wo Konfigurationsfile drin liegen?
+
+I2: Genau.
+
+R1: Was ist so der Vorteil, denkt ihr, an dieser… dass ihr jetzt zum Beispiel ein eigenes Projekt habt?
+
+I2: Naja, zum einen ist der Verschlüsselungsaspekt. Also wir haben da halt Bereiche drin, die komplett verschlüsselt sind, AES-verschlüsselt. Und da kommt halt keiner von außen so einfach ran. Und dann die andere Seite ist eben, ich kann meinen Container selber konfigurieren ohne, dass ich mein eigenes Projekt noch mal anfassen muss. Also man hat halt keine Commits, die eigentlich nur Konfiguration ändern. Die eigentlich gar nicht so relevant sind für das eigene Projekt. Das soll halt in unterschiedlichen Umgebungen laufen und dann läuft es halt da.
+
+I3: Genau, das kommt halt auch noch hinzu, dass du das eben für jede Umgebung einzeln hast.
+
+I2: Genau.
+
+I3: Und dann hast du halt noch Konfigurationen, die in einer Datenbank liegt. Also speziell jetzt auch wenn du diese Toggles benutzt um so Feature-Toggle zu implementieren, das legt halt auch die Konfiguration in der Datenbank ab, speziell halt in unserer Microservices-Umgebung, weil du hast ein UI, wo du die Konfiguration änderst, du hast aber X Services, die da eigentlich dranhängen. Du hast ja mehrere Instanzen von deinem Service und du willst ja, dass die sich alle gleich verhalten. Das heißt du schaltest dann dieses Feature um und dann sind halt auch alle Services gleichzeitig umgeschaltet. Du musst nicht jeden einzeln umschalten und das geht dann über die Datenbank.
+
+R1: Und die Datenbank ist ein eigener Service dann, oder?
+
+I3: Die liegt im eigenen Service mit drin. Und dann gibt es halt, die zweite Alternative ist halt diese Redis-Geschichte über die kannst du halt sowas auch machen. Wo du dann eben bestimmte Werte setzen kannst, die dann deine anderen Instanzen eben wieder auswerden können.
+
+I2: Das geht auch, das stimmt.
+
+R1: Und eure, du hast ja gesagt ihr habt Konfiguration für Jenkins selber. Wie würdet ihr das speichern?
+
+I3: Das liegt auch wieder im… also das ist halt geteilt. Wie der Jenkins an sich die Grundfunktionalität liegt halt in einem extra Projekt und wie der Jenkins das aktuelle Projekt jeweils bauen soll, liegt halt mit beim aktuellen Projekt, weil es da halt dazugehört. Weil es kann ja sein, dass jedes Projekt auf andere Art und Weise gebaut werden soll.
+
+R1: Okay, das hört sich alles so gut an, aber gibt es auch Nachteile von dieser Sache? Oder?
+
+I3: Ja, du hast es halt verteilt über mehrere, verschiedene Repositories. Also du musst dann halt, wenn du irgendwie einen Fehler hast, erst mal rausfinden wo denn der Fehler eigentlich herkommt und wo du den korrigieren musst. Also speziell wenn du halt auch solche Konfigurationen hast, die sich überschreibt. Also sprich, du hast irgendwie ein Feature, das hast du in deinem Service irgendwie konfiguriert und hast dafür halt irgendwie einen Default hinterlegt und überschreibst das dann aber durch zum Beispiel die Ansible-Konfiguration auf jedem der Environments durch einen eigenen Wert. Da musst du dann halt eben auch gucken, dass dann wenn da halt irgendwie was nicht funktioniert, wo der Fehler denn liegt. Wird jetzt die Konfiguration nur in deiner Applikation nicht richtig verarbeitet, oder hat halt das Ansible-Skript den Parameter nicht richtig an deinen Dockercontainer gesetzt und er wird von dort gar nicht gezogen, oder es steht dort eventuell was falsches drin.
+
+R1: Habt ihr sowas schon gehabt?
+
+I3: Also, dass sozusagen das gar nicht matched, das hatten wir schon. Also dass sozusagen in dem Service-Deskriptor des Applikation was falsches drinstand, was nicht zu dem passte, was eigentlich in dem Ansible-Skript stand, das hatten wir auch schon. Dass sich da irgendwie mal so ein Schreibfehler oder irgendwie Groß-Kleinschreibung eingeschlichen hat, das ist halt schon, kommt halt schon vor. Aber du bist halt auch, üblicherweise hast du halt so, zum einen wird es halt lokal noch mal ausprobiert, dann hast du halt auch so einen, wir haben ja auch immer so einen Review-Konzept, also dass mindestens immer einer im Team halt noch mal drüberguckt bevor halt jetzt irgendwelche Änderungen, also das betrifft sowohl Änderungen halt an deinem Service, als auch aber auch Änderungen an dem Provisioning-Projekt, dass immer noch mal einer drüberguckt und die meisten Fehler wurden eigentlich schon vorher beim Review gefunden. Also dir als Entwickler passiert das glaube ich häufiger als dass es dann am Ende wirklich gemerged wird.
+
+R1: Also—
+
+I2: Gerade dadurch, dass wir noch über mehrere Umgebungen gehen, ne?
+
+R1: Also schaut man beim Review auch auf die Konfigurationen dann mit drauf?
+
+I3: Ja.
+
+I2: (Zustimmung)
+
+R1: Ahja, okay. Ja, wie kommuniziert ihr denn im Team jetzt solche Konf —
+
+I3: Warte mal, eins, noch eins anfügen. Eins ist halt auch, was halt auch immer so ein bisschen Nachteil ist ist, dass wir jetzt ein großes Konfigurationsprojekt haben für all unsere, also das ist ja nicht service-spezifisch, sondern es ist eher so plattform-spezifisch. Und da hast du halt das Problem, dass es durchaus mal passieren kann, dass jemand anderes die Gesamtkonfiguration kaputt macht und, dass dann andere ihre Services nicht mehr deployen können. Also das ist halt auch was, was in seltenen Fällen mal auftritt, aber da gibt es halt auch das Team, was halt eigentlich für die Plattform zuständig ist, die sind dann halt meistens dann da relativ schnell dahinter und prüfen das und rollen dann die Änderung entsprechend zurück, aber das ist halt auch noch mal eine zusätzliche Fehlerquelle, dass du sozusagen dann im Prinzip für jedes Environment so ein Konfigurationsfile hast und wenn sich da ein Fehler einschleicht kann das auch Auswirkungen auf die anderen haben.
+
+I2: Wobei das ja so ist, dass gerade bei dem Konfigurationsprojekt ja auch ein Jenkins-Job läuft und zumindest syntaktisch—
+
+I3: Syntaktisch überprüft der, ja, aber es kommt halt immer mal
+
+I2: Also zumindest Ansible sollte nicht großartig auf die Nase fallen.
+
+I3: Ja, du findest halt, der Fehler fällt halt relativ schnell auf.
+
+R1: Wenn ich jetzt so raushöre mit diesem ganzen Plattform-Team. Ich würde jetzt mal schätzen, dass das Plattform-Team dann erheblich mehr mit Konfiguration zu tun hat?
+
+I3: Ja.
+
+I2: Sehr wahrscheinlich.
+
+I3: Also das fängt ja schon an, wenn du jetzt, keine Ahnung, einen Read-Only-Zugriff auf irgendein System, da gehst du halt an das Plattform-Team, machst ein Ticket auf, brauchst Read-Only-Zugriff auf die Kafka-Event-Queue, dann musst du halt dann, das ist aber auch eben viel automatisiert, aber das ist halt schon, wahrscheinlich ist deren Anteil an Konfiguration deutlich höher. Weil die passen dann irgendwelche Konfigurationen an und rollen irgendwelche Infrastruktur aus.
+
+R1: Wie kommuniziert ihr denn welche Konfiguration ihr gerade fahrt und so weiter im Team. Oder ist jetzt ein neues Feature hinzugekommen, wie macht ihr denn das, dass jetzt jeder sozusagen informiert ist „Achtung, jetzt gibt es eine Änderung der Konfiguration“ oder so. Oder macht ihr das gar nicht?
+
+I2: Naja, über mehrere Wege. Zum einen kann es an den Userstorys dranstehen, dass man irgendwie Konfiguration braucht. (Zu I3) Das hast du ja jetzt schon gesagt. Wenn jetzt irgendwie in der Requirementphase schon feststeht, dass man das braucht, dann wird es halt darüber kommuniziert. Dann haben wir ja ganz Scrum-like auch ein Daily, wo man drüber reden kann und, naja, so Last Resort bei dem ganzen Ding ist immer noch das Review am Ende. Also kurz bevor es halt irgendwie in den… naja, in den Master zurückgeht machen wir halt da auch noch mal Reviews durch die einzelnen Teammitglieder.
+
+I3: Genau, das ist halt sowieso auch, dass dein Code ja, deine Änderungen durch andere dirigiert werden, also selbst wenn du jetzt mit denen vielleicht nicht redest über, dass du da jetzt Konfiguration geändert hast, sehen sie spätestens im Review, dass sich da an den entsprechenden Stellen jetzt was verändert hat. Und es gibt ja auch nicht, das, es werden halt immer alle Teammitglieder eingeladen, von Code. Also bevor der gemerged wird. Ob die jetzt nun alle da ihren Haken dran machen oder nicht, aber sie kriegen zumindest erstmal eine Information, dass es da Änderungen gegeben hat und können halt auch jederzeit reingucken, was derjenige jetzt geändert hat. Und dann gibt es halt auch—also wir machen zum Beispiel jetzt, wenn wir jetzt größere Features oder größere Umbauten haben, eben noch mal ein Feature-Branch, wo wir dann halt auch als Team noch mal gemeinsam ein Review drüber machen, bevor wir das in den Master mergen und da wird dann halt auch noch mal auf sowas eingegangen.
+
+R1: Okay, und was ist wenn ihr jetzt sowas habt, das teamübergreifend vielleicht einen Einfluss hat, so eine Konfiguration? Wenn jetzt, was weiß ich, vielleicht an der API dann was ändert oder so?
+
+I3: Da gibt es eigentlich immer irgendwie Meetings oder Abstimmung vorher. Das wird dann halt auch auf einem Environment erstmal getestet, ob das funktioniert. Da gibt es dann halt so manuelle Testphasen und so. Also das —
+
+I2: Das betrifft ja dann aber meistens immer die Infrastruktur. Weil jetzt so die Services selber, die liegen ja in Teamhand, also es gibt nicht mehrere Teams, die an einem Service arbeiten. Sowas gibt es in der Regel nicht.
+
+I3: Ja, aber das war jetzt eher auch so ein Migrationsthema, dass du, wir hatten jetzt auch irgendwie eine Funktionalität übernommen von einem anderen Service sozusagen, dass du dann eben irgendwie an einem Stichtag aufhörst und sowas (I2: Achso). Das ist ja dann auch ein bisschen Konfiguration, also das ist dann eher so Kommunikation zwischen den Teams wo das dann geklärt und getestet wird.
+
+I2: Aber das ist ja eher der Sonderfall —
+
+I3: Ist eher der Sonderfall, ja.
+
+R1: Was ist bei euren Reviews und Daily Scrums so, was seht ihr denn da sind so die Vorteile/Nachteile, so die Kommunikation so zu verteilen?
+
+I3: Meinst du jetzt speziell auf diese Meetings, oder?
+
+R1: Ja, also das was ihr so gesagt, ihr habt ja praktisch Userstoryes, Daily Scrums, Reviews und so weiter gesagt, da wird das publik sozusagen gemacht, die Änderungen. Und ist das jetzt, warum macht ihr das so? Also das muss ja irgendwie einen Vorteil haben und, aber es könnte ja auch vielleicht sein, vielleicht, weil vielleicht zu spät Leute was mitkriegen, die dann an ähnlichen Features arbeiten.
+
+I3: Ja, oder es ist jemand nicht da zum Daily, das hast du halt auch. Das kann schon passieren. Ansonsten muss ich halt auch sagen, du hast halt auch, wir sitzen ja als Team relativ dicht beieinander. Es sitzt ja nicht jedes Teammitglied irgendwie in einem Einzelbüro, du kriegst halt auch so, allgemein wird da auch während der Entwicklung da mal drüber gesprochen, sollten wir jetzt hier, also wird auch im Team diskutiert, sollten wir da das jetzt konfigurierbar machen? Wo machen wir das konfigurierbar? Also das ist eigentlich auch so ein Prozess. Also es wird sich, glaube ich, also bei uns würde sich kaum jemand hinsetzen „oh, jetzt still und heimlich mache ich das konfigurierbar“, ich glaube das passiert einfach nicht.
+
+I2: Ja, Kommunikation wird bei uns schon sehr hoch gehalten, ne? Also, das waren jetzt halt drei Kommunikationskanäle, die wir genannt haben, aber das so die Zwischendurchunterhaltungen, die kann man ja jetzt gar nicht so offiziell erfassen.
+
+I3: Die Teams sitzen halt dicht beieinander, da sitzt auch der Productowner immer mit dabei. Also jedes Team hat seinen eigenen Productowner. Der Scrum-Master ist der einzige, der halt zwischen den Teams halt pendelt, aber der macht ja eigentlich auch nur, sage ich mal, Prozessbetreuung des Scrum-Prozesses. Aber dadurch ist der Informationsfluss jetzt  in der täglichen Arbeit halt auch schon ziemlich hoch.
+
+R1: Ok… Ja okay. Ja, jetzt haben was, was zu Fehlern haben wir jetzt ja schon ein bisschen irgendwie gesagt so, Probleme und so. Und hier ist praktisch so dann noch mal die Frage, was denn so für häufige Auswirkungen, also von Konfigurationsfehlern. Vielleicht, dass nur der Jenkins abfliegt oder dann… doch mal ein Bugreport kommt, oder so. Ein Konfigurations—
+
+I3: Das können eigentlich alles, also es gibt halt Dinge, die merkst du halt gleich in dem Moment wo du halt deine Instanzen neustartest und dich wunderst „ah, wieso konsumiert der jetzt Nachrichten und sollte eigentlich gar nicht?“, also das sind halt Dinge, die kriegst du vielleicht selber mit oder halt wie du sagst, das sind Dinge, die merkst du gar nicht, weil du es vielleicht auch gar nicht siehst, weil du eben vielleicht was in einem falschen Format an ein Drittsystem schickst, wo du dann eben erst einen Tag später einen Bugreport kriegst „oh, hier ihr schickt das aber im falschen Format, könnt ihr das noch mal korrigieren und noch mal anders machen?“, also das ist verschieden. Also es gibt alle, die ganze Bandbreite glaube ich.
+
+I2: Dann versuchst(?) wir natürlich die Fehler irgendwie zu minimieren indem wir halt, wie gesagt (I3: selber testen) selber testen, das stark automatisiert testen (I3: Ja), wir halt auch viele Umgebungen haben, wo dann die Services auch miteinander agieren können, also Migration, Präproduktion, also bevor das live geht versuchen wir halt schon die Fehler schon möglichst zu minimieren.
+
+R1: Also genau dann (?) also die Fehler zu finden und zu beheben, wie geht ihr denn da vor? Also testen ist eine Sache.
+
+I3: Also testen ist halt eher schon im vor vorne weg, sozusagen zu testen, auch mit mehreren Konfigurationen zu testen, eventuell mehrere mögliche Kombinationen an Konfigurationen zu testen, ob die sich vielleicht irgendwie beeinflussen oder was auch immer, also das ist ja durchaus auch denkbar. Genau und dann gibt es halt auch noch mal so ein, also im, spätestens dann auch Preproduction, gibt es dann halt auch noch mal so ein, sag ich mal manuellen Schritt, wo dann zum Beispiel auch der Productowner seine Storys abnimmt und das vielleicht manuell testet und guckt, ob das dann so aussieht und dann mal eine Testbestellung macht, sich die Rechnung zuschicken lässt, guckt ob das so aussieht, wie er das gerne hätte, wenn man da jetzt irgendwas umkonfiguriert hat. Yes.
+
+I2: Und ja, dann natürlich haben wir für Fehleranalyse nutzen wir natürlich intensives Logging. Ja, also über (?; 57:37) kommen wir da halt dann ran und natürlich Monitoring ist dann dementsprechend auch wichtig, wir haben als wir den Service von [firma] übernommen haben, haben wir sehr viel Zeit investiert in Logging und Monitoring, weil wir da ja irgendwie ein unbekanntes System bekommen haben und haben da halt sehr viele Zahlen mitgeschrieben um überhaupt zu sehen wie sich das System verhält und das ist glaube ich im Fehlerfall durchaus sehr hilfreich.
+
+I3: Also es ist halt eben wieder günstig, dass es so eine Microservice-Architektur ist, du hast halt eben kleine, überschaubare Services und wenn dann ein Fehler kommt, wo feststeht, okay, das muss an deiner Konfiguration liegen, dann hast du den auch meistens sehr schnell gefunden. Weil du eben nicht ein riesen Stück Software hast, was durch eine große Konfiguration konfiguriert wird, ist das Team eben auch drin in seinem Code und kennt sich aus.
+
+R1: Also ihr habt jetzt aber auch nicht dann so ein Konfigurationsproblem dann gehabt, was weiß ich, Spring Boot oder so und dann musstet ihr erstmal auf Stackoverflow schauen, wie man das jetzt richtig konfiguriert, un dann—
+
+I3: Na, solche, das ist glaube ich eher so ein Fall, wenn du jetzt zum Beispiel eine neue Migration machst auf eine neue Version von Spring Boot, dann stellst du fest „oh, meine Anwendung startet gar nicht mehr. Warum nicht?“ und dann guckst mal in den Migration Guide von Spring, guckst mal bei Stackoverflow, ob jemand schon das Problem hatte um rauszufinden… aber das sind eher so, würde ich sagen, solche Probleme, die du auch schon lokal findest.
+
+I2: Genau, das sind so Entwicklungsprobleme, ne?
+
+I3: Also spätestens bis Production solltest du eigentlich alle Konfigurationsfehler schon vorher gefunden haben. Also ist eigentlich meistens so.
+
+I2: Ja. Also da, auf Produktion sind die Konfigurationsfehler dann schon sehr offensichtlich, also man hat irgendwelche falschen URLs drin oder irgendwas, die man schon sehr gut sieht. So lokal natürlich, grad, wir hatten ja Spring Security schon mehrfach angesprochen, da ist ja ein Wust an Konfiguration drin, da muss man erstmal durchsteigen und ganz ehrlich auch Stackoverflow hilft einem da an vielen Stellen auch nicht mehr weiter und also Codeanalyse von Spring Security Zeug, das hilft einem dann manchmal weiter.
+
+I3: Ja, oder halt das Logging halt mal weiter aufzumachen um halt mehr Ausgaben zu bekommen um zu sehen welche Rules greifen jetzt und welche von denen du vielleicht erwartet hättest, dass die da irgendwie was machen, vielleicht nicht. Also da ist dann eher auch ein lokales testen.
+
+R1: Okay—
+
+I3: Was halt manchmal auch gemacht wird, du kannst halt auch vielleicht einen Test schreiben, dass du halt siehst okay, da geht irgendeine Konfiguration nicht, dann schreibe ich halt erstmal einen Test um zu gucken, wie sich das verhält und wenn der dann halt fehlschlägt, dann kannst du halt dann auch sicher fixen und gucken, dass der dann grün wird und dann hast es halt auch schon für die Zukunft vielleicht abgedeckt, dass eben solche Konfigurationsfehler in Zukunft vermieden werden können.
+
+I2: Das stimmt.
+
+R1: Okay, also und ich seh schon, beheben scheint nicht so das Problem zu sein, äh Quatsch finden, beheben dann sagt ihr doch schon Code-Analyse teilweise wenn es ein komplexes Problem ist, Logging und—
+
+I2: Ja, gerade Spring ist da halt so sehr stark konfigurierbar und halt da auch sehr viel, ne?
+
+I3: Ja, ich meine da kannst du auf jeder Ebene, es kann ja schon sein, dass der seine ganzen Beans nicht instanziiert und gewired kriegt, weil plötzlich irgendwelche Beans zwei mal da sind oder gar nicht da sind, wegen irgendwelcher Conditions, die ausgewertet werden. Also es kommt auch drauf an, wir nutzen ja dann auch zum Beispiel solche Starter, die dir eben vorkonfigurierte Funktionalität mitbringen. Auch da musst du halt gucken: Funktionieren die… mit meinem Code? Vielleicht mit meiner Spring-Version noch? Oder muss man halt auch da gucken, ob es da vielleicht eine neuere Version gibt? Also das hast du halt auch. Speziell eben mit dieser Autokonfiguration von Spring, also das muss halt dann auch nicht mehr plötzlich, kann eben plötzlich mal  nicht mehr funktionieren mit einer neuen Version.
+
+I2: Ich hatte es vor kurzem sogar, da lag das Problem nicht mal bei Spring, sondern beim Tomcat unten drunter (I3: Naja, das ist durchaus) und dann hat man durch Code-Analyse in Spring erstmal gesehen wo, nach welchen Fragen man dann bei Stackoverflow suchen kann, weil… manchmal die Fehlermeldungen, die da kommen, helfen einem dann nicht weiter, ne? Das sind dann sehr viele Möglichkeiten und dann muss man irgendwie spezifischer suchen können und das kriegt man manchmal nur durch Code-Analyse raus.
+
+R1: Was habt ihr gesagt, ihr startet vielleicht ja mit so einem Spring Boot oder Spring Boot Starter. Wann würdet ihr denn schätzen, wenn man so eine Projekthistorie sieht, ja man fängt initial an mit neuen Microservices und so weiter, was würdet ihr denn schätzen, wo hat man die meisten Probleme mit Konfiguration? Am Anfang, oder dann wenn es Migration gibt, oder keine Ahnung, wenn ein neues Feature reinkommt? Oder sagt ihr, das ist ziemlich gleich verteilt, das ist egal?
+
+I3: Es kann eigentlich zu jeder Phase auftreten, es ist halt, es kommt eben auch ein bisschen auf das Team an. Also sprich, wenn du jetzt schon, nehmen wir mal an du schreibst jetzt deinen dritten, vierten Service, dann hast du irgendwie schon eine gewisse Routine, du wirst auch bekannte Muster als Team immer wieder benutzen, dann hast du auch schon eine Erfahrung, wann musst du was konfigurieren und wie löst du welche Konfigurationsprobleme. Du hast dann vielleicht schon mit Spring Security Erfahrung, hast schon Konfiguration, die sich bewährt haben. Das ist halt auch eben so ein Erfahrungsthema, denke ich, was dann kommt und diese unbekannten Fehler—also Migration ist halt immer ein Thema, weil du weißt nicht, das ist halt immer was, was von außen kommt, und ansonsten hängt es ein bisschen an der Erfahrung des Teams, ja, die anderen Geschichten, das wir hier erfahren—
+
+I2: Und dann halt mit den neuen Anforderungen, die dazukommen. Also beispielsweise, ein Microservice hat, der jetzt in der Infrastruktur schon läuft und man baut einen ähnlichen, der nur andere funktionale Anforderungen hat, ist es wahrscheinlich ziemlich einfach den auch zu konfigurieren. Wir hatten jetzt aber zum Beispiel das Thema bei uns in dem Microservice, dass wir auf einmal eine ganz andere Plattform funken mussten und das heißt also, dass wir dann halt auch securitytechnisch in andere Bereiche reingreifen mussten und uns da natürlich auch anders authentifizieren mussten und dann Spring Security sieht das aber standardmäßig nur für eine Sache vor, also muss man dann wieder da sich reinarbeiten, also da fängt man da halt auf einmal doch an wieder stärker zu rotieren und dann ist das Thema Konfiguration dann auch schon einfach mal wieder schwerer. Aber, wie gesagt, wenn neue Anforderungen dazukommen, ist es wahrscheinlich so, der… hat man wahrscheinlich so die meisten Probleme mit Konfiguration, ne?
+
+I3: Ja.
+
+R1: Bleibt ihr eigentlich jetzt noch dabei mit unter eurem unter 10&nbsp;% wenn ich jetzt so die letzten Antworten so gehört habe?
+
+I3: Doch, würde ich schon sagen, weil meistens…
+
+I2: Es ist ja nicht so, dass jetzt jede Woche oder jeden Tag Anforderungen dazukommen, die das Ändern der Konfiguration (I3: Ja) erfordern. So ist es ja jetzt auch nicht.
+
+R1: Also es ist eher so schubweise, wahrscheinlich, ja? (I2: Kommt. genau—) Beim migrieren und dann—
+
+I2: Es kommen halt bestimmte Anforderungen, die erfordern das und jetzt ein Feature an- oder ausschalten, das ist in Sachen Konfiguration, ist das eher eine Minutengeschichte wie eine Stundegeschichte, das ist jetzt auch nicht sehr schwer. Aber es gibt halt Themen, die lassen sich halt schwerer konfigurieren als andere und gerade, wie gesagt, das Security-Thema, weil es halt auch ein heikles Thema ist, da legt man auch ein ganz anderes Augenmerk drauf und das frisst dann halt dementsprechend mehr Zeit. Also ich kann jetzt meine Hand nicht dafür ins Feuer legen, dass wir jetzt jede Woche unter 10&nbsp;% sind bei dem ganzen Thema, aber—
+
+I3: Das kommt stark auf die Anforderungen an—
+
+I2: Genau, aber es—
+
+I3: Wenn du Pech hast, machst du halt in einem Sprint 50&nbsp;%, also das ist, würde ich jetzt nicht ausschließen wollen.
+
+I2: Ja, aber solche Sprints sind hoffentlich eher nicht die Regel.
+
+I3: Aber auch wenn du jetzt neu implementierst, es ist auch eher so ein iterativer Ansatz. Du fängst also erstmal mit einer einfachen Lösung an und baust die dann immer weiter auf, sodass du dann vielleicht spezielle Konfigurationsdinge erst angehst, wenn du in einer weitere Phase bist und auf ein anderes Environment gehst. Also du fängst vielleicht üblicherweise erstmal an, deployst den Service nur in die Integration und baust den halt erstmal auf, bis die Grundfunktionalität steht und dann machst du dir vielleicht erst Gedanken um Konfiguration. Dann hast du natürlich auch einen zeitlich höheren Anteil an Konfiguration vielleicht auch mal in einem Sprint, weil du dann eben die ganze Konfiguration einfach auf einen späteren Zeitpunkt verschoben hast.
+
+R1: Ahja, ok.
+
+I3: Also das ist aber auch eben flexibel in der… aber so im Schnitt würde ich schon bei den 10&nbsp;% bleiben.
+
+I2: Oder drunter.
+
+R1: Okay, sind sind wir noch beim letzten Bereich, also Verbesserungen. Jetzt sind wir eher so im Dreamland. Ihr könnt euch mal überlegen, was würde euch vielleicht helfen, vielleicht schneller Konfigurationsfehler zu finden oder zu beheben oder vorzubeugen? Das es euch einfacher macht sozusagen, also was würde euch eure Arbeit da erleichtern?
+
+I2: Naja, an einer Sache hat das Plattformteam bei uns beispielsweise schon gearbeitet, an das Thema, dass man jetzt irgendwie verschlüsselte Files nicht selber pflegen kann, auch das haben sie mittlerweile automatisiert. Das war immer noch so ein Bottleneck, dass man darauf warten musste, dass das Plattformteam da irgendwie aktiv wurde.
+
+I3: Na, das erste, was mir einfällt ist, ja YAML finde ich an sich nicht schlecht, aber… es ist halt irgendwie einfach scheiße. Du weißt jetzt nicht, ist es jetzt eins zu weit eingerückt, oder vielleicht doch nicht. Wird es jetzt angezogen an der Stelle, oder habe ich jetzt eins zu weit reingezogen? Also das ist halt auch immer so ein… also das Format an sich der Konfiguration gibt ja halt auch, ich meine XML hast du halt, kannst du schön validieren… theoretisch wenn du irgendwie eine XSD hast oder so, kannst du dein Schema, kannst du schön validieren, ob es zumindest erstmal syntaktisch korrekt ist und so da.
+
+I2: Dafür hast du wieder viel Boilerplate.
+
+I3: Dafür hast du viel Boilerplate, den du dir da… es ist halt irgendwie—
+
+I2: Die Properties-Files sind ähnlich, da musst du immer so viel wiederholen.
+
+I3: Genau
+
+I2: Also es ist—
+
+I3: YAML ist halt schon schön strukturiert, aber da kannst halt eben allein durch Einrückung ziemlich viel kaputtmachen. Oder es funktioniert einfach nicht. Ja, das ist halt ein so ein Ding. Überhaupt, dass man das im, irgendwie es ist halt eben schwierig alle Konfiguration zu testen. Also du kannst dann halt manchmal vielleicht lokal nicht testen, weil du vielleicht, du kannst ja irgendwie eine Prod-Konfiguration nicht testen, weil du auf die Systeme gar nicht kommst. Also speziell Prod ist eben so ein Ding. Pre ist halt nicht so schlimm, da kannst du auch mal nen Systemtest machen um zu gucken, ob alles so funktioniert, wie es funktionieren soll, aber spätestens auf Prod ist dann schon Schluss.
+
+I2: Was ich noch irgendwie eine Herausforderung finde in dem ganzen, ist das Thema verschiedene Technologien für Konfiguration, ne? Jede Technologie, da werden Platzhalter irgendwie anders definiert, also da hast du Ginger-Templates, wo irgendwie da Prozentzeichen genommen werden, dann hat man irgendwie innerhalb von den Application YML-Files hast du irgendwie doppelte geschweifte Klammern und—
+
+I3: Und dann hast du manchmal nur eine, mit einem Dollar davor, also es ist halt—
+
+I2: Dann kannst du manchmal auch weglassen, dann hast du nur Dollar davor, dann hast du manchmal Dollar davor, dahinter, also das ist, da muss man schon ziemlich hinterher sein, dass man da irgendwie noch durchblickt. (I3: Ja) Also eine Vereinheitlichung von sowas, wäre natürlich irgendwie schön… ob praktikabel weiß ich nicht… schwierig… ja.
+
+R1: Okay, und vielleicht irgendwie was—also das hat ja jetzt sehr stark mit „wie schreibe ich eine Konfiguration“ (I3: Jaja) irgendwie zu tun. Was ist jetzt vielleicht um Konsistenz zwischen Konfigurationen herzustellen? Würde da euch vielleicht ein Tool helfen? Oder würdet ihr euch eins wünschen?
+
+I3: Ah, es ist halt, du hast halt vielleicht auch nicht immer, also du meinst jetzt, dass du sozusagen für verschiedene Systeme die Konfigurationen miteinander vergleichbar machst, um zu gucken, ob sie—
+
+R1: Ja, zum Beispiel man hat einen, man checkt einen Commit ein und das prüft jetzt, ob das gegen etwas verstößt, was schon da ist oder so, also.
+
+I2: Hm, interessante Idee.
+
+I3: Ja.
+
+I2: Ja, das geht ja sehr stark, wir haben ja da unser, hatten wir ja schon gesagt, unser globales Config-Repository. Da wird das ja schon so ähnlich gemacht. Da wird zumindest syntaktisch geguckt, ob das irgendwie valide ist, was man da einträgt. Das geht ja schon sehr stark in die Richtung. Das könnte man natürlich jetzt noch irgendwie service-seitig auch haben… ja… das würde man aber wahrscheinlich schon anhand der Tests finden.
+
+I3: Generell ist halt eben dieses automasierte Prüfen einer Konfiguration schon ein Thema, was interessant wäre. Also du schreibst Tests für deinen ganzen Code, aber du hast keine Tests, die jetzt nur die Konfiguration an sich testen. Also speziell—zumindest machen wir das selber nicht. Also du hast jetzt, du verlässt dich dann eben darauf, dass das Plattform-Team da was bereitstellt, was die Konfiguration vielleicht… irgendwie… validiert, aber man könnte sich zum Beispiel auch vorstellen, dass du irgendwie so ein Dummy-Container hast auf dem deine Konfiguration angewendet wird und der zeigt dir einfach nur, was du denn überhaupt versuchst zu konfigurieren. Und das könnte man ja auch automatisiert mit irgendwas abgleichen. Weiß ich nicht, das sind vom… ja, also vielleicht irgendwie —
+
+I2: Ob da Aufwand–Nutzen im Verhältnis steht, weiß ich halt nicht (I3: Ja). Das ist halt die Frage. Ich meine, wir fahren ja in der Regel auch ganz gut mit Integrations- und Systemtests. Und testest du ja die—
+
+I3: Ja, wir haben halt eben kleine Komponenten. Und du hast halt eine überschaubare Konfiguration. Also wenn du jetzt da irgendwie 10 flexible Konfigurationsparameter hast, oder 20, dann ist das schon viel für so einen Service. Und die service-interne Konfiguration, die lässt sich halt, auch weil er eben funktional überschaubar ist, lässt es sich eben auch leicht manuell testen… im Zweifelsfall, so weil—
+
+R1: Also hat es diese —
+
+I3: Du hast jetzt eben nicht eine riesige Applikation, wo du sicherstellen musst, ist die Konfiguration konsistent und sorgt nicht an irgendeiner Stelle irgendwas dafür, dass was anderes nicht funktioniert, sondern du hast eben irgendwie nur kleine Bausteine um die du dich kümmern musst.
+
+R1: Also die Microservice-Architektur ist eigentlich schon in der Hinsicht eine gute Sache um Konfigurationsprobleme —
+
+I3: Ja, du hast halt eben, wenn du auch die Konfiguration entsprechend verteilt hast und so, ist das schon…
+
+I2: Da ist das schon ganz gut, ja.
+
+R1: Also das wäre irgendwie so das Konfigurationsfragen, die wir haben. Jetzt haben wir noch ein paar Fragen noch zur Hierarchie, wenn ihr noch dabeibleibt. Wie würdet ihr eigentlich so Hierarchie im Sinne von Team erstmal definieren für euch. Was stellt denn ihr euch unter Teamhierarchie vor? Das ist tatsächlich von Firma zu Firma unterschiedlich.
+
+I3: Naja, es gibt eigentlich bei uns keine Teamhierarchie.
+
+I2: Ja, das ist das Problem. Es kristallisieren sich meistens irgendwelche Leute innerhalb des Teams raus, die so ein bisschen (I3: Die irgendwas gut können, ja) die was gut können und dadurch irgendwie führen, aber das ist jetzt keine (I3: Es gibt keine) es gibt keinen Teamleader oder irgendwie sowas.
+
+I3: Ne, es gibt, genau, es gibt keine Teamleader. Es gibt keine von außen definierte Struktur oder Hierarchie des Teams.
+
+I2: Es gibt unterschiedliche Rollen, also der PO beispielsweise, der halt irgendwie fachlich Anforderungen erhebt und die natürlich in gewisser Weise vorgibt (I3: aber das eigentlich), aber der redet uns ja technisch nicht rein.
+
+I3: Genau, das ist nur eine fachliche Aufgabe. Der hat keinerlei irgendwie Weisungsbefugnis oder irgendwas anderes. Das ist halt einfach nur eine andere Art von Teammitglied.
+
+I2: Genau, so.
+
+I3: Der hat seine Verantwortung und ja.
+
+R1: Und gesamtkontextlich, [Firma], habt ihr dieses Spotify-Modell und dann ist das relativ (I3: Hm, ja) klar, mit der Hierarchie?
+
+I3: Also es gibt halt, wie gesagt, für die Teams solche Guidelines. Das ist halt so ein großer Katalog, der verschiedene Dinge umfasst und da gibt es halt irgendwie immer so should, could, und—ne, must, should und could. Das must sollen sie halt einhalten, das ist halt infrastrukturbedingt und eben kommunikationsbedingt, das halt das ganze System miteinander kann und dann gibt es halt diese should, das solltest du halt machen, kannst aber dagegen verstoßen wenn du das begründen kannst und das andere sind halt eben Hinweise für empfohlene Vorgehensweisen. So, und die musts sind halt sehr wenige eigentlich… muss ich sagen. Und das sind halt alles eben nur Richtlinien. Es ist nicht so, dass der Architekt kommt und sagt „Du musst das aber so machen. Und das verstößt jetzt so, weil du das so formatiert hast oder weil du eben die Technologie einsetzt, das geht nicht.“, sowas gibt es eigentlich nicht. Es wird halt immer abgewägt, macht es an der Stelle Sinn? Welche Probleme könnte es geben? Vielleicht auch in die Zukunft hinein und dann muss man das eben als Team abwägen, ob man das macht oder nicht.
+
+R1: (?) dieses Spotify-Modell (?), habt ihr da irgendwie auch Nachteile. Also jetzt habt ihr glaube ich eher Vorteile oder so beschrieben.
+
+I2: Es hat sehr viele Vorteile, weil uns halt von oben keiner groß reinredet in die tägliche Arbeit. Gerade hier technisch gesehen eigentlich nicht. Als Entwickler ist das sehr angenehm. Es hat natürlich andere Nachteile, die sich jetzt so, für Karriere-Menschen ist das nicht unbedingt was, weil es nicht viele Möglichkeiten gibt zum Aufsteigen. Das ist natürlich der… naja, es schließt halt daraus, ne? Wenn es niemanden gibt, der großartig führt, kann man natürlich auch keine Führungsposition einnehmen. Das ist eben so. Aber ansonsten begegnen wir uns eben alle sehr stark auf Augenhöhe, die Entwickler untereinander, dadurch, dass es halt auch keine Hierarchie gibt—Senior, Junior (I3: Genau) – dadurch, ist man, sind halt alle irgendwie auf gleichem Level.
+
+I3: Genau, also das sehe ich halt auch. Das ist halt wahrscheinlich das einzige, was problematisch ist, dass du eben so Leute, die gerne aufsteigen möchten, die kriegst du dann halt nicht. Oder sie gehen halt wieder nach kürzerer Zeit.
+
+I2: Man kann halt versuchen sie noch in neue Rollen reinzubringen jetzt, (zu I3) wie dich jetzt beispielsweise, ne?
+
+I3: Ja, es gibt halt schon die Möglichkeit, die Möglichkeit gibt es halt in [Standort2] auch, dass du dann eben solche Fachexperten hast. Für die sie dann halt auch spezielle Rollen schaffen. Also, dass du jemanden hast, der sich wirklich ganz tief mit Security auskennst, oder der sich mit QA auskennt. Also für solche Leute gibt es dann schon noch mal so ein Fachexperten-Level, die dann halt auch so ein bisschen teamübergreifend beraten sollen und die Teams unterstützen sollen. Aber das ist trotzdem immer noch keine Hierarchie in dem Sinne, sondern das ist einfach nur ein anderes Aufgabenspektrum immer, als Unterstützer für eben eine größere Bandbreite an Leuten zur Verfügung zu stehen.
+
+R1: Ja, und ist das dann auch, also ist das eher gut für die Kommunikation, dass ihr so aufgebaut seid, oder würdet ihr euch noch eher wünschen, dass es jetzt hier so einen Teamleiter habt, der euch —
+
+I3: Du brauchst ihn eigentlich nicht.
+
+R1: Brauchst du nicht, okay dann ist doch gut.
+
+I2: Also innerhalb des Teams ist ja die Kommunikation relativ einfach. Es ist halt bei uns alles nach Domänen geschnitten, jedes Team arbeitet an seinem eigenen Thema und dadurch werden halt auch die Kommunikationswege zu anderen Teams minimiert. Und die Kommunikationswege, die man zu anderen Teams braucht, weil die beispielsweise im gleichen Squad sitzen oder so, weil die halt in dem gleichen Bereich arbeiten, das wird meistens dadurch gelöst, dass die Teams räumlich sehr nah beieinander sind.
+
+I3: Das ist jetzt bei uns ein bisschen noch ein Problem, weil wir in unserem Squad sozusagen noch ein Team haben, was in [Standort2] ist, aber dort sitzen halt auch die Teams eines Squads dicht beisammen. Und sie sitzen dann halt üblicherweise in so einem großen Raum, der dann für die Teams noch mal ein bisschen unterteilt ist, aber die sitzen halt auch noch mal dicht zusammen. Sodass dann auch die Kommunikation in so einem Squad relativ gut funktioniert. Und die sind dann halt fachlich wieder dichter beisammen. Aber zwischen den Squads gibt es üblichweise noch weniger Berührungspunkte.
+
+I2: Ja, genau.
+
+I3: Also das nimmt halt immer mehr ab, je größer die Einheit wird.
+
+I2: Genau, und so weiter ist auch die räumliche Distanz meistens. Oder durch, geht das eben ganz gut. Das sieht auf PO-Level, sieht das teilweise ein bisschen anders aus, weil die sich fachlich natürlich irgendwie zwischen den Teams auch anders unterhalten müssen. Weil es ja beispielsweise auch Themen gibt, die irgendwie eine sehr breite Anzahl an Teams betrifft. DSGVO Anfang des Jahres, beispielsweise, trifft ja dann einige. Und die müssen sich dann natürlich ganz anders austauschen. Das tun sie auch und, naja, unsere POs reisen dann halt regelmäßig mal nach [Standort2], das ist dann halt nötig.
+
+I3: Genau, so hätte ich jetzt auch —
+
+I2: Aber dadurch wird von uns als Entwicklern das Kommunikationsmaß wird dann irgendwie sehr stark runtergefahren und auf das Team beschränkt. Das ist eigentlich sehr angenehm.
+
+I3: Das ist halt eben auch, weil du so als autonome Einheit relativ viel Spielraum hast und auch relativ viel selbst entscheiden kannst. Also das ist… also das fängt halt bei Arbeitszeiten an, also auch das ist sozusagen Teamentscheidung: Von wann bis wann und es gibt halt keine Kernarbeitszeit und keine Kontrolle auch. Das ist alles Vertrauensarbeitszeit, es wird halt eben im Team geregelt. Auch Urlaubsplanung, das muss zwar irgendwie noch jemand von diesen People Managern abhaken, aber am Ende entscheidet das Team wann wer Urlaub macht. Da gibt es nicht den Plan, wo jetzt plötzlich—du bist halt für deine Services verantwortlich. Du musst die halt betreuen, du musst halt auch sicherstellen, dass eben nicht in der einen Woche alle im Urlaub sind und keiner da ist. Das ist halt dann die Verantwortung, die du damit auch kriegst.
+
+I2: Das heißt halt auch, dass du beispielsweise zwischen Weihnachten und Silvester müssen halt Leute da sein —
+
+I3: (I2: die halt sich irgendwie kümmern.) Muss halt eben immer einer zumindest Bereitschaft haben, um halt drauzugucken.
+
+R1: Ja. Okay, wenn ihr jetzt mal eine echte inhaltliche Frage habt über eure Arbeit, geht ihr dann zu dem, der bei euch am nächsten sitzt, oder zu dem, der Guru ist bei euch sage ich jetzt mal, oder zu jemandem, den ihr am meisten leiden könnt, weil der halt immer bei euch in der Kaffee-Ecke steckt?
+
+I2: Ja, das ist jetzt auch wieder so eine Sache. Das kommt darauf an. Also wenn es fachlich ist, ist wahrscheinlich der PO der günstigste Punkt um sich da irgendwie zu informieren. Der ist wahrscheinlich auch derjenige, der sich dann irgendwie erkundigt, wenn er das selber nicht beantworten kann und damit ist zumindest fachlich gesehen das Thema erstmal geklärt. Zumindest für mich als Teammitglied. So, wenn das jetzt technischer Natur ist, da hilft mir der PO relativ wenig weiter. Und da kommt es jetzt wieder sehr stark drauf an. Wenn das jetzt irgendwelche Sachen ist, man hat ein im Team irgendeinen Experten sitzen. Also beispielsweise, sei es jetzt DevOp, irgendwas, ich muss jetzt irgendwie an meinem Deployment-Skript muss ich irgendwas bauen, ich weiß selber nicht, wie das geht, es gibt jemanden, der hat das schon jahrelang immer gemacht, weil er vielleicht selber mal in irgendeiner DevOps-Abteilung gearbeitet hat, dann ist das vielleicht der Weg, den man geht. Wenn das im Team keiner beantworten kann, dann haben wir natürlich Standort-, sind wir ja ein ziemlich famil —
+
+I3: Überschaubarer Standort.
+
+I2: Genau, wir sind ja ziemlich familiär hier, das heißt auch da findet man natürlich Leute, die sich dann auskennen. Wenn das nicht reicht hat man ja Squad-Architekten bald auch bei uns, da kann man dann den in die Spur schicken. Und so weiter. Also man kann das, je nachdem wie halt eben die Fragen sind, kann man das eben schon ganz gut steuern.
+
+I3: Ich glaube, das ist aber auch irgendwie so eine persönliche Komponente dabei. Es gibt bestimmt auch, wenn du mit jemandem wirklich nicht klar kommst, wirst du den vielleicht nicht gerade fragen, wenn er der, also ich denke es gibt schon Leute, wo das ist vielleicht ist. Also, kann ich mir vorstellen, dass das… also vielleicht hier nicht so sehr wie in [Standort2], wo du dann vielleicht auch mal in ein anderes Team gehst, weil du da jemanden, dich mit jemandem gut auskennst. Also gut verstehst oder mit dem irgendwie mal klettern gehst oder was. Kann ich mir schon vorstellen, dass da auch sowas, also dass man dann, aus dem Team rausgeht. Aber… grundsätzlich ist halt, bei uns ist es halt, wir sind halt wirklich sehr familiär und sehr überschaubare Leute. Du weißt eigentlich, was jeder andere kann und ich glaube auch hier geht jeder auf den anderen zu und fragt einfach, manchmal ergibt sich auch beim Mittagessen mal die Möglichkeit mit jemand anderes mal drüber zu reden. Vielleicht willst du auch nur mal irgendwie aus einem anderen Team eine Meinung wissen, wie die das vielleicht machen würden, weil du vielleicht in Frage stellst, wie dein Team das die ganze Zeit macht. Also das ist halt auch noch mal so eine Komponente. Und dann hat halt der eine oder andere halt auch schon Connections nach [Standort2] und weiß wer sich dort mit welchem Thema vielleicht gut auskennt.
+
+I2: Das stimmt auch.
+
+I3: Was es halt dann auch noch gibt, ist halt, wir haben halt noch so ein Gildensystem. Also sprich für spezielle Themen gibt es halt so ein teamübergreifendes… teamübergreifenden Austausch. Zum einen halt zu Themen, die halt festlegen. Also es gibt halt eine Architecture-Gilde, eine Security-Gilde, Frontend-Gilde (I2: QA), QA gab es mal eine Weile. Wo du sozusagen eigentlich aus jedem Team jemand hingeht, der denkt „okay, das ist vielleicht so ein Thema, was mich interessiert“ und sich dann mit den anderen Teams austauschen kann, wo eben über aktuelle Probleme geredet wird, du kannst Themen anbringen, die werden diskutiert in der großen Runde, da können andere sagen, wie sie es vielleicht machen und du kannst halt auch jederzeit, wenn du siehst es ist ein Thema, was vielleicht nicht nur dein Team interessiert, kannst du auch sagen „ja, lass uns doch jetzt mal eine Gilde machen zum Thema Xy, das ist vielleicht wichtig“. Dann kommen halt aus anderen Teams noch Leute dazu, dann kannst du dieses Thema bearbeiten, vielleicht zu irgendeinem definierten Ende bringen und dann löst sich die Gilde halt wieder auf. Also das ist halt auch so wie QA, die haben halt eine Weile lang da, diese Testautomatisierung vorangetrieben und —
+
+R1: Würdet ihr das gut finden, dieses Konzept? Also findet ihr das gut, dieses Gildenkonzept?
+
+I2: An sich gut. Wenn es… also ich war eine zeitlang in der QA-Gilde selber drin. Die war dann eine zeitlang dann halt, hat die sehr mit sich selber gekämpft, weil einfach keiner hingegangen ist, weil meistens die Fragen so spezifisch waren, dass die nicht für die Gilde geeignet waren, sondern die waren dann halt an einzelne Personen selbst gerichtet und die Konsequenz daraus war dann eher eine fachliche Instanz zu schaffen, also eine Person, die sich halt besonders gut auskennt und sich um solche Themen kümmert.
+
+I3: Genau.
+
+I2: Und auf die können jetzt halt die Leute zugehen. Ja? Also die waren meistens so speziell, dass es halt irgendwie für die anderen Teams keine richtige Auswirkung hat. Andere Gilden wiederum, die sind bei uns sehr stark frequentiert, wie Security beispielsweise. Dort sind eigentlich immer Leute drin, weil es da halt auch regelmäßig Updates gibt. Also dort haben wir zwar auch jemanden, der sich gut auskennt in dem Bereich und das auch irgendwie vertritt, aber dort wird das eben, die Gilde als Kanal benutzt um Informationen wieder in die einzelnen Teams zu streuen. Ja, Architektur ist von der Sache her das gleiche, wird hauptsächlich benutzt um Informationen zu streuen. Und, ja, geht das eben so.
+
+R1: Okay, ja. Jetzt ist es… also so wie ich jetzt herausgehört habe, fragt eigentlich jeder jeden, oder? Also, wenn—also fast jeder… fast jeden.
+
+I3: Jaja, kommt hin. Fast jeder jeden.
+
+R1: Okay gut, dann haben wir halt so ein interessantes Netzwerk da. Also ist kein, es gibt keinen One-Key-Player oder so.
+
+I2: Genau, also es war eigentlich damals auch wo wir angefangen haben, also wurde mir zumindest gesagt, als ich nach [Standort2] bin, da gibt es so ein Bootcamp, das geht zwei Wochen. Wo man halt aufgegleist wird auf die Technologien, die verwendet werden und auch so ein bisschen in die Firmenmentalität reinkommt und so weiter. Da sind aber zwischen den Blöcken, wo man was beigebracht bekommt, sind halt teilweise auch relativ große Pausen. Also da hat man auch mal einen halben Tag frei. So, jetzt aus meiner Sicht, wenn ich jetzt in [Standort2] bin und habe da einen halben Tag frei, kann ich halt nicht nach Hause gehen oder so, ne? Oder so.
+
+I3: Ja, beziehungsweise ist es so, dass die in [Standort2] halt dann schon bei ihrem Team sind —
+
+I2: Genau
+
+I3: und die Zeit dort verbringen um halt da auch Know-How abzugreifen, aber wir aus [Standort1] haben halt dann speziell immer… Zeit.
+
+I2: Genau und mir wurde damals halt explizit mit auf den Weg gegeben, eben genau das für Networking zu benutzen. Diese Zeit eben genau dafür zu verwenden, dass man eben mal in die einzelnen Teams reingeht, Leute kennenlernt, Experten kennenlernt auf bestimmten Bereichen, dass man eben wenn man dann Fragen hat, dass man dann halt jemanden an der Hand hat um eben das genau so machen zu können. Also Kommunikation wird bei uns halt schon ziemlich hoch gehalten.
+
+I3: Also es ist halt, auch speziell jetzt mit [Standort2] halt, dass… du erfährst zwar normalerweise relativ schnell den Namen von jemandem, der es weiß, aber wenn der dich schon mal gesehen hat und weiß wer du bist und in welchem Team du bist und, dass du aus [Standort1] kommst, das ist halt meistens dann schon mal noch so ein extra Punkt, wo der vielleicht auch mal schneller antwortet.
+
+R1: Ahja, ok.
+
+I3: Wenn du dem halt schon mal persönlich begegnet bist.
+
+I2: Genau.
+
+R1: Ich glaube… dann sind wir durch, oder? Vielleicht so…
+
+R2: Also, eine Frage hätte ich noch, die vielleicht ein bisschen spezieller ist, aber ihr habt bei den Sachen, die schwierig sind, habt ihr ganz viel vorallem Spring Security erwähnt und ganz am Anfang habt ihr gesagt, dass natürlich, weil ihr Java macht—das war glaube ich vor dem Interview noch—macht ihr natürlich Spring Boot. Ist das, hilft dieses ganze Spring, hilft das mehr oder macht es das eher komplizierter am Ende?
+
+I2: Naja…
+
+I3: Es hilft schon mehr als es…
+
+I2: Sonst würden wir es ja nicht einsetzen. Das Thema ist, Security ist meistens sowieso an sich relativ komplex, ne? Also da sind halt ziemlich viele Fallstricke drin. Und man kann halt da sehr schnell Fehler machen und wenn man Fehler macht, haben die vor allen Dingen meistens große Auswirkungen. Das ist halt immer so das. Und wenn man dann eben ein Framework hat, was viele von diesen Fallstricken per se erstmal ausschließt und einfach schon mal, so eine Grundsicherheit schafft, ist einem schon mal sehr viel geholfen. Und das ist ja bei Spring Security der Fall. So und jetzt, jetzt geht es natürlich dann darum, man hat natürlich dann individuelle Anforderungen und die sind manchmal dann halt nicht ganz so trivial. Gerade in dem Security-Bereich und da gibt es natürlich dann auch Probleme.
+
+R2: Also gäbe mehr zu konfigurieren wenn ihr das nicht hättet? Also noch mehr.
+
+I3: Naja, ne du müsstest weniger konfigurieren, aber du müsstest mehr implementieren. Du hast dann halt die Möglichkeit da eben andere Fehler zu machen. Und würdest dich halt auch immer wiederholen wenn du eben nicht ein Framework hättest, was dir das abnimmt. Also, oder du müsstest halt dein eigenes Framework implementieren und das müsstest du dann halt auch wieder pflegen, also eins zieht das andere nach sich.
+
+I2: Ja, vor allen Dingen musst du Experte in dem sein und das ist das Problem. Das haben die meisten wahrscheinlich nicht. Dieses Expertenwissen im Bereich Security um halt solche speziellen Themen halt wirklich richtig zu machen.
+
+I3: Das ist es ja auch. Häufig decken ja die Anforderungen nur einen Teil dessen ab, was das eigentliche Framework dir alles noch mitbringt und du musst halt dann eben nur den speziellen Aspekt auf deine spezielle Konfiguration oder deine Anorderungen anpassen und den Rest, der bleibt ja wie er ist. Und der funktioniert auch wie er ist. Wenn du das halt nicht hättest, dann müsstest du dich halt allumfassend, wie du schon sagst, mit dem Thema beschäftigen. Und das würde halt auch viel mehr Zeit kosten. Und das ist ja, Security ist ja dann eben, nur ein Aspekt davon. Also da kommen ja dann alle anderen Aspekte, die das Framework mit abdeckt ja noch dazu.
+
+R1: Ja, habt ihr dann irgendwie so Feedback oder so zum Interview oder so? Also, hättet ihr euch gewisse —
+
+I3: (?) Konfigurationsfragen, was man so alles über Konfiguration fragen kann. Ich bin mal gespannt was raus kommt.
+

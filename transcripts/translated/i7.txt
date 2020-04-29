@@ -1,0 +1,256 @@
+[INTRO]
+
+10:01
+
+R1: What are you doing so professionally in your job? So are you somehow involved in microservice development, testing or team manager, DevOps, consultant or what?
+
+I7: So at the moment my position is team leader of a development team. We develop - our company does business process outsourcing. That means certain processes of, at the moment energy service providers / energy suppliers, electricity and gas suppliers, we carry out and for that we do software development and I am in such a team that provides APIs and customer portals to the outside world. We have a service-oriented landscape for this. So interfaces to the outside. We're kind of the intermediate layer between the big backend system — SAP system, big Oracle systems — and the outside world. Either as a portal or as an API. And we're also going a bit towards selling software as a service. It starts now. So rather in a service landscape. And as a team leader. I take care of it - on the one hand I program a bit myself, take care of the preparation of the tickets. I have also been taking care of release management in the last three or four years, a kind of configuration, very much. With us it is still a little bit like that who builds it, should also take care of it, so we also take care of the error analysis and so on and treatment, but not the actual operation, so if a server fails on Sunday night, our IT department already does that. What else can you say? Our software is so multi-client capable, so we have different customers and we just offer the services for their customers and the different customers have different requirements and our software runs for different customers.
+
+R1: Yes, you already answered our first questions. What part does programming have in your daily work?
+
+I7: The programming itself maybe like this - software development in general already 66%, two thirds like this. About, maybe a little bit more. So I count to software development from evaluation to deployment. So everything. So if you define it that way.
+
+R1: And programming then?
+
+I7: Programming itself is rather less. 10% maximum.
+
+R1: How many years of experience do you have in software development?
+
+I7: With or without a dissertation? So right in the economy that's 6.5 years.
+
+R1: How long have you been working in the organization?
+
+I7: Even so long.
+
+R1: How long have you been in your current position?
+
+I7: About a year.
+
+R1: And so the last general question: Which frameworks and tools do you usually work with?
+
+I7: So our software is java-based software. We use the Spring framework. The web services are based on either SOAP or REST interfaces. We also have WildFly running as an application server. We are starting or have already started with systems like Kubernetes. Yes, exactly Spring Framework, Spring Boot, WildFly, as relational databases Oracle. Yes and everything that goes with it: JavaScript applications as a front end, HTML applications as a front end.
+
+R1: And in your continuous integration / delivery stack?
+
+I7: Oh, there we have Jenkins integration server and we are in the process of building continuous delivery. There are first approaches. And that's where we use Jenkins pipelines. And as software management we have Git, as version management. And what else do we have? As a registry for Docker images or for Java artifacts, we have just such a Sonatype. Is that called like that? Yes, such a sonatype nexus. We also use Maven as build tools. So yes, Maven mainly in the Java environment and development environment mainly IntelliJ. That was it.
+
+R1: Awesome. Okay, so that's the general question, now let's go to the configuration. What do you mean by the term configuration yourself?
+
+I7: So I would see two different things with us. On the one hand, what I did as a release manager, the whole configuration of the application serer, all possible configurations, so if you have services - we don't have service discovery, for example, but we have to configure dependencies on who speaks to whom and so on. Orchestration would be something like that. We configure our apaches and so on. 17:38 I think ours - so at this level of configuration our limit is the VM. Our IT department takes care of that. The IT department does the whole network configuration, the whole VM configuration, data center and things like that. We don't have that anymore. And that would only be more in the direction of deployment and process, we configure a lot and the second type of configuration is because we cover different customers, different clients with our software, we also have configurations. When I say we configure features, so it is more like that for certain functionalities clients have certain, different properties. Which will configure. Or certain functionality is there for a client and not for others. Or something simpler: For certain processes you need a few parameters, for a certain validation one client has the setting that should be validated, another client should be validated something else. That would have to be configured during setup or so, I would say. This is for me — these two levels. On the one hand, the technical and the other, I would now say a kind of technical. Which properties does which customer have? 19:18
+
+R1: Great, because we have exactly the same division for the rest of the interview: professional and technical configuration. So it is very good that you also use the same terms. Maybe when do you configure the software? For my part divided into functional and technical So at compile time, term or something?
+
+I7: Most of the time, we have it all right now, so we have different things. Mostly the technical stuff at compile time. These are mostly property files, but sometimes also derived classes, so if it is properly hard-coded, sometimes too. 20:13 So that you have a basic validator and then you have built in specific functions. However, we also have the option of changing certain properties during the runtime. That you have just outsourced certain properties in configuration files or databases and there you can just set things during the runtime. Then we now have a third type of configuration time: During the deployment. This is mainly in the direction of containers and Kubernetes. We are trying to extract settings files from the actual programming artifacts and then pack them practically. You can say so - pack it up. And during the deployment a certain version of the configuration is just taken and yes, it is there. So we have these three things.
+
+R1: To what extent does the functional and technical configuration play a role in daily work?
+
+I7: A big one? Well, on the one hand, when we implement requirements from our customer clients, you always have to make sure that there is this — feature is such an overloaded term — if this function already exists, if it somehow already exists for a client, you have to configure it differently in the ideal case or do you have to program something? So that's actually always part of the multi-client systems. 22:11 And the technical thing that has become a little less because I don't care about these things anymore, but still plays a big role in different areas Levels.
+
+R1: In your experience, are there any interactions between functional and technical configuration?
+
+I7: Yes, definitely. Yes. What could I think of as an example now? Certainly, if you activate a function that often requires certain component services, for example, and so that a system can use a service, it is the case at the moment that this has to be configured. So yes, that would be an example. An email verification and there is a service for email verification and if you activate this function, you also have to set up the configuration so that the service can be used. So often in this direction: If a function is to be activated, you also need a technical configuration for it to work.
+
+R1: Do you also typically have to do with the configuration of a monolithic system?
+
+I7: Well, we have a service-oriented landscape. We have various services that everyone can of course be configured. And also - we have a little bit of collection points to the outside, API, or a portal. These portals can already be described as monoliths that use all of the services. So both. But we mainly have services.
+
+R1: How far do you have to configure tools, frameworks and infrastructure?
+
+I7: Yes, they all have to be configured. Starting with the developer computer, every developer has to configure his development environment from all the tools to the proxy in part. Then (? 25: 07) infrastructure, tools, frameworks. So as far as the environment is concerned, we of course configure most of the software above the operating system ourselves. So not the firewalls and things like that, but software like Apache and other web servers or WildFlys. Or as I said, the Kubernetes. It's full of configuration, as I've seen. And now in between frameworks. What do you have to configure? Actually there is less configuration, apart from integrating Maven dependencies. Nothing like that afterwards.
+
+R1: Okay, but Spring Framework and so on?
+
+I7: There is not so much ... well within - so on the one hand there is framework, you just look for the components, as Maven dependencies, for certain functions that already exist. Are partially configured via properties files, direction of access protection or database connections or something.
+
+R1: Are there any interactions between all of this? Yes, between your frameworks and the infrastructure or something.
+
+I7: It depends on where you start the infrastructure. Yes, the framework just uses — on the one hand, the configuration is of course dictated by the infrastructure a bit. So I think addresses now, something like that. So server addresses, passwords and so on.
+
+R1: How do you find the importance or the importance of configuration in software engineering or software development, how do you see that?
+
+I7: Always happy to be forgotten. No, important, yes? That you manage it properly.
+
+R1: "I will always be forgotten", we would probably also like to quote you.
+
+I7: So the technical configuration helps us, if you build it yourself, to provide or adapt functions for different clients faster. And the technical configuration can break a lot if you do it wrong and need a little more value. Especially the management. So packing settings files somewhere is relatively easy, but then managing them and keeping versions.
+
+R1: Ah yes, okay. Can we talk about it again at the end of the interview, because we are doing research there too. Are there differences in different software life phases with regard to the importance of configuration?
+
+I7: I have to think about it. Well, I think there are differences. It is everywhere, but the main work is already changing. So especially with new systems, you are already considering how it can be configured, but you are more likely to develop the functionality. Maybe you try to think about it, what could be configurable, what not. Or what do you do now - but that's more on a conceptual level then. While the software is already there and, for example, only a new customer needs to be added, you have more direction towards configuration.
+
+R1: Were you prepared for this configuration during your studies or training?
+
+I7: Little.
+
+R1: Okay, should it be taught during your studies or should it become more important?
+
+I7: I'm unsure. So rather in such practical work. Maybe — or, yes, on the one hand in practical work, you should show that there is more than just programming something. And maybe you should - I don't know what it's like to study today, I've been away for a long time - there are also things like infrastructure as code or whatever that means. Ultimately, the infrastructure is then defined just like normal software. So you have to test, you write it, you have version control. Perhaps such topics should also appear in certain subjects. 31:52
+
+R1: Okay, those were the general questions about configuration. 31:55 how do you work with configuration? How do you manage and document configurations?
+
+I7: Okay, so in our team. I'm talking about our team now. The other teams have other software and other configurations. Exactly, a team takes great care of a large SAP system, which has a lot of configuration. Completely different. Okay, we all have our configurations in version control. So we have all file-based configurations in one Git repository. And they are managed and then imported to the server, but still by hand at the moment. In addition, we have a configuration service that is used by other services, where configurations can be imported into a database. There is also a kind of version management too. That would be the two. And the third configuration is currently present in the artifacts, in the actual programming artifacts. That means you can imagine it like this, we have different stages we call it, i.e. test, dev system, test system, acceptance system, productive system. And often so that the artifacts that we provide four artifacts, each with their own configuration in it for each stage. And these configurations are also managed via version management. Documentation ... technical configuration we often have a wiki system, where we store a lot as documentation or directly in code, I would say. These are the two sources. 34:38
+
+R1: What is the biggest advantage of your administration?
+
+I7: So what I think is good is that we have everything in version management. So you have the whole history, you can see when what was changed. I see that as our best point.
+
+R1: And the biggest disadvantage?
+
+I7: I see two points. On the one hand, there is still too much manual work involved in the actual deployment / configuration process. And second, the testability. In the sense of testability in the sense of configuring a productive system, it is difficult to test whether the configuration is correct. You only see that when the productive system is running and then very small errors can have a big impact.
+
+R1: Okay, we'll get to that later. Are there any special tools for managing and documenting configuration that you take? Except maybe now Git.
+
+I7: I am thinking ... so with us in the team, we have a few small scripts there. So we have already written a few small tests, very rough ones, and we have a few scripts to exchange certain things for mass and—
+
+R1: But no external somehow now that you can get somewhere, so to speak.
+
+I7: Not at the moment, ne. Unless I just forget them.
+
+R1: How are configurations communicated in the team?
+
+I7: Oh. Okay, by floor radio. So sometimes not very active. So we definitely have conventions for certain things and everyone, every team member knows them.
+
+R1: For example?
+
+I7: So what are the settings files, what directory they are in, how to configure what, where what is. It's all pro - in our team for every service in the same place and everyone knows what means what. And when changes are made, you can see this via the version management system. In addition, there are also system descriptions of what is related in our wiki system.
+
+R1: Okay, what's the biggest advantage of — and the biggest disadvantage of this type of communication?
+
+I7: So personally I think it's quite good that we have made conventions and that everyone adheres to them, because often it is just that - conventions make things easier. The disadvantage is that certain changes do not always affect everything.
+
+R1: Do you have an example when something slips or something? Maybe what typical cases slip through?
+
+I7: So we recently had a changeover - so that would be a bit typical - recently a changeover from Windows to Linux systems and the file paths had to be displayed differently and with certain configurations this was not communicated and with In the next configuration, a backslash was written instead of a slash. Somehow something like that. It happens every now and then.
+
+R1: Do you actually review configuration files for code reviews?
+
+I7: Yes.
+
+R1: How is the procedure there?
+
+I7: The procedure? Relatively simple, actually. One employee does the job, another looks at it in the merge request and checks as best he knows and can do it. So this is always only one employee who checks it. Ideally, just during configuration, employees who are responsible for the release will check it again. And we work via pull requests and that is also checked in the course. 41:14
+
+R1: Since you also create configurable software systems yourself: According to which criteria and at what time are configuration options planned and implemented for you?
+
+I7: So I'm thinking about where to start. Usually, so very often changes or requests for changes to our system come from the customers themselves and we implement them. And then we always think about it, should it actually be considered in the conception phase after the requirements in the conception come up, is this only necessary for this customer, is it important for others, is it immediately for one customer, actually for all customers, always the same. So you have to configure something at all and if not, just switch the function on and off or you need certain parameters that you can set. There is no structured process as far as I know. You always try to keep it as flexible as possible, but just (?) Partly with the current requirement so as not to do too much. So you have a requirement for a certain thing and if you now make it highly configurable, the effort will be twice as high on my account. May well be possible and that has to be weighed up.
+
+R1: Okay, that's the question. How much effort do you put into the development time to incorporate configuration options?
+
+I7: That was just an example. It always depends. So it is always - in any case, it is always clear that our software must be available for multiple clients / customers to be configurable, and that is more or less done. And I can't express it in percentages now, but it will definitely be taken into account during development. Different levels.
+
+R1: And how much effort do you spend in the development period to actually configure? So do not install, but configure.
+
+I7: Yes, is already a part. We are probably the team with the least configuration, but since we have already been working on the system for eight or nine years, I don't know, the majority is already there and will definitely be 20, 30% or something configured.
+
+R1: How much effort do you put into the initial setup of a configuration for tools, frameworks and infrastructure? 45:35
+
+I7: It takes a day for such a developer computer to get everything going. For a new server we use, we are practically copying other configurations at the moment. That happens relatively quickly. But everything has to be done again by hand - because most of it is still done by hand, it has to be tested again.
+
+R1: Then it is not - so what we might mean by initial, there is still nothing where you can copy.
+
+I7: Oh well. Let me think.
+
+R1: So I think what you probably did in your last project with the release cycle.
+
+I7: So at the moment we are always growing. That means that's all (? 46: 49) standard. Somehow, we configure, so configure a new route in the proxy or configure a new database connection then always takes a few hours, with testing maybe half a day. So it's not at the push of a button.
+
+R1: So you can't say now if you were to redefine your continuous integration / delivery pipeline, how long, how much effort—
+
+I7: Oh, there it is - I can't really judge that. If I see the classic method of creating a Jenkins job takes half an hour, somehow, something like that will create a completely new project - we mainly do Maven projects, it becomes an initial pom file, so we also have a few Standards already exist, created. I'm just considering a whole new service. What did we do there? So create a Git repository, create the Java structure, i.e. as pom files, initial interfaces, start files, create tests, create a Jenkins job, or Jenkins files, integration tests - so that's a lot of work. I can also say what it will be like. We have now defined standard pipelines with tools as Jenkins files and with the new project you can access the libraries and some of them are automatically recognized by Jenkins and can also be deployed semi-automatically. But we are not there yet. So is still in the development phase. It's not that easy in my opinion.
+
+R1: That is practically yes, what I mean is somehow a direction. So you still have a whole project, which is working on that.
+
+I7: Exactly, we already have a few solutions, but it is not yet a standard with us, for new projects, that you can start immediately. Partly.
+
+R1: How much effort do you make in the case of version changes or other configuration-dependent changes? So Spring Boot goes from version 1 to 2 for example or something.
+
+I7: I've only made two changes so far. From Java 6 to 7 and from Java 7 to 8 and from Spring Framework 3 to 4, everything is a bit older. Back then it was still huge big projects of three months at least or longer. That was the last experience. In the meantime, we are now switching to Spring Boot step by step, but that takes longer.
+
+R1: Okay, what is the biggest factor for you that determines the configuration effort?
+
+I7: Different, with configuration effort. What do you mean by factor now? What takes us the longest or what I think is the worst in the configuration or what determines the effort?
+
+R1: What determines the effort.
+
+I7: Depends on the size of the configuration. So if you say version change now, there is of course development effort involved, but also a lot of test. With the other things. It depends on the size. With such small things, the whole deployment question is the time-determining one. In the case of a very small change, if the change cannot be changed from the outside. So if the property / settings file is directly available for the artifact. So not somehow external. That is of course the whole deployment and everything that release work is the most complex. If it can be changed from outside, the effort determines the information gathering. So everything is important, I think, all configurations that can somehow be done externally. So settings, so a version change will probably not work. Then it is important for me that it can also be done outside of the artifact. This means that you don't have to recompile, you have to build a new artifact through the deployment pipeline, and you have to include it in the release, and all that. Ideally, during the term, that would be great if you can. Or at least if you just have to redeploy with a new configuration file. A small restart would still work. What you said with a new framework version, it would be good if within a team everywhere the same, what I said earlier, the same conventions were followed and ideally there are tests everywhere, then it can all be done relatively centrally the services and systems are upgraded to a new version. I would see such things as a determining factor. Everything determines the technical configuration, the configurations are very different from the type.
+
+R1: Do you also use configurability to tune non-functional properties such as performance?
+
+I7: Yes, partly in the infrastructure. What do I know, connection pooling in the database is the easiest. Did we do anything else, where we switched off functions to get better performance? I do not know that.
+
+R1: So partly yes. Well, let's go to the configuration errors, to the topic. Now it's going to be nice. Does configuring systems, tools and infrastructure and so on present you with problems?
+
+I7: Partly. In my opinion somehow still missing, even with code reviews you can still overlook things. So for me the big problem is that there are two big problems. On the one hand, the manual deployment of configuration, i.e. exchanging a configuration file on the server. There is a process for that and it has already turned out well, but it is not yet perfect. But it is quite possible that there is a different version on the server than in the repository. This is technically possible. And as long as this is technically possible, it can also happen. And the second thing, that is testability. Productive configuration, testability, I have already seen all kinds of wrong configuration that were possible with us. 57:07
+
+R1: Exactly, are these the most serious problems? Super. What are they — what do you think are the causes of these difficulties?
+
+I7: Several things. Mostly has to do with processes and setting up the infrastructure and tools, I would almost say. So (? 57: 44) with the software. On the one hand, test and production systems would have to be almost the same, but not exactly the same. So they should be the same, so to speak. So that you can easily test configuration on a test system better, already there. And I can give you an example, for example productively the server is called Prod-Server1 and on the test system is called Test-Server1 \. With a different port also and if you then, for example, once port 443 and on test 444 \. And if you accidentally enter Prod as developer 444, you have a problem. You only see it when you do it in the productive. If you now specify a Kubernetes cluster, such dependencies are logically defined. So you just say Service1 or Service2, I have a dependency on Service1 and the infrastructure says Service1 is here, Prod-Server1 and on the test system is Test-Server1 \. So such support in the configuration by the developer does more logical things that you separate it. Infrastructure and logical configuration. Then you can test it better. And tool support. So that one automates deployments if possible. If they are automated, there is also a tool and this tool, what does it, can be tested again. So the theory. In practice, this is difficult to implement for us.
+
+R1: Let's put Ansible in there. What is a difficult tool to configure for you and why exactly? 1:00:07
+
+I7: There is actually, I would - so the tools and frameworks that we use are not difficult for us to configure. Actually, it is more general, rather so technical ancillary — wrong to configure so generally, the tools that we have used so far are not difficult to configure. Now, when I see my colleague building the Kubernetes cluster, the learning curve is very steep, there is a lot you can do and this is a bigger project because there is a lot more to it. But like that, not technically difficult to configure, but actually organizational, so that you always have the right values, for example.
+
+R1: Is the configuration of interacting tools and frameworks actually problematic?
+
+I7: Partially. So if you now, do not know much Java you have already programmed, if we now say, you might have figured it out more often: You have two external libraries and they use other libraries of different versions and they can be compatible. There, things like that are initially difficult to configure sometimes to bring the right versions together, but then it is the case with us that once you are done with it, it remains stable for a while. So that would be a configuration. Otherwise, whenever it comes, I come back to the version changes, for various reasons, of course, it takes a lot of testing. Another team, for example, changed the Oracle version — two anecdotes now. So another team changed the Oracle version, which means we did a test and we had to change the driver version and they did something else. Yes, you had to configure around. Oder umgekehrt, wir haben eine Framework-Version geändert und plötzlich war, wurde etwas validiert, was vorher optional und schon gab es dann Fehler im Zusammenspiel mit anderen Teams. Also solche Sachen passieren immer wieder. Also ziemlich locker gekoppelte Systeme zum Teil.
+
+R1: Was sind denn für dich eigentlich Konfigurationsfehler und wie unterscheiden die sich von normalen Bugs?
+
+I7: Wenn ich das—die einfachste Definition ist, alles was in Einstellungsdateien schiefgegangen ist oder ein bisschen allgemeiner: Wenn an dem eigentlichen Artefakt, an dem Quellcode nichts geändert werden muss, sondern nur irgendeine Konfiguration, eine Einstellung geändert werden muss. Und wenn die dann falsch ist, dann ist das für mich ein Konfigurationsfehler. Das wäre die Infrastruktur. Bei den Funktionen, da ist das fließender würde ich sagen. Also bei der fachlichen Konfiguration, da gibt es ja auch unterschiedliche Level. Manchmal ist es da auch nur eine Einstellungsdatei, also Parameter A oder Parameter B und Wert A und B und manchmal ist es aber wirklich, man muss da irgendwelche Klassen ableiten oder Funktionen in eine if-Anweisung—teilweise selbst mit einer if-Anweisung oder aus einer Properties-Datei irgendwie, liest man irgendeinen Parameter aus und von da aus gibt es im Code verschiedenste if-Alternativen. Und da ist es dann fließend, was Konfiguration ist oder Code-Bug.
+
+R1: Welche Auswirkungen von Konfigurationsfehlern sind denn häufig bei euch?
+
+I7: Ja, bestimmte Prozesse gehen nicht. Also vollständig nicht. Keine Ahnung, das Kundenportal funktioniert nicht vollständig. Die API nach außen funktioniert nicht vollständig. Das heißt darauf aufbauende Apps oder Portale haben Ausfälle. Bestimmte Prozesse werden nicht angestoßen oder—Daten gehen jetzt verloren klingt jetzt zu hart, das passiert eigentlich nicht, aber es sind schon schwierige Ausfälle. Sehr akut und sehr leicht zu lösen dann zwar, aber haben dann auch gleich eine große Auswirkung.
+
+R1: Okay, auch Performance auch Auswirkungen oder ist das für euch eher nicht…
+
+I7: Performance? Selten. Da hatten wir bisher—vielleicht ist unsere Last zu wenig. Ne, hatte auch Performance-Auswirkungen, ja, teilweise. Wenn zu wenig Speicher an so einen Java-Prozess vergeben oder sowas.
+
+R1: Gibt es einen Unterschied zwischen falscher und schlechter Konfiguration?
+
+I7: Ja. Schlecht würde ich jetzt so definieren, dass es immer noch geht, aber entweder die Performance nicht gut ist oder zu viele Ressourcen verbraucht werden oder zu komplex ist. Das wäre die schlechte Konfiguration. Und die falsche ist, es funktioniert gar nicht. So würde ich das definieren.
+
+R1: Also du hast ja schon Konfigurationsfehler erlebt. Kannst du denn vielleicht noch einen besonders schwierigen Fall rekapitulieren? Schwerwiegenden, also.
+
+I7: Schwerwiegenden? Wir hatten mal eine Schema-Validierung eingeschaltet—das ist jetzt ein Zwischending zwischen Bug und Konfiguration—bei unseren Diensten haben wir eine Schema-Validierung eingeschaltet. Die Schema-Validierung war sehr inperformant programmiert. Das heißt bei jedem Request wurde so eine sehr teure Operation ausgeführt, in dem Fall wurde eine WLSD-Datei oder XSD vollständig neu geparst jedes Mal und bei sehr vielen Requests pro Minute, pro Sekunde, stört das erstmal einen Dienst. Da unser System aber auch ein bisschen sensibel auf Störung eines Dienstes reagiert, ist immer alles dann kaputt gegangen. Also wirklich, waren die Portale nach kurzer Zeit bei etwas größerer Last dann nicht mehr erreichbar. Teilweise waren andere Dienste in Mitleidenschaft gezogen, die dann wieder vom Backendsystem benutzt wurden. Das heißt die Prozesse liefen dann auch nicht mehr korrekt. Und dieser Fehler war auch schlimm, weil der nicht sofort akut war, sondern das wurde immer schlimmer mit den Performance-Problemen, also hat man mehr die Kiwi(?)-Methode andewendet, also mehr Power reingestellt in die VMs, aber irgendwann war es dann überhaupt nicht mehr lösbar und nur über ein Profiling haben wir es dann sofort gesehen. Also es war wirklich in der Konfiguration der Schema-Validierung und die Validierung selbst war inperformant und deswegen—
+
+R1: Das heißt der schwierigste Fehler war bei euch eine schlechte Konfiguration und keine falsche?
+
+I7: Ja, ne das war die interessanteste. Ich weiß nicht, ob das schwer—ja, wir hatten lange damit zu tun bis wir die Wurzel des Übels gefunden haben, Root Cause.
+
+R1: Wie lange habt ihr da eigentlich so gebraucht dafür um das…?
+
+I7: Na das ganze Problem zog sich über sagen wir mal drei, vier Monate hin. Das war ja nicht sofort akut. Man hat nur gesehen, dass wir sehr viel mehr CPU-Ressourcen verbraucht haben. Und dann hat man gesagt, okay geht noch. Und bei unserem Geschäft ist es so, dass es am Jahresende sehr viel mehr Last vorhanden ist und da hat es dann gar nicht mehr funktioniert. Wir haben auch vorher schon überlegt woran es liegt und wir haben, also ich war es sogar, ich habe dann sowas so gesagt „Ja, daran kann es doch nicht liegen.”, aber lag daran. Wir haben es nicht getestet. Andere Fälle sind einfach mal—wir hatten noch einen anderen Fall, das war ein automatischer Email-Prozess, da war die Empfänger- und die Sender-Email falsch konfiguriert. Das heißt weder sind die Emails angekommen, noch hat man Informationen bekommen, dass die Emails nicht angekommen sind. Das heißt man hatte nicht mal eine Chance zu sehen, dass da was falsch war.
+
+R1: Ja, wie häufig treten denn Konfigurationsfehler bei der Projektarbeit auf? Also jeden Tag, jede Woche oder jeden Monat?
+
+I7: Für unseren Geschmack zu häufig, deswegen wollen wir uns ja verbessern auch. Ja, es passiert dann schon im Monat sage ich mal. Einmal im Monat.
+
+R1: Also einmal im Monat, der in die Produktion geht, oder?
+
+I7: Testsystem vielleicht häufiger mal, aber da ist es nicht so wichtig. Aber produktiv kommen Produktionsfehler dann schon mal wirklich vor. Vielleicht ein bisschen weniger. Aber so viel, dass es uns aufgefallen ist.
+
+R1: Wenn man so die Projekthistorie sieht, wann treten dann typischerweise Konfigurationsfehler auf? Am Anfang, beim initialen Aufsetzen oder bei Upgrades von Komponenten oder bei geänderter Infrastruktur oder sowas.
+
+I7: Beim Aufsetzen. Ansonsten bei Änderungen jeglicher Art. Gleichverteilt. Aber bei neuen Funktionen glaube ich noch ein bisschen häufiger als bei Änderungen.
+
+R1: Gibt es generell Unterschiede bei Konfigurationsfehlern zwischen fachlicher und technischer Konfiguration?
+
+I7: Technische Konfigurationen kommen häufiger vor. Fachlich, bei der fachlichen Konfiguration entstanden die meisten Fehler eher aus dem Konzept oder aus der Anforderung, also dass es schon falsch angefordert wurde. Während technisch eher bei uns eher Schusselfehler sind.
+
+R1: Wie geht ihr denn typischerweise vor um Konfigurationsfehler zu finden und zu beheben?
+
+I7: Also was ich mal gemacht habe, ich habe einen Test geschrieben, zum Beispiel für abhängige Dienste, die über eine Web-URL definiert sind. Also wir geben die HTTP-URL an von dem Dienst. Haben wir beispielsweise einen Test geschrieben, dass in produktiven Properties-Dateien keine Testservernamen vorhanden sind. Was war das? Beheben oder verhindern?
+
+R1: Vorzubeugen ist die nächste Frage. Eher zu finden und zu beheben.
+
+I7: Also verhindern: Tests und Code-Review und teilweise automatisierte Tools. 1:16:03 Ja, ein paar Konfigurationen sind automatisiert. Automatisiert heißt es ist entweder alles falsch oder alles richtig. Und beheben besteht aus meiner Sicht aus zwei Sachen: Also erstmal den Fehler finden, woran es liegt und unsere Monitoring-Tools und Logfile-Zentralisierung und -Suche und -Analyse. Und das zweite ist beheben. Das ist meistens ein neues Deployment.
+
+R1: Okay, StackOverflow oder so, googeln?
+
+I7: Ach so eine Konfiguration. Yes. Also in dieser Hinsicht. Ja, genau. Google. Bei dem schlimmen Fall mit der Schema-Validierung haben wir auch eine externe Firma auch mal beauftragt, dass sie uns die Wildfly-Konfiguration optimiert, aber letztendlich lag es daran gar nicht, sondernan diesem kleinen Modul. Das heißt, Google zum Finden von Performanceproblemen, Profiler, Logfiles für Monitoring um fehlerhafte Konfigurationen zu finden, sieht man dann schon sowas wie einen 404 oder ähnliches, NotFound-Exceptions… und um die richtige Konfiguration zu finden, hauptsächlich Selbststudium. Und wenig externe Consultants und Hilfen.
+
+R1: Was für Verbesserungsbedarf siehst du, was würdest du dir wünschen um vielleicht Konfigurationsfehler zu beheben oder besser zu identifizieren?
+
+I7: Was ich schon gesagt habe: Testbarkeit und automatische Tools, automatisches Deployment. Was ich von anderen mal gehört habe, dass sie Compliance-Regeln für bestimmte Sachen eben auch zentral aufgestellt haben und dagegen automatisch testen. Also ich bin ein Fan von automatisch testen und automatischen Tools und—genau, bei der reinen technischen Konfiguration, also sowas. Und bei der fachlichen Konfiguration, alle Sachen, die man extern ablegen kann, irgendwo extern halten. Extra halten. Vom Code. Dass eben Konfiguration und Code schön sauber getrennt ist und, dass man das flexibel behandeln kann.
+
