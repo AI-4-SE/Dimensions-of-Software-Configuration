@@ -4,7 +4,7 @@
 1. [Interviews](#interviews)
    * [Participants](#participants)
    * [Companies](#companies)
-2. [Dimensions of Configuration](#dimensions-of-configuration)
+2. [Dimensions of Software Configuration](#dimensions-of-software-configuration)
 3. [Related Work](#related-work)
    * [Software Product Lines](#software-product-lines)
    * [Testing](#testing)
@@ -47,9 +47,9 @@ You can find the final version of the translated questionnaire [here](questionna
 | Xceptance      | Software Testing             | 42        |
 |                | E-commerce                   | <100      |
 
-## Dimensions of Configuration
+## Dimensions of Software Configuration
 
-![Dimensions of Configuration](https://user-images.githubusercontent.com/831282/75362848-9b8b1980-58b9-11ea-8e57-18aba9f8f3a6.png)
+![Dimensions of Software Configuration](https://user-images.githubusercontent.com/831282/75362848-9b8b1980-58b9-11ea-8e57-18aba9f8f3a6.png)
 
 ## Related Work
 
