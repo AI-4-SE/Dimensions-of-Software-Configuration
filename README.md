@@ -1,4 +1,4 @@
-# Dimensions of Configuration
+# Dimensions of Software Configuration
 
 ## Table of Contents
 1. [Interviews](#interviews)
