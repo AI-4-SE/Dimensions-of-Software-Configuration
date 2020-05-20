@@ -4,7 +4,7 @@
 1. [Interviews](#interviews)
    * [Participants](#participants)
    * [Companies](#companies)
-2. [Dimensions of Software Configuration](#dimensions-of-software-configuration)
+2. [Dimensions of Software Configuration](#dimensions-of-software-configuration-1)
 3. [Related Work](#related-work)
    * [Software Product Lines](#software-product-lines)
    * [Testing](#testing)
