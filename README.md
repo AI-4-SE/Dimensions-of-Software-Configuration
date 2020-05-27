@@ -49,7 +49,7 @@ You can find the final version of the translated questionnaire [here](questionna
 
 ## Dimensions of Software Configuration
 
-![Dimensions of Software Configuration](https://user-images.githubusercontent.com/831282/75362848-9b8b1980-58b9-11ea-8e57-18aba9f8f3a6.png)
+![Dimensions of Software Configuration](./images/dimensions.svg "Dimensions of Configuration")
 
 ## Related Work
 
@@ -59,37 +59,37 @@ We placed 18 related papers of the domains of software product lines, testing, p
 
 #### What is a Feature? A Qualitative Study of Features in Industrial Software Product Lines
 
-![What is a Feature](https://user-images.githubusercontent.com/831282/75362838-99c15600-58b9-11ea-960f-548570a90f66.png)
+![What is a Feature](./images/berger2015.svg "What is a Feature?")
 
 Thorsten Berger, Daniela Lettner, Julia Rubin, Paul Grünbacher, Adeline Silva, Martin Becker, Marsha Chechik, and Krzysztof Czarnecki. 2015. What is a Feature?: A Qualitative Study of Features in Industrial Software Product Lines.  In Proceedings of the International Conference on Software Product Lines (SPLC).  ACM, 16–25.
 
 #### An Analysis of the Variability in Forty Preprocessor-Based Software Product Lines
 
-![Dimensions of an Analysis of the Variability in Forty Preprocessor-Based Software Product Lines](https://user-images.githubusercontent.com/831282/75362856-9d54dd00-58b9-11ea-8f66-3c1e46f4d751.png)
+![Dimensions of An Analysis of the Variability in Forty Preprocessor-BasedSoftware Product Lines](./images/lalks_icse10.svg "Dimensions of An Analysis of the Variability in Forty Preprocessor-BasedSoftware Product Lines")
 
 Jörg Liebig, Sven Apel, Christian Lengauer, Christian Kästner, and Michael Schulze. 2010. An Analysis of the Variability in Forty Preprocessor-Based Soft- ware Product Lines. In *Proc. Int. Conf. Software Engineering (ICSE)*. ACM, 105–114.
 
 #### Granularity in Software Product Lines
 
-![Dimensions of Granularity in Software Product Lines](https://user-images.githubusercontent.com/831282/75362854-9cbc4680-58b9-11ea-9531-36c381e3f383.png)
+![Dimensions of Granularity in Software Product Lines](./images/kak_icse08.svg "Dimensions of Granularity in Software Product Lines")
 
 Christian Kästner, Sven Apel, and Martin Kuhlemann. 2008. Granularity in Software Product Lines. In *Proc. Int. Conf. Software Engineering (ICSE)*. ACM, New York, 311–320. https://doi.org/10.1145/1368088.1368131
 
 #### Variability-Aware Static Analysis at Scale: An Empirical Study
 
-![Dimensions of Variability-Aware Static Analysis at Scale: An Empirical Study](https://user-images.githubusercontent.com/831282/75362867-9fb73700-58b9-11ea-8340-7165b31394fd.png)
+![Dimensions of Variability-Aware Static Analysis at Scale: An Empirical Study](./images/rhein_2018.svg "Dimensions of Variability-Aware Static Analysis at Scale: An Empirical Study")
 
 Alexander von Rhein, Jörg Liebig, Andreas Janker, Christian Kästner, and Sven Apel. 2018. Variability-Aware Static Analysis at Scale: An Empirical Study. *ACM Transactions on Software Engineering and Methodology (TOSEM)* 27, 4 (2018), 1–33.
 
 #### A Survey of Variability Modeling in Industrial Practice
 
-![Dimensions of A Survey of Variability Modeling in Industrial Practice](https://user-images.githubusercontent.com/831282/75362844-9af28300-58b9-11ea-9cab-650979a16fd7.png)
+![Dimensions of A Survey of Variability Modeling in Industrial Practice](./images/berger_2013.svg "Dimensions of A Survey of Variability Modeling in Industrial Practice")
 
 Thorsten Berger, Ralf Rublack, Divya Nair, Joanne M. Atlee, Martin Becker, Krzysztof Czarnecki, and Andrzej Wąsowski. 2013. A Survey of Variability Modeling in Industrial Practice. In *Proceedings of the Seventh International Workshop on Variability Modelling of Software-intensive Systems (VaMoS ’13)*. ACM, New York, NY, USA, Article 7, 8 pages. https://doi.org/10.1145/2430502.2430513
 
 #### Multi-purpose, multi-level feature modeling of large-scale industrial software systems
 
-![Dimensions of Multi-purpose, multi-level feature modeling of large-scale industrial software systems](https://user-images.githubusercontent.com/831282/75362866-9f1ea080-58b9-11ea-9c08-8359208a746c.png)
+![Dimensions of Multi-purpose, multi-level feature modeling of large-scale industrial software systems](./images/rabiser_2018.svg "Dimensions of Multi-purpose, multi-level feature modeling of large-scale industrial software systems")
 
 Daniela Rabiser, Herbert Prähofer, Paul Grünbacher, Michael Petruzelka, Klaus Eder, Florian Angerer, Mario Kromoser, and Andreas Grimmer. 2018. Multi-purpose, multi-level feature modeling of large-scale industrial software systems.  *Software & Systems Modeling* 17, 3 (01 Jul 2018), 913–938. https://doi.org/10.1007/s10270-016-0564-7
 
@@ -97,19 +97,19 @@ Daniela Rabiser, Herbert Prähofer, Paul Grünbacher, Michael Petruzelka, Klaus 
 
 #### A Survey of Combinatorial Testing
 
-![Dimensions of A Survey of Combinatorial Testing](https://user-images.githubusercontent.com/831282/75362860-9e860a00-58b9-11ea-9c43-4e5bbaff1c62.png)
+![Dimensions of A Survey of Combinatorial Testing](./images/nl_csur11.svg "Dimensions of A Survey of Combinatorial Testing")
 
 Changhai Nie and Hareton Leung. 2011. A Survey of Combinatorial Testing. *ACM Computing Surveys (CSUR)* 43, 2, Article 11 (Feb. 2011), 29 pages. https://doi.org/10.1145/1883612.1883618
 
 #### Configurations Everywhere: Implications for Testing and Debugging in Practice
 
-![Dimensions of Configurations Everywhere: Implications for Testing and Debugging in Practice](https://user-images.githubusercontent.com/831282/75362853-9cbc4680-58b9-11ea-88ea-559858b1d4bd.png)
+![Dimensions of Configurations Everywhere: Implications for Testing and Debugging in Practice](./images/jin_2014.svg "Dimensions of Configurations Everywhere: Implications for Testing and Debugging in Practice")
 
 Dongpu Jin, Xiao Qu, Myra B. Cohen, and Brian Robinson. 2014. Configurations Everywhere: Implications for Testing and Debugging in Practice. In Companion *Proceedings of the 36th International Conference on Software Engineering (ICSE Companion 2014)*. ACM, New York, NY, USA, 215–224. https://doi.org/10.1145/2591062.2591191
 
 #### Usage, Costs, and Benefits of Continuous Integration in Open-source Projects
 
-![Dimensions of Usage, Costs, and Benefits of Continuous Integration in Open-source Projects](https://user-images.githubusercontent.com/831282/75362851-9c23b000-58b9-11ea-9e02-70a8b45107e2.png)
+![Dimensions of Usage, Costs, and Benefits of Continuous Integration in Open-source Projects](./images/hilton_2016.svg "Dimensions of Usage, Costs, and Benefits of Continuous Integration in Open-source Projects")
 
 Michael Hilton, Timothy Tunnell, Kai Huang, Darko Marinov, and Danny Dig.  2016. Usage, Costs, and Benefits of Continuous Integration in Open-source Projects. In *Proceedings of the International Conference on Automated Software Engineering (ASE)*. ACM, 426–437.
 
@@ -117,13 +117,13 @@ Michael Hilton, Timothy Tunnell, Kai Huang, Darko Marinov, and Danny Dig.  2016.
 
 #### Faster discovery of faster system configurations with spectral learning
 
-![Dimensions of Faster discovery of faster system configurations with spectral learning](https://user-images.githubusercontent.com/831282/75362858-9ded7380-58b9-11ea-8e69-527b0b6f51dd.png)
+![Dimensions of Faster discovery of faster system configurations with spectral learning](./images/nair2017-lr.svg "Dimensions of Faster discovery of faster system configurations with spectral learning")
 
 Vivek Nair, Tim Menzies, Norbert Siegmund, and Sven Apel. 2017. Faster discovery of faster system configurations with spectral learning. *Autom Softw Eng* (Aug. 2017), 1–31.
 
 #### Finding Near-optimal Configurations in Product Lines by Random Sampling
 
-![Dimensions of Finding Near-optimal Configurations in Product Lines by Random Sampling](https://user-images.githubusercontent.com/831282/75362861-9f1ea080-58b9-11ea-8fe5-cb235e0ee358.png)
+![Dimensions of Finding Near-optimal Configurations in Product Lines by Random Sampling](./images/oh2017-jl.svg "Dimensions of Finding Near-optimal Configurations in Product Lines by Random Sampling")
 
 Jeho Oh, Don Batory, Margaret Myers, and Norbert Siegmund. 2017. Finding Near-optimal Configurations in Product Lines by Random Sampling. In *Proceedings of the 2017 11th Joint Meeting on Foundations of Software Engineering (ESEC/FSE 2017)*. ACM, New York, NY, USA, 61–71.
 
@@ -131,19 +131,19 @@ Jeho Oh, Don Batory, Margaret Myers, and Norbert Siegmund. 2017. Finding Near-op
 
 #### On Cross-stack Configuration Errors
 
-![Dimensions of On Cross-stack Configuration Errors](https://user-images.githubusercontent.com/831282/75362869-a04fcd80-58b9-11ea-883c-46a9721bf531.png)
+![Dimensions of On Cross-stack Configuration Errors](./images/sayagh_2017.svg "Dimensions of On Cross-stack Configuration Errors")
 
 Mohammed Sayagh, Noureddine Kerzazi, and Bram Adams. 2017. On Cross-stack Configuration Errors. In *Proceedings of the International Conference on Software Engineering (ICSE)*. IEEE Press, 255–265.
 
 #### An Empirical Study on Configuration Errors in Commercial and Open Source Systems
 
-![Dimensions of An Empirical Study on Configuration Errors in Commercial and Open Source Systems](https://user-images.githubusercontent.com/831282/75362885-a34abe00-58b9-11ea-8c2c-0589d7375c61.png)
+![Dimensions of An Empirical Study on Configuration Errors in Commercial and Open Source Systems](./images/yin_2011.svg "Dimensions of An Empirical Study on Configuration Errors in Commercial and Open Source Systems")
 
 Zuoning Yin, Xiao Ma, Jing Zheng, Yuanyuan Zhou, Lakshmi N. Bairavasundaram, and Shankar Pasupathy. 2011. An Empirical Study on Configuration Errors in Commercial and Open Source Systems. In *Proceedings of the International Symposium on Operating Systems Principles (SOSP)*. ACM, 159–172.
 
 #### Systems Approaches to Tackling Configuration Errors: A Survey
 
-![Dimensions of Systems Approaches to Tackling Configuration Errors: A Survey](https://user-images.githubusercontent.com/831282/75362882-a2199100-58b9-11ea-91a5-570d5318942a.png)
+![Dimensions of Systems Approaches to Tackling Configuration Errors: A Survey](./images/xu_2015b.svg "Dimensions of Systems Approaches to Tackling Configuration Errors: A Survey")
 
 Tianyin Xu and Yuanyuan Zhou. 2015. Systems Approaches to Tackling Configuration Errors: A Survey. *ACM Comput. Surv.* 47, 4, Article 70 (2015), 41 pages.
 
@@ -151,24 +151,24 @@ Tianyin Xu and Yuanyuan Zhou. 2015. Systems Approaches to Tackling Configuration
 
 #### Software Configuration Engineering in Practice
 
-![Dimensions of Software Configuration Engineering in Practice](https://user-images.githubusercontent.com/831282/75362873-a0e86400-58b9-11ea-95fc-c2734c5d701d.png)
+![Dimensions of Software Configuration Engineering in Practice](./images/ska_18.svg "Dimensions of Software Configuration Engineering in Practice")
 
 M. Sayagh, N. Kerzazi, B. Adams, and F. Petrillo. 2018. Software Configuration Engineering in Practice: Interviews, Survey, and Systematic Literature Review.  *IEEE Transactions on Software Engineering* (2018).
 
 #### Mining Container Image Repositories for Software Configuration and Beyond
 
-![Dimensions of Mining Container Image Repositories for Software Configuration and Beyond](https://user-images.githubusercontent.com/831282/75362884-a2b22780-58b9-11ea-99e6-f26e622688e7.png)
+![Dimensions of Mining Container Image Repositories for Software Configuration and Beyond](./images/xu_2018.svg "Dimensions of Mining Container Image Repositories for Software Configuration and Beyond")
 
 Tianyin Xu and Darko Marinov. 2018. Mining Container Image Repositories for Software Configuration and Beyond. In *Proceedings of the International Conference on Software Engineering: New Ideas and Emerging Results (NIER)*. ACM, 49–52.
 
 #### DevOps: A Definition and Perceived Adoption Impediments
 
-![Dimensions of DevOps: A Definition and Perceived Adoption Impediments](https://user-images.githubusercontent.com/831282/75362876-a180fa80-58b9-11ea-8eb1-7d653737327a.png)
+![Dimensions of DevOps: A Definition and Perceived Adoption Impediments](./images/smeds_2015.svg "Dimensions of DevOps: A Definition and Perceived Adoption Impediments")
 
 Jens Smeds, Kristian Nybom, and Ivan Porres. 2015. DevOps: A Definition and Perceived Adoption Impediments. In *Agile Processes in Software Engineering and Extreme Programming*, Casper Lassenius, Torgeir Dingsøyr, and Maria Paasivaara (Eds.). Springer International Publishing, Cham, 166–177.
 
 #### DevOps Capabilities, Practices, and Challenges: Insights from a Case Study
 
-![Dimensions of DevOps Capabilities, Practices, and Challenges: Insights from a Case Study](https://user-images.githubusercontent.com/831282/75362871-a04fcd80-58b9-11ea-991e-99073dd3fc7b.png)
+![Dimensions of DevOps Capabilities, Practices, and Challenges: Insights from a Case Study](./images/senapathi_2018.svg "Dimensions of DevOps Capabilities, Practices, and Challenges: Insights from a Case Study")
 
 Mali Senapathi, Jim Buchan, and Hady Osman. 2018. DevOps Capabilities, Prac- tices, and Challenges: Insights from a Case Study. In *Proceedings of the Interna- tional Conference on Evaluation and Assessment in Software Engineering (EASE)*.  ACM, 57–67.
