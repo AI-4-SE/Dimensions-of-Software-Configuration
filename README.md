@@ -1,6 +1,8 @@
 # Dimensions of Software Configuration
 
-## Table of Contents
+Additional material for our paper Dimensions of Software Configuration. You can find the pre-print of the paper [here](https://sws.informatik.uni-leipzig.de/wp-content/uploads/2020/05/Configuration.pdf).
+
+## Table of Contents 
 1. [Interviews](#interviews)
    * [Participants](#participants)
    * [Companies](#companies)
