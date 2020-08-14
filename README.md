@@ -2,8 +2,8 @@
 
 Additional material for our paper Dimensions of Software Configuration. You can find the pre-print of the paper [here](https://sws.informatik.uni-leipzig.de/wp-content/uploads/2020/05/Configuration.pdf).
 
-Please cite our paper when using the data set:
-Norbert Siegmund, Nicolai Ruckel, and Janet Siegmund. Dimensions of Software Configuration. In Proceedings of the European Software Engineering Conference and the ACM SIGSOFT International Symposium on the Foundations of Software Engineering (ESEC/FSE), ACM Press, 2020. 
+Please cite our paper when using the data set:  
+Norbert Siegmund, Nicolai Ruckel, and Janet Siegmund. Dimensions of Software Configuration. In *Proceedings of the European Software Engineering Conference and the ACM SIGSOFT International Symposium on the Foundations of Software Engineering (ESEC/FSE)*, ACM Press, 2020. 
 
 ## Table of Contents 
 1. [Interviews](#interviews)
@@ -66,7 +66,7 @@ We placed 18 related papers of the domains of software product lines, testing, p
 
 ![What is a Feature](./images/berger2015.svg "What is a Feature?")
 
-Thorsten Berger, Daniela Lettner, Julia Rubin, Paul Grünbacher, Adeline Silva, Martin Becker, Marsha Chechik, and Krzysztof Czarnecki. 2015. What is a Feature?: A Qualitative Study of Features in Industrial Software Product Lines.  In Proceedings of the International Conference on Software Product Lines (SPLC).  ACM, 16–25.
+Thorsten Berger, Daniela Lettner, Julia Rubin, Paul Grünbacher, Adeline Silva, Martin Becker, Marsha Chechik, and Krzysztof Czarnecki. 2015. What is a Feature?: A Qualitative Study of Features in Industrial Software Product Lines.  In *Proceedings of the International Conference on Software Product Lines (SPLC)*.  ACM, 16–25.
 
 #### An Analysis of the Variability in Forty Preprocessor-Based Software Product Lines
 
