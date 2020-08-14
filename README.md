@@ -2,7 +2,7 @@
 
 Additional material for our paper Dimensions of Software Configuration. You can find the pre-print of the paper [here](https://sws.informatik.uni-leipzig.de/wp-content/uploads/2020/05/Configuration.pdf).
 
-We please cite our paper when using the data set:
+Please cite our paper when using the data set:
 Norbert Siegmund, Nicolai Ruckel, and Janet Siegmund. Dimensions of Software Configuration. In Proceedings of the European Software Engineering Conference and the ACM SIGSOFT International Symposium on the Foundations of Software Engineering (ESEC/FSE), ACM Press, 2020. 
 
 ## Table of Contents 
