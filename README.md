@@ -2,9 +2,7 @@
 
 Additional material for our paper Dimensions of Software Configuration. You can find the pre-print of the paper [here](https://sws.informatik.uni-leipzig.de/wp-content/uploads/2020/05/Configuration.pdf).
 
-You can find the talk about our work at ESEC/FSE 2020 here:
-
-TODO
+[ESEC/FSE 2020 talk on our work](https://www.youtube.com/watch?v=xB7CSxTngds)
 
 [Slides with notes](https://sws.informatik.uni-leipzig.de/wp-content/uploads/2020/11/slides-esecfse2020-notes.pdf)
 
